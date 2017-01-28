@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		003A5653D34AAEB4F8323350 /* FeedPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52075AE70E3DA0A237FC8878 /* FeedPresenterTests.m */; };
+		057143E0B942CAAA2AECFCF3 /* FeedInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7C1F76660680F764001093 /* FeedInteractorTests.m */; };
+		0DB0D3412E2388470143C35D /* FeedPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE9E01F3371DE9AE63EBE9D /* FeedPresenter.m */; };
+		43C705630CB3F9F119674C81 /* FeedInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C25412D95B431B072F1E4 /* FeedInteractor.m */; };
+		49E4F450566A012CE7425223 /* FeedRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 655FADFB35BC3C50EA1E64EB /* FeedRouter.m */; };
+		53A2D663945430B90DE614BD /* FeedRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7600BDBC2E963559D6AD8C7B /* FeedRouterTests.m */; };
 		58CE503756E189EFB08C50D8 /* libPods-TwitterFeedViewerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B714AFB8A21DBCE9C7D25EC /* libPods-TwitterFeedViewerTests.a */; };
+		610B88CDA3DA2BAA4E59F8DF /* FeedAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4FFF826AD62E0A00002511 /* FeedAssemblyTests.m */; };
+		6407EA875E1D9EFE4D290158 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A008AF2356DA129270E3A /* FeedViewController.m */; };
+		8242C03EF62A4F2545426F5B /* FeedAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = FDECB01C2D60E5E666892147 /* FeedAssembly.m */; };
 		8A3CD6BE1E3CE5EB000C3F71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6BD1E3CE5EB000C3F71 /* AppDelegate.m */; };
 		8A3CD6BF1E3CE5EB000C3F71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6BD1E3CE5EB000C3F71 /* AppDelegate.m */; };
 		8A3CD6C51E3CE6BC000C3F71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3CD6C11E3CE6BC000C3F71 /* Assets.xcassets */; };
@@ -30,6 +39,7 @@
 		8A78B1711E3CADE900E7534A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B16F1E3CADE900E7534A /* Main.storyboard */; };
 		8A78B1761E3CADE900E7534A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B1741E3CADE900E7534A /* LaunchScreen.storyboard */; };
 		B68D3C36C752B1D2BC1C1FCE /* libPods-TwitterFeedViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B44DC57178446202331AE1CB /* libPods-TwitterFeedViewer.a */; };
+		BBB830D42C0D611AA327DD6E /* FeedViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A393EE7A45903AD570A66C46 /* FeedViewControllerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +55,19 @@
 /* Begin PBXFileReference section */
 		056495EB88D61CD9F1E9A384 /* Pods-TwitterFeedViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterFeedViewerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterFeedViewerTests/Pods-TwitterFeedViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1B714AFB8A21DBCE9C7D25EC /* libPods-TwitterFeedViewerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TwitterFeedViewerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9A008AF2356DA129270E3A /* FeedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		1BE9E01F3371DE9AE63EBE9D /* FeedPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FeedPresenter.m; sourceTree = "<group>"; };
+		2152525E0CBA1C4BDF924682 /* FeedAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedAssembly.h; sourceTree = "<group>"; };
+		3208E45060EACB8FF2F6B62D /* FeedModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedModuleInput.h; sourceTree = "<group>"; };
+		35FBA524E34A07B006464A87 /* FeedInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedInteractor.h; sourceTree = "<group>"; };
+		3940BBFEF46BF2F1593920C8 /* FeedPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedPresenter.h; sourceTree = "<group>"; };
+		42CA114ED951590A5E6D8A5F /* FeedViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedViewInput.h; sourceTree = "<group>"; };
+		52075AE70E3DA0A237FC8878 /* FeedPresenterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FeedPresenterTests.m; sourceTree = "<group>"; };
+		556C25412D95B431B072F1E4 /* FeedInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FeedInteractor.m; sourceTree = "<group>"; };
+		62A35744425A467B12105D68 /* FeedViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedViewOutput.h; sourceTree = "<group>"; };
+		655FADFB35BC3C50EA1E64EB /* FeedRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FeedRouter.m; sourceTree = "<group>"; };
 		71E3BF8DA7463A6DEB0A7084 /* Pods-TwitterFeedViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterFeedViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterFeedViewer/Pods-TwitterFeedViewer.release.xcconfig"; sourceTree = "<group>"; };
+		7600BDBC2E963559D6AD8C7B /* FeedRouterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FeedRouterTests.m; sourceTree = "<group>"; };
 		8A3CD6BC1E3CE5EB000C3F71 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8A3CD6BD1E3CE5EB000C3F71 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8A3CD6C11E3CE6BC000C3F71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,9 +90,19 @@
 		8A78B1751E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A78B17C1E3CADE900E7534A /* TwitterFeedViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterFeedViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A78B1821E3CADE900E7534A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A7C1F76660680F764001093 /* FeedInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FeedInteractorTests.m; sourceTree = "<group>"; };
+		A393EE7A45903AD570A66C46 /* FeedViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FeedViewControllerTests.m; sourceTree = "<group>"; };
+		A9177263E46A2C19C4BFC288 /* FeedInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedInteractorOutput.h; sourceTree = "<group>"; };
+		B3CD7CDDAB3ADA8AAEFC19DF /* FeedAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedAssembly_Testable.h; sourceTree = "<group>"; };
 		B44DC57178446202331AE1CB /* libPods-TwitterFeedViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TwitterFeedViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B72CC08CF7045FE5E1E84FF9 /* FeedRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedRouter.h; sourceTree = "<group>"; };
+		BCD75E186AA277578D8EF238 /* FeedRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedRouterInput.h; sourceTree = "<group>"; };
+		C20F0F3D2EE4D55A7DFFE3F1 /* FeedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		CC3309A0CA461DD116ADE50A /* Pods-TwitterFeedViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterFeedViewerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterFeedViewerTests/Pods-TwitterFeedViewerTests.release.xcconfig"; sourceTree = "<group>"; };
 		CEC63B5803E0D7442939C8E6 /* Pods-TwitterFeedViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterFeedViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterFeedViewer/Pods-TwitterFeedViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		DAAD3929A172D2BDF6108FBE /* FeedInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedInteractorInput.h; sourceTree = "<group>"; };
+		DB4FFF826AD62E0A00002511 /* FeedAssemblyTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FeedAssemblyTests.m; sourceTree = "<group>"; };
+		FDECB01C2D60E5E666892147 /* FeedAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FeedAssembly.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +125,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09131624B5C5F41254FA0B80 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				2CB0AF3692CFE0898843710C /* Feed */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		0E4A34FA52463BD4CBD082E4 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				2F1BB7B10FA54FDB0AB7D9E3 /* Assembly */,
+				2FDD1E020F3CA2AE8F490D1E /* View */,
+				2A2DC17C609B558C7994710F /* Presenter */,
+				91D1FA1572A9871683A71A4D /* Interactor */,
+				8C280CF515152CA5BC9F3916 /* Router */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		2A2DC17C609B558C7994710F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3208E45060EACB8FF2F6B62D /* FeedModuleInput.h */,
+				3940BBFEF46BF2F1593920C8 /* FeedPresenter.h */,
+				1BE9E01F3371DE9AE63EBE9D /* FeedPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2CB0AF3692CFE0898843710C /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				5C503F88118E0F5521CC92C2 /* Assembly */,
+				8B32CBDD110EC4512983DDAE /* View */,
+				473E6995569BC614FBE0134D /* Presenter */,
+				999B44831F43E2637AC33FD3 /* Interactor */,
+				781D7D1A8BDAB66752564FA7 /* Router */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		2F1BB7B10FA54FDB0AB7D9E3 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				2152525E0CBA1C4BDF924682 /* FeedAssembly.h */,
+				FDECB01C2D60E5E666892147 /* FeedAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		2FDD1E020F3CA2AE8F490D1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42CA114ED951590A5E6D8A5F /* FeedViewInput.h */,
+				62A35744425A467B12105D68 /* FeedViewOutput.h */,
+				C20F0F3D2EE4D55A7DFFE3F1 /* FeedViewController.h */,
+				1B9A008AF2356DA129270E3A /* FeedViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		473E6995569BC614FBE0134D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				52075AE70E3DA0A237FC8878 /* FeedPresenterTests.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5C503F88118E0F5521CC92C2 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				DB4FFF826AD62E0A00002511 /* FeedAssemblyTests.m */,
+				B3CD7CDDAB3ADA8AAEFC19DF /* FeedAssembly_Testable.h */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		781D7D1A8BDAB66752564FA7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7600BDBC2E963559D6AD8C7B /* FeedRouterTests.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		7C747108B4034D60385214D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,16 +268,9 @@
 		8A3CD6B91E3CE5C3000C3F71 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				8A3CD6BA1E3CE5C3000C3F71 /* UserStories */,
+				0E4A34FA52463BD4CBD082E4 /* Feed */,
 			);
 			path = PresentationLayer;
-			sourceTree = "<group>";
-		};
-		8A3CD6BA1E3CE5C3000C3F71 /* UserStories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UserStories;
 			sourceTree = "<group>";
 		};
 		8A3CD6BB1E3CE5DA000C3F71 /* AppDelegate */ = {
@@ -296,8 +408,27 @@
 			children = (
 				8A3CD6E51E3D1C27000C3F71 /* CoreComponents */,
 				8A78B1821E3CADE900E7534A /* Info.plist */,
+				09131624B5C5F41254FA0B80 /* PresentationLayer */,
 			);
 			path = TwitterFeedViewerTests;
+			sourceTree = "<group>";
+		};
+		8B32CBDD110EC4512983DDAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A393EE7A45903AD570A66C46 /* FeedViewControllerTests.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C280CF515152CA5BC9F3916 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BCD75E186AA277578D8EF238 /* FeedRouterInput.h */,
+				B72CC08CF7045FE5E1E84FF9 /* FeedRouter.h */,
+				655FADFB35BC3C50EA1E64EB /* FeedRouter.m */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		8DAEFB31288463BF6CAE9159 /* Pods */ = {
@@ -309,6 +440,25 @@
 				CC3309A0CA461DD116ADE50A /* Pods-TwitterFeedViewerTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		91D1FA1572A9871683A71A4D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				DAAD3929A172D2BDF6108FBE /* FeedInteractorInput.h */,
+				A9177263E46A2C19C4BFC288 /* FeedInteractorOutput.h */,
+				35FBA524E34A07B006464A87 /* FeedInteractor.h */,
+				556C25412D95B431B072F1E4 /* FeedInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		999B44831F43E2637AC33FD3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8A7C1F76660680F764001093 /* FeedInteractorTests.m */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,6 +675,11 @@
 				8A3CD6CE1E3D1091000C3F71 /* Tweet.m in Sources */,
 				8A3CD6C91E3CE6BC000C3F71 /* main.m in Sources */,
 				8A3CD6BE1E3CE5EB000C3F71 /* AppDelegate.m in Sources */,
+				8242C03EF62A4F2545426F5B /* FeedAssembly.m in Sources */,
+				6407EA875E1D9EFE4D290158 /* FeedViewController.m in Sources */,
+				0DB0D3412E2388470143C35D /* FeedPresenter.m in Sources */,
+				43C705630CB3F9F119674C81 /* FeedInteractor.m in Sources */,
+				49E4F450566A012CE7425223 /* FeedRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +694,11 @@
 				8A3CD6CA1E3CE6BC000C3F71 /* main.m in Sources */,
 				8A3CD6E01E3D1788000C3F71 /* MappingProvider.m in Sources */,
 				8A3CD6CF1E3D1091000C3F71 /* Tweet.m in Sources */,
+				610B88CDA3DA2BAA4E59F8DF /* FeedAssemblyTests.m in Sources */,
+				BBB830D42C0D611AA327DD6E /* FeedViewControllerTests.m in Sources */,
+				003A5653D34AAEB4F8323350 /* FeedPresenterTests.m in Sources */,
+				057143E0B942CAAA2AECFCF3 /* FeedInteractorTests.m in Sources */,
+				53A2D663945430B90DE614BD /* FeedRouterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
