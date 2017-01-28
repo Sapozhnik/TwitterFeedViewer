@@ -7,39 +7,126 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09A1E44783AE8A9EA6C06201FF94ED7A /* EKSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BA205753EC3B68BFB41F729E0B051FA /* EKSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		128FFAFBFBD1BBCF0446A6D09AF2E99D /* EKManagedObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = E52EA91F94361553A288B7B6996E116B /* EKManagedObjectMapping.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1475CD1292792AE1675B09E570D36EA0 /* Pods-TwitterFeedViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7096E7494D16E12DE544BC129B32EFDC /* Pods-TwitterFeedViewer-dummy.m */; };
+		15A631B4938EAEB2483F7EF6E584A096 /* NSArray+FlattenArray.h in Headers */ = {isa = PBXBuildFile; fileRef = F2D46735586E7FD4E0426F27848FEBDC /* NSArray+FlattenArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C5B0234F9A69E4F5FB652595396F883 /* EKObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F39A5E0943870FC6851BF7C25AA0BA8A /* EKObjectModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1FF5B9B60A733D9A6CD15EA606F1EC37 /* EKObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BCF36669D6E987B1A5E32F63210B0A8 /* EKObjectMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2514B29E1C7F4B0642C51BB656EB5CDB /* EKObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA2C2730B000A4D4DD57AEEEAC8D971 /* EKObjectMapping.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		313C0598B2E6618D74AAB7F9619A4735 /* EasyMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 18458186062D655E29F860DE0C6A0415 /* EasyMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		359D141766A191B88CE7ACC855F737CF /* NSDateFormatter+EasyMappingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BD75A1CEA259C2D88DC12879E6D9B1D7 /* NSDateFormatter+EasyMappingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39A2CCC7330EC7E0BDDB336D829E9319 /* EKCoreDataImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E12683CAB3AFAD0F803F350A6E11E8 /* EKCoreDataImporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E96716E51174D7DC8DC17CF6F18198C /* EKManagedObjectModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CCD1B9F457E020800F95E37D877DC9F /* EKManagedObjectModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FACEAFE83F39FF60D84FCA5B56F99A6 /* EKPropertyMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CEC7A613BF83B5CBBC1BB7E4C557242 /* EKPropertyMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4102ACDDC5D5D4437EB1C7D17603DADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF85E5A74BF2C5F729F6419654402FBC /* Foundation.framework */; };
 		4BEB289ED4F0B984B40EDA830B72A89A /* Pods-TwitterFeedViewerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0159E82AD8581CE05182F2E6C2F10B7E /* Pods-TwitterFeedViewerTests-dummy.m */; };
-		B4F75F253CFCD41C2B19402F2743C256 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		BCA7711032977F4BDB614B93F2B29686 /* Pods-TwitterFeedViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7096E7494D16E12DE544BC129B32EFDC /* Pods-TwitterFeedViewer-dummy.m */; };
-		D3C0034F2C096401EE066BA127C6EE4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		53061196E61CD440EC406974C4AE25C9 /* EKManagedObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F5AE9057A9609D85DBDDA20F977D92 /* EKManagedObjectModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5685A82EED639C246D7E1FFEADFEA772 /* EKMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA27EF0B067E09B1F04118EBEFD409A4 /* EKMapper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6DFAA1C1BED36E03E813008BF7C91EBF /* EKPropertyHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AE75B76640180CF62BF45B6746929E /* EKPropertyHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F4D66EA15CB0387BD8A4A24BADDF951 /* EKManagedObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1027D9CD170C1A285F26255376696AF6 /* EKManagedObjectMapper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		886EA548C04E4B7CC39568E7FA1EE5CF /* EKManagedObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = F63718DA51B10F9D8C0075D81A6E92B9 /* EKManagedObjectMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D1458C64ABCA825E97CD5DFB609F6C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF85E5A74BF2C5F729F6419654402FBC /* Foundation.framework */; };
+		91909A9AD8D9B2324C520AE942EAD64A /* EKMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = DE838C3BEB44C89B5106CD93B06FC9B0 /* EKMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4603A33EA07C63853C90CAAD4C380BD /* NSDateFormatter+EasyMappingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3180C26F8469C64D788C2E8A0FA645 /* NSDateFormatter+EasyMappingAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A5CC23BEF6A05B26175870C94CE81EA3 /* EKManagedObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C5C044D31C87F50B38B9A0CA3860B13 /* EKManagedObjectMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A67DE0F614F9CFB6C46E4E05E145C134 /* EKMappingBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 1274B583E6CA10C49E5846B267932FBD /* EKMappingBlocks.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AFE0E54E1F02FD2C678EEAF5770AF411 /* EKMappingBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 539FC80F95D5E0194F914DB5789D0E8F /* EKMappingBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0790AB566F867B291AB29E0C1D167D0 /* EKRelationshipMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC52489D52AB93CBED310B29C20EFCF /* EKRelationshipMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0A90FDF2720C839F9F406B915FF7FA9 /* EKSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A57F597F85066AE7AD356210E8958A6 /* EKSerializer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B317241D390DF924AA2D290A59C4C94D /* EasyMapping-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2558EA15289DC1E00654F0D849FC12B /* EasyMapping-dummy.m */; };
+		B4F75F253CFCD41C2B19402F2743C256 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF85E5A74BF2C5F729F6419654402FBC /* Foundation.framework */; };
+		BBE8E314886946176704FF4014726A79 /* EKObjectModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B55C73D8E2C057A47EC174E3341109 /* EKObjectModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBAEDEEC0BCFD0649B2659F0AFDE8F2 /* EKMappingProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E20B4033AF48174F385F5FD6549516DE /* EKMappingProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C565C62E6B828A1A4A80EE3D427C49F3 /* EKPropertyMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 161BB79926138FE556C3F27D1463D56E /* EKPropertyMapping.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CF165D2EF33A9F0190B9B6053DE6500A /* NSArray+FlattenArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 520AFEB9035ABC7EB6E26C5B1DD4CCA2 /* NSArray+FlattenArray.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DEB1B20659BAC952B2893FF14C59834C /* EKRelationshipMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7F37ADCD1E606FD1E239E6BD697C8A /* EKRelationshipMapping.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E0B95FD34D7782F251F548ECA728799D /* EKCoreDataImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E01C41D018FB2F9358DE1177596A0 /* EKCoreDataImporter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E54CF3B09A8D251A71FC03A0E59A5A57 /* EKPropertyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A02E690C9E4F3CF68F0D0E01B8FAF2 /* EKPropertyHelper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F93BEA4C84A6299D3893D7143C76A587 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E84538505F21AD441B87E2C82C53E5 /* CoreData.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25FA4D7FF8475F9F8373ADA1DE7AAE92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 985888A2E6687A95E124DC22AED8A3D8;
+			remoteInfo = EasyMapping;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0159E82AD8581CE05182F2E6C2F10B7E /* Pods-TwitterFeedViewerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TwitterFeedViewerTests-dummy.m"; sourceTree = "<group>"; };
-		01B9845CE3E5EAC3B61B41F917FC9118 /* libPods-TwitterFeedViewerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TwitterFeedViewerTests.a"; path = "libPods-TwitterFeedViewerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05550D14C6DB6A523FBA0307B3ECA697 /* Pods-TwitterFeedViewer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TwitterFeedViewer-acknowledgements.markdown"; sourceTree = "<group>"; };
 		06CE031BDA051AF487D461CD4F3D68AF /* Pods-TwitterFeedViewerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TwitterFeedViewerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0A57F597F85066AE7AD356210E8958A6 /* EKSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKSerializer.m; path = EasyMapping/EKSerializer.m; sourceTree = "<group>"; };
+		0BA205753EC3B68BFB41F729E0B051FA /* EKSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKSerializer.h; path = EasyMapping/EKSerializer.h; sourceTree = "<group>"; };
+		1027D9CD170C1A285F26255376696AF6 /* EKManagedObjectMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKManagedObjectMapper.m; path = EasyMapping/EKManagedObjectMapper.m; sourceTree = "<group>"; };
 		1212A12E3FE0D8A6F48064831D8C77D7 /* Pods-TwitterFeedViewerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterFeedViewerTests-frameworks.sh"; sourceTree = "<group>"; };
+		1274B583E6CA10C49E5846B267932FBD /* EKMappingBlocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKMappingBlocks.m; path = EasyMapping/EKMappingBlocks.m; sourceTree = "<group>"; };
+		161BB79926138FE556C3F27D1463D56E /* EKPropertyMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKPropertyMapping.m; path = EasyMapping/EKPropertyMapping.m; sourceTree = "<group>"; };
+		18458186062D655E29F860DE0C6A0415 /* EasyMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EasyMapping.h; path = EasyMapping/EasyMapping.h; sourceTree = "<group>"; };
+		1CEC7A613BF83B5CBBC1BB7E4C557242 /* EKPropertyMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKPropertyMapping.h; path = EasyMapping/EKPropertyMapping.h; sourceTree = "<group>"; };
+		1E91E7B9FFB6953A2B0D6F0940702EAD /* libPods-TwitterFeedViewerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TwitterFeedViewerTests.a"; path = "libPods-TwitterFeedViewerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3593DFBE6873A593D26A249FF6C8DBE2 /* Pods-TwitterFeedViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwitterFeedViewer.release.xcconfig"; sourceTree = "<group>"; };
 		36BCBC69B4BF608B36836812F194D11D /* Pods-TwitterFeedViewer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterFeedViewer-resources.sh"; sourceTree = "<group>"; };
 		3B14F796486BC09B6E1B1D8555876A8B /* Pods-TwitterFeedViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwitterFeedViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		498E01C41D018FB2F9358DE1177596A0 /* EKCoreDataImporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKCoreDataImporter.m; path = EasyMapping/EKCoreDataImporter.m; sourceTree = "<group>"; };
 		4C79577E96EEAF8599114ED628DAFA33 /* Pods-TwitterFeedViewer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TwitterFeedViewer-acknowledgements.plist"; sourceTree = "<group>"; };
+		520AFEB9035ABC7EB6E26C5B1DD4CCA2 /* NSArray+FlattenArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+FlattenArray.m"; path = "EasyMapping/NSArray+FlattenArray.m"; sourceTree = "<group>"; };
+		539FC80F95D5E0194F914DB5789D0E8F /* EKMappingBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKMappingBlocks.h; path = EasyMapping/EKMappingBlocks.h; sourceTree = "<group>"; };
+		5CCD1B9F457E020800F95E37D877DC9F /* EKManagedObjectModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKManagedObjectModel.h; path = EasyMapping/EKManagedObjectModel.h; sourceTree = "<group>"; };
 		60CA2BE5106F4573CFD60277D6C94848 /* Pods-TwitterFeedViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwitterFeedViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7096E7494D16E12DE544BC129B32EFDC /* Pods-TwitterFeedViewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TwitterFeedViewer-dummy.m"; sourceTree = "<group>"; };
+		71F5AE9057A9609D85DBDDA20F977D92 /* EKManagedObjectModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKManagedObjectModel.m; path = EasyMapping/EKManagedObjectModel.m; sourceTree = "<group>"; };
+		73A02E690C9E4F3CF68F0D0E01B8FAF2 /* EKPropertyHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKPropertyHelper.m; path = EasyMapping/EKPropertyHelper.m; sourceTree = "<group>"; };
 		78A2DE91CBD60EC9C7AAB9E6220D6463 /* Pods-TwitterFeedViewer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterFeedViewer-frameworks.sh"; sourceTree = "<group>"; };
+		7C5C044D31C87F50B38B9A0CA3860B13 /* EKManagedObjectMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKManagedObjectMapper.h; path = EasyMapping/EKManagedObjectMapper.h; sourceTree = "<group>"; };
 		7D4E8849E3C6670773A77262F559A9D5 /* Pods-TwitterFeedViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwitterFeedViewerTests.release.xcconfig"; sourceTree = "<group>"; };
+		7EC52489D52AB93CBED310B29C20EFCF /* EKRelationshipMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKRelationshipMapping.h; path = EasyMapping/EKRelationshipMapping.h; sourceTree = "<group>"; };
+		85F9064432AD35F890213C4F917A6D49 /* libEasyMapping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEasyMapping.a; path = libEasyMapping.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3180C26F8469C64D788C2E8A0FA645 /* NSDateFormatter+EasyMappingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+EasyMappingAdditions.m"; path = "EasyMapping/NSDateFormatter+EasyMappingAdditions.m"; sourceTree = "<group>"; };
+		8B7F37ADCD1E606FD1E239E6BD697C8A /* EKRelationshipMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKRelationshipMapping.m; path = EasyMapping/EKRelationshipMapping.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C5FD6A9F4B3309CEE22B5C06A38329DC /* libPods-TwitterFeedViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TwitterFeedViewer.a"; path = "libPods-TwitterFeedViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		978E91E5FB7E58B87A4658706379F5CF /* EasyMapping-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyMapping-prefix.pch"; sourceTree = "<group>"; };
+		9BCF36669D6E987B1A5E32F63210B0A8 /* EKObjectMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKObjectMapping.h; path = EasyMapping/EKObjectMapping.h; sourceTree = "<group>"; };
+		A10B4993C773BC9739DAA69D5BCC4F13 /* EasyMapping.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyMapping.xcconfig; sourceTree = "<group>"; };
+		B5E12683CAB3AFAD0F803F350A6E11E8 /* EKCoreDataImporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKCoreDataImporter.h; path = EasyMapping/EKCoreDataImporter.h; sourceTree = "<group>"; };
+		BA27EF0B067E09B1F04118EBEFD409A4 /* EKMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKMapper.m; path = EasyMapping/EKMapper.m; sourceTree = "<group>"; };
+		BD75A1CEA259C2D88DC12879E6D9B1D7 /* NSDateFormatter+EasyMappingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+EasyMappingAdditions.h"; path = "EasyMapping/NSDateFormatter+EasyMappingAdditions.h"; sourceTree = "<group>"; };
+		D0AE75B76640180CF62BF45B6746929E /* EKPropertyHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKPropertyHelper.h; path = EasyMapping/EKPropertyHelper.h; sourceTree = "<group>"; };
 		D6DDE95E4D8C9408FEB54E11E39CF8EB /* Pods-TwitterFeedViewerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterFeedViewerTests-resources.sh"; sourceTree = "<group>"; };
+		DAA2C2730B000A4D4DD57AEEEAC8D971 /* EKObjectMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKObjectMapping.m; path = EasyMapping/EKObjectMapping.m; sourceTree = "<group>"; };
 		DC99A06698F5B437A581EF42190C4151 /* Pods-TwitterFeedViewerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TwitterFeedViewerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DE838C3BEB44C89B5106CD93B06FC9B0 /* EKMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKMapper.h; path = EasyMapping/EKMapper.h; sourceTree = "<group>"; };
+		E20B4033AF48174F385F5FD6549516DE /* EKMappingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKMappingProtocol.h; path = EasyMapping/EKMappingProtocol.h; sourceTree = "<group>"; };
+		E2558EA15289DC1E00654F0D849FC12B /* EasyMapping-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyMapping-dummy.m"; sourceTree = "<group>"; };
+		E52EA91F94361553A288B7B6996E116B /* EKManagedObjectMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKManagedObjectMapping.m; path = EasyMapping/EKManagedObjectMapping.m; sourceTree = "<group>"; };
+		E7B55C73D8E2C057A47EC174E3341109 /* EKObjectModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKObjectModel.h; path = EasyMapping/EKObjectModel.h; sourceTree = "<group>"; };
+		E7E84538505F21AD441B87E2C82C53E5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		F0C6F620065AB27AB5FFFBF466FDCE56 /* libPods-TwitterFeedViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TwitterFeedViewer.a"; path = "libPods-TwitterFeedViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D46735586E7FD4E0426F27848FEBDC /* NSArray+FlattenArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+FlattenArray.h"; path = "EasyMapping/NSArray+FlattenArray.h"; sourceTree = "<group>"; };
+		F39A5E0943870FC6851BF7C25AA0BA8A /* EKObjectModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKObjectModel.m; path = EasyMapping/EKObjectModel.m; sourceTree = "<group>"; };
+		F63718DA51B10F9D8C0075D81A6E92B9 /* EKManagedObjectMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKManagedObjectMapping.h; path = EasyMapping/EKManagedObjectMapping.h; sourceTree = "<group>"; };
+		FF85E5A74BF2C5F729F6419654402FBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4A4DEECAB2B088FAEAD481FE4D5758A1 /* Frameworks */ = {
+		19DF83159FF724720E7552CF811A73F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3C0034F2C096401EE066BA127C6EE4F /* Foundation.framework in Frameworks */,
+				4102ACDDC5D5D4437EB1C7D17603DADD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D0F670CFCB54A57945E12F6CB7BF94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93BEA4C84A6299D3893D7143C76A587 /* CoreData.framework in Frameworks */,
+				8D1458C64ABCA825E97CD5DFB609F6C1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +141,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08AEAD71B26F136943CEE9AD9FEDE62D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85F9064432AD35F890213C4F917A6D49 /* libEasyMapping.a */,
+				F0C6F620065AB27AB5FFFBF466FDCE56 /* libPods-TwitterFeedViewer.a */,
+				1E91E7B9FFB6953A2B0D6F0940702EAD /* libPods-TwitterFeedViewerTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0C8610B1078268721C06D4D830202EAD /* Pods-TwitterFeedViewer */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,20 +166,48 @@
 			path = "Target Support Files/Pods-TwitterFeedViewer";
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+		18C31505F53BCD0CB0F85AB659963013 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+				E7E84538505F21AD441B87E2C82C53E5 /* CoreData.framework */,
+				FF85E5A74BF2C5F729F6419654402FBC /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		21D2BE373EB6AA00E4CA2E0C3982ACE1 /* EasyMapping */ = {
+			isa = PBXGroup;
+			children = (
+				89B19AF971FCAA236E95359C90BA89C0 /* Core */,
+				C11FA680CE8EC346E36F0E6B07406146 /* Support Files */,
+			);
+			name = EasyMapping;
+			path = EasyMapping;
+			sourceTree = "<group>";
+		};
+		358A47F298495ABEFCCA59BDA38EBD55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21D2BE373EB6AA00E4CA2E0C3982ACE1 /* EasyMapping */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18C31505F53BCD0CB0F85AB659963013 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				BDEC94FFEA3084BC03CDC7256137C556 /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				358A47F298495ABEFCCA59BDA38EBD55 /* Pods */,
+				08AEAD71B26F136943CEE9AD9FEDE62D /* Products */,
 				A27CDDC39AC106B4F8C5231F9F00BE3A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +227,43 @@
 			path = "Target Support Files/Pods-TwitterFeedViewerTests";
 			sourceTree = "<group>";
 		};
+		89B19AF971FCAA236E95359C90BA89C0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				18458186062D655E29F860DE0C6A0415 /* EasyMapping.h */,
+				B5E12683CAB3AFAD0F803F350A6E11E8 /* EKCoreDataImporter.h */,
+				498E01C41D018FB2F9358DE1177596A0 /* EKCoreDataImporter.m */,
+				7C5C044D31C87F50B38B9A0CA3860B13 /* EKManagedObjectMapper.h */,
+				1027D9CD170C1A285F26255376696AF6 /* EKManagedObjectMapper.m */,
+				F63718DA51B10F9D8C0075D81A6E92B9 /* EKManagedObjectMapping.h */,
+				E52EA91F94361553A288B7B6996E116B /* EKManagedObjectMapping.m */,
+				5CCD1B9F457E020800F95E37D877DC9F /* EKManagedObjectModel.h */,
+				71F5AE9057A9609D85DBDDA20F977D92 /* EKManagedObjectModel.m */,
+				DE838C3BEB44C89B5106CD93B06FC9B0 /* EKMapper.h */,
+				BA27EF0B067E09B1F04118EBEFD409A4 /* EKMapper.m */,
+				539FC80F95D5E0194F914DB5789D0E8F /* EKMappingBlocks.h */,
+				1274B583E6CA10C49E5846B267932FBD /* EKMappingBlocks.m */,
+				E20B4033AF48174F385F5FD6549516DE /* EKMappingProtocol.h */,
+				9BCF36669D6E987B1A5E32F63210B0A8 /* EKObjectMapping.h */,
+				DAA2C2730B000A4D4DD57AEEEAC8D971 /* EKObjectMapping.m */,
+				E7B55C73D8E2C057A47EC174E3341109 /* EKObjectModel.h */,
+				F39A5E0943870FC6851BF7C25AA0BA8A /* EKObjectModel.m */,
+				D0AE75B76640180CF62BF45B6746929E /* EKPropertyHelper.h */,
+				73A02E690C9E4F3CF68F0D0E01B8FAF2 /* EKPropertyHelper.m */,
+				1CEC7A613BF83B5CBBC1BB7E4C557242 /* EKPropertyMapping.h */,
+				161BB79926138FE556C3F27D1463D56E /* EKPropertyMapping.m */,
+				7EC52489D52AB93CBED310B29C20EFCF /* EKRelationshipMapping.h */,
+				8B7F37ADCD1E606FD1E239E6BD697C8A /* EKRelationshipMapping.m */,
+				0BA205753EC3B68BFB41F729E0B051FA /* EKSerializer.h */,
+				0A57F597F85066AE7AD356210E8958A6 /* EKSerializer.m */,
+				F2D46735586E7FD4E0426F27848FEBDC /* NSArray+FlattenArray.h */,
+				520AFEB9035ABC7EB6E26C5B1DD4CCA2 /* NSArray+FlattenArray.m */,
+				BD75A1CEA259C2D88DC12879E6D9B1D7 /* NSDateFormatter+EasyMappingAdditions.h */,
+				8A3180C26F8469C64D788C2E8A0FA645 /* NSDateFormatter+EasyMappingAdditions.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
 		A27CDDC39AC106B4F8C5231F9F00BE3A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,40 +273,78 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		C11FA680CE8EC346E36F0E6B07406146 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				A10B4993C773BC9739DAA69D5BCC4F13 /* EasyMapping.xcconfig */,
+				E2558EA15289DC1E00654F0D849FC12B /* EasyMapping-dummy.m */,
+				978E91E5FB7E58B87A4658706379F5CF /* EasyMapping-prefix.pch */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BDEC94FFEA3084BC03CDC7256137C556 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C5FD6A9F4B3309CEE22B5C06A38329DC /* libPods-TwitterFeedViewer.a */,
-				01B9845CE3E5EAC3B61B41F917FC9118 /* libPods-TwitterFeedViewerTests.a */,
-			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/EasyMapping";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		185C97DFC86A55B303DA10E7B2A008D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				313C0598B2E6618D74AAB7F9619A4735 /* EasyMapping.h in Headers */,
+				39A2CCC7330EC7E0BDDB336D829E9319 /* EKCoreDataImporter.h in Headers */,
+				A5CC23BEF6A05B26175870C94CE81EA3 /* EKManagedObjectMapper.h in Headers */,
+				886EA548C04E4B7CC39568E7FA1EE5CF /* EKManagedObjectMapping.h in Headers */,
+				3E96716E51174D7DC8DC17CF6F18198C /* EKManagedObjectModel.h in Headers */,
+				91909A9AD8D9B2324C520AE942EAD64A /* EKMapper.h in Headers */,
+				AFE0E54E1F02FD2C678EEAF5770AF411 /* EKMappingBlocks.h in Headers */,
+				BFBAEDEEC0BCFD0649B2659F0AFDE8F2 /* EKMappingProtocol.h in Headers */,
+				1FF5B9B60A733D9A6CD15EA606F1EC37 /* EKObjectMapping.h in Headers */,
+				BBE8E314886946176704FF4014726A79 /* EKObjectModel.h in Headers */,
+				6DFAA1C1BED36E03E813008BF7C91EBF /* EKPropertyHelper.h in Headers */,
+				3FACEAFE83F39FF60D84FCA5B56F99A6 /* EKPropertyMapping.h in Headers */,
+				B0790AB566F867B291AB29E0C1D167D0 /* EKRelationshipMapping.h in Headers */,
+				09A1E44783AE8A9EA6C06201FF94ED7A /* EKSerializer.h in Headers */,
+				15A631B4938EAEB2483F7EF6E584A096 /* NSArray+FlattenArray.h in Headers */,
+				359D141766A191B88CE7ACC855F737CF /* NSDateFormatter+EasyMappingAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		2499E4E901E04E2135BF02442DF0ADA0 /* Pods-TwitterFeedViewer */ = {
+		2C36E5BC3AA93AB98B980818F4793A36 /* Pods-TwitterFeedViewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF95944A79421276DCE66A1B7D8E845B /* Build configuration list for PBXNativeTarget "Pods-TwitterFeedViewer" */;
+			buildConfigurationList = D56BC19C9A70C492B84E702B1C38F80E /* Build configuration list for PBXNativeTarget "Pods-TwitterFeedViewer" */;
 			buildPhases = (
-				05486C37AE279C81598741959F4E4362 /* Sources */,
-				4A4DEECAB2B088FAEAD481FE4D5758A1 /* Frameworks */,
+				EF621D3293C7172BDA3CDE17B1C0C420 /* Sources */,
+				19DF83159FF724720E7552CF811A73F6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FA771721622396740387F3C8CEE4C59 /* PBXTargetDependency */,
+			);
+			name = "Pods-TwitterFeedViewer";
+			productName = "Pods-TwitterFeedViewer";
+			productReference = F0C6F620065AB27AB5FFFBF466FDCE56 /* libPods-TwitterFeedViewer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		985888A2E6687A95E124DC22AED8A3D8 /* EasyMapping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CE02F0A699EF8E8C0041E1F353CA23B /* Build configuration list for PBXNativeTarget "EasyMapping" */;
+			buildPhases = (
+				21E005B366D42565E075FF780872E655 /* Sources */,
+				50D0F670CFCB54A57945E12F6CB7BF94 /* Frameworks */,
+				185C97DFC86A55B303DA10E7B2A008D0 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-TwitterFeedViewer";
-			productName = "Pods-TwitterFeedViewer";
-			productReference = C5FD6A9F4B3309CEE22B5C06A38329DC /* libPods-TwitterFeedViewer.a */;
+			name = EasyMapping;
+			productName = EasyMapping;
+			productReference = 85F9064432AD35F890213C4F917A6D49 /* libEasyMapping.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		E3098E615DA0FA1253854757DDBC926B /* Pods-TwitterFeedViewerTests */ = {
@@ -160,7 +360,7 @@
 			);
 			name = "Pods-TwitterFeedViewerTests";
 			productName = "Pods-TwitterFeedViewerTests";
-			productReference = 01B9845CE3E5EAC3B61B41F917FC9118 /* libPods-TwitterFeedViewerTests.a */;
+			productReference = 1E91E7B9FFB6953A2B0D6F0940702EAD /* libPods-TwitterFeedViewerTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -180,22 +380,37 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = BDEC94FFEA3084BC03CDC7256137C556 /* Products */;
+			productRefGroup = 08AEAD71B26F136943CEE9AD9FEDE62D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2499E4E901E04E2135BF02442DF0ADA0 /* Pods-TwitterFeedViewer */,
+				985888A2E6687A95E124DC22AED8A3D8 /* EasyMapping */,
+				2C36E5BC3AA93AB98B980818F4793A36 /* Pods-TwitterFeedViewer */,
 				E3098E615DA0FA1253854757DDBC926B /* Pods-TwitterFeedViewerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		05486C37AE279C81598741959F4E4362 /* Sources */ = {
+		21E005B366D42565E075FF780872E655 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCA7711032977F4BDB614B93F2B29686 /* Pods-TwitterFeedViewer-dummy.m in Sources */,
+				B317241D390DF924AA2D290A59C4C94D /* EasyMapping-dummy.m in Sources */,
+				E0B95FD34D7782F251F548ECA728799D /* EKCoreDataImporter.m in Sources */,
+				6F4D66EA15CB0387BD8A4A24BADDF951 /* EKManagedObjectMapper.m in Sources */,
+				128FFAFBFBD1BBCF0446A6D09AF2E99D /* EKManagedObjectMapping.m in Sources */,
+				53061196E61CD440EC406974C4AE25C9 /* EKManagedObjectModel.m in Sources */,
+				5685A82EED639C246D7E1FFEADFEA772 /* EKMapper.m in Sources */,
+				A67DE0F614F9CFB6C46E4E05E145C134 /* EKMappingBlocks.m in Sources */,
+				2514B29E1C7F4B0642C51BB656EB5CDB /* EKObjectMapping.m in Sources */,
+				1C5B0234F9A69E4F5FB652595396F883 /* EKObjectModel.m in Sources */,
+				E54CF3B09A8D251A71FC03A0E59A5A57 /* EKPropertyHelper.m in Sources */,
+				C565C62E6B828A1A4A80EE3D427C49F3 /* EKPropertyMapping.m in Sources */,
+				DEB1B20659BAC952B2893FF14C59834C /* EKRelationshipMapping.m in Sources */,
+				B0A90FDF2720C839F9F406B915FF7FA9 /* EKSerializer.m in Sources */,
+				CF165D2EF33A9F0190B9B6053DE6500A /* NSArray+FlattenArray.m in Sources */,
+				A4603A33EA07C63853C90CAAD4C380BD /* NSDateFormatter+EasyMappingAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,102 +422,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF621D3293C7172BDA3CDE17B1C0C420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1475CD1292792AE1675B09E570D36EA0 /* Pods-TwitterFeedViewer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4FA771721622396740387F3C8CEE4C59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyMapping;
+			target = 985888A2E6687A95E124DC22AED8A3D8 /* EasyMapping */;
+			targetProxy = 25FA4D7FF8475F9F8373ADA1DE7AAE92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		5B548F113C0A51CFA750BC4FEBCD5A13 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60CA2BE5106F4573CFD60277D6C94848 /* Pods-TwitterFeedViewerTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		5E8A376C76C2DD2158D18B68FEDA1603 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3593DFBE6873A593D26A249FF6C8DBE2 /* Pods-TwitterFeedViewer.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		97329B18FB2275F88DC3D44B65B91231 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D4E8849E3C6670773A77262F559A9D5 /* Pods-TwitterFeedViewerTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C28CA54599BE2BAD15B187625E1ED20D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B14F796486BC09B6E1B1D8555876A8B /* Pods-TwitterFeedViewer.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -338,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -346,7 +486,53 @@
 			};
 			name = Debug;
 		};
-		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+		16528FF0639CFAB64557A2659E8A167E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B14F796486BC09B6E1B1D8555876A8B /* Pods-TwitterFeedViewer.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3246B6C3AA2CF219ACD642C88412BB5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3593DFBE6873A593D26A249FF6C8DBE2 /* Pods-TwitterFeedViewer.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -378,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
@@ -386,14 +572,115 @@
 			};
 			name = Release;
 		};
+		4CD596241BF83A881909E20217AC8289 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4E8849E3C6670773A77262F559A9D5 /* Pods-TwitterFeedViewerTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E64D2EC2123AC291E14D2C64B6F06F11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A10B4993C773BC9739DAA69D5BCC4F13 /* EasyMapping.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyMapping/EasyMapping-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F3D74E2535BFAE413161A228B4DDD145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A10B4993C773BC9739DAA69D5BCC4F13 /* EasyMapping.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyMapping/EasyMapping-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F9431473CB2A3632CB1A0867056FF50F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60CA2BE5106F4573CFD60277D6C94848 /* Pods-TwitterFeedViewerTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
-				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CE02F0A699EF8E8C0041E1F353CA23B /* Build configuration list for PBXNativeTarget "EasyMapping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3D74E2535BFAE413161A228B4DDD145 /* Debug */,
+				E64D2EC2123AC291E14D2C64B6F06F11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -401,17 +688,17 @@
 		BAB742A950A8565820F2A961E50B7080 /* Build configuration list for PBXNativeTarget "Pods-TwitterFeedViewerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B548F113C0A51CFA750BC4FEBCD5A13 /* Debug */,
-				97329B18FB2275F88DC3D44B65B91231 /* Release */,
+				F9431473CB2A3632CB1A0867056FF50F /* Debug */,
+				4CD596241BF83A881909E20217AC8289 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF95944A79421276DCE66A1B7D8E845B /* Build configuration list for PBXNativeTarget "Pods-TwitterFeedViewer" */ = {
+		D56BC19C9A70C492B84E702B1C38F80E /* Build configuration list for PBXNativeTarget "Pods-TwitterFeedViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C28CA54599BE2BAD15B187625E1ED20D /* Debug */,
-				5E8A376C76C2DD2158D18B68FEDA1603 /* Release */,
+				16528FF0639CFAB64557A2659E8A167E /* Debug */,
+				3246B6C3AA2CF219ACD642C88412BB5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

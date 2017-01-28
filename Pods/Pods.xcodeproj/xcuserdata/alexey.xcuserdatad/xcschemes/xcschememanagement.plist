@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>EasyMapping.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TwitterFeedViewer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,7 +22,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2499E4E901E04E2135BF02442DF0ADA0</key>
+		<key>2C36E5BC3AA93AB98B980818F4793A36</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>985888A2E6687A95E124DC22AED8A3D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
