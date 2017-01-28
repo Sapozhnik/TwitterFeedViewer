@@ -14,14 +14,14 @@ project_target: TwitterFeedViewer
 test_target: TwitterFeedViewerTests
 
 # The file path for new tests
-test_file_path: /TwitterFeedViewerTests
+test_file_path: /TwitterFeedViewer/Classes/PresentationLayer/
 
 # The Xcode group path to new tests
-test_group_path: /TwitterFeedViewerTests
+test_group_path: /TwitterFeedViewer/Classes/PresentationLayer/
 
 ### Dependencies settings section
 podfile_path: Podfile
 
 ### Templates
 templates:
-- {name: championat_viper}
+- {name: rviper_controller}
