@@ -46,7 +46,10 @@
                                                toProperty:NSStringFromSelector(@selector(name))];
                                       
                                       [mapping mapKeyPath:@"profile_image_url"
-                                               toProperty:NSStringFromSelector(@selector(profileImageLink))];
+                                               toProperty:NSStringFromSelector(@selector(profileImageURL))
+                                           withValueBlock:^id(NSString *key, id value) {
+                                               return [NSURL URLWithString:value];
+                                           }];
                                   }];
 }
 

@@ -11,6 +11,6 @@
 @interface User : NSObject
 
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *profileImageLink;
+@property (nonatomic, copy) NSURL *profileImageURL;
 
 @end
