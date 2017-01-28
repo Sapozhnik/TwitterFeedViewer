@@ -15,7 +15,24 @@
 #import "Tweet.h"
 #import "User.h"
 
+@interface MappingProvider ()
+
+@property (nonatomic, strong) NSDateFormatter *tweetDateFormatter;
+
+@end
+
 @implementation MappingProvider
+
+- (instancetype)init {
+    self = [super init];
+    
+    if (self != nil) {
+        _tweetDateFormatter = [NSDateFormatter new];
+        _tweetDateFormatter.dateFormat = @"EEE MMM dd HH:mm:ss Z yyyy"; //Sat Jan 28 17:47:39 +0000 2017
+    }
+    
+    return self;
+}
 
 - (EKObjectMapping *)tweetMapping {
     return [EKObjectMapping mappingForClass:[Tweet class]

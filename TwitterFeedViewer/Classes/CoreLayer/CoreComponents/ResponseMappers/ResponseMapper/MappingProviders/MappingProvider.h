@@ -11,10 +11,6 @@
 // Protocols
 #import "MappingProviderProtocol.h"
 
-@class EKObjectMapping;
-
 @interface MappingProvider : NSObject <MappingProviderProtocol>
-
-@property (nonatomic, strong) NSDateFormatter *tweetDateFormatter;
 
 @end

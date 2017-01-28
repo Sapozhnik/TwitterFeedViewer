@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class EKObjectMapping;
+
 @protocol MappingProviderProtocol <NSObject>
 
 - (EKObjectMapping *)tweetMapping;
