@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class User;
+
 @interface Tweet : NSObject
 
 @property (nonatomic, copy) NSString *tweetId;
 @property (nonatomic, copy) NSString *text;
-@property (nonatomic, copy) NSString *authorName;
-@property (nonatomic, copy) NSString *profileImageLink;
+@property (nonatomic, copy) NSDate *date;
+@property (nonatomic, strong) User *user;
 
 @end
