@@ -16,6 +16,8 @@
 		8A3CD6C81E3CE6BC000C3F71 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A3CD6C31E3CE6BC000C3F71 /* Info.plist */; };
 		8A3CD6C91E3CE6BC000C3F71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6C41E3CE6BC000C3F71 /* main.m */; };
 		8A3CD6CA1E3CE6BC000C3F71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6C41E3CE6BC000C3F71 /* main.m */; };
+		8A3CD6CE1E3D1091000C3F71 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6CD1E3D1091000C3F71 /* Tweet.m */; };
+		8A3CD6CF1E3D1091000C3F71 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6CD1E3D1091000C3F71 /* Tweet.m */; };
 		8A78B1711E3CADE900E7534A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B16F1E3CADE900E7534A /* Main.storyboard */; };
 		8A78B1761E3CADE900E7534A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B1741E3CADE900E7534A /* LaunchScreen.storyboard */; };
 		8A78B1811E3CADE900E7534A /* TwitterFeedViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A78B1801E3CADE900E7534A /* TwitterFeedViewerTests.m */; };
@@ -41,6 +43,8 @@
 		8A3CD6C11E3CE6BC000C3F71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A3CD6C31E3CE6BC000C3F71 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A3CD6C41E3CE6BC000C3F71 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A3CD6CC1E3D1091000C3F71 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		8A3CD6CD1E3D1091000C3F71 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 		8A78B1631E3CADE900E7534A /* TwitterFeedViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterFeedViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A78B1701E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A78B1751E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 		8A3CD6B71E3CE5C3000C3F71 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8A3CD6D01E3D11E1000C3F71 /* CoreComponents */,
 			);
 			path = CoreLayer;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 		8A3CD6B81E3CE5C3000C3F71 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8A3CD6CB1E3D1085000C3F71 /* Tweet */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +167,46 @@
 				8A3CD6C41E3CE6BC000C3F71 /* main.m */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A3CD6CB1E3D1085000C3F71 /* Tweet */ = {
+			isa = PBXGroup;
+			children = (
+				8A3CD6CC1E3D1091000C3F71 /* Tweet.h */,
+				8A3CD6CD1E3D1091000C3F71 /* Tweet.m */,
+			);
+			path = Tweet;
+			sourceTree = "<group>";
+		};
+		8A3CD6D01E3D11E1000C3F71 /* CoreComponents */ = {
+			isa = PBXGroup;
+			children = (
+				8A3CD6D11E3D127A000C3F71 /* ResponseMappers */,
+			);
+			path = CoreComponents;
+			sourceTree = "<group>";
+		};
+		8A3CD6D11E3D127A000C3F71 /* ResponseMappers */ = {
+			isa = PBXGroup;
+			children = (
+				8A3CD6D21E3D127A000C3F71 /* ResponseMapper */,
+			);
+			path = ResponseMappers;
+			sourceTree = "<group>";
+		};
+		8A3CD6D21E3D127A000C3F71 /* ResponseMapper */ = {
+			isa = PBXGroup;
+			children = (
+				8A3CD6D31E3D127A000C3F71 /* MappingProviders */,
+			);
+			path = ResponseMapper;
+			sourceTree = "<group>";
+		};
+		8A3CD6D31E3D127A000C3F71 /* MappingProviders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MappingProviders;
 			sourceTree = "<group>";
 		};
 		8A78B15A1E3CADE800E7534A = {
@@ -421,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A3CD6CE1E3D1091000C3F71 /* Tweet.m in Sources */,
 				8A3CD6C91E3CE6BC000C3F71 /* main.m in Sources */,
 				8A3CD6BE1E3CE5EB000C3F71 /* AppDelegate.m in Sources */,
 			);
@@ -433,6 +480,7 @@
 				8A3CD6BF1E3CE5EB000C3F71 /* AppDelegate.m in Sources */,
 				8A3CD6CA1E3CE6BC000C3F71 /* main.m in Sources */,
 				8A78B1811E3CADE900E7534A /* TwitterFeedViewerTests.m in Sources */,
+				8A3CD6CF1E3D1091000C3F71 /* Tweet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
