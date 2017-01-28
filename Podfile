@@ -2,10 +2,9 @@
 # platform :ios, '9.0'
 
 target 'TwitterFeedViewer' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
 
-  # Pods for TwitterFeedViewer
+    # Mapping
+    pod 'EasyMapping', '~> 0.15'
 
   target 'TwitterFeedViewerTests' do
     inherit! :search_paths
