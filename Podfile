@@ -1,6 +1,3 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
-
 target 'TwitterFeedViewer' do
 
     # Mapping
@@ -18,6 +15,7 @@ target 'TwitterFeedViewer' do
 
     # Mocks and stubs
     pod 'OCMock', '~>3.3.0'
+    pod 'RamblerTyphoonUtils/AssemblyTesting', '~> 1.5.0'
 
   end
 
