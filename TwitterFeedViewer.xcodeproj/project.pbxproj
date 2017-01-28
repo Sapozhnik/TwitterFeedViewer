@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		58CE503756E189EFB08C50D8 /* libPods-TwitterFeedViewerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B714AFB8A21DBCE9C7D25EC /* libPods-TwitterFeedViewerTests.a */; };
-		8A78B1681E3CADE900E7534A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A78B1671E3CADE900E7534A /* main.m */; };
-		8A78B16B1E3CADE900E7534A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A78B16A1E3CADE900E7534A /* AppDelegate.m */; };
-		8A78B16E1E3CADE900E7534A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A78B16D1E3CADE900E7534A /* ViewController.m */; };
+		8A3CD6BE1E3CE5EB000C3F71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6BD1E3CE5EB000C3F71 /* AppDelegate.m */; };
+		8A3CD6BF1E3CE5EB000C3F71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6BD1E3CE5EB000C3F71 /* AppDelegate.m */; };
+		8A3CD6C51E3CE6BC000C3F71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3CD6C11E3CE6BC000C3F71 /* Assets.xcassets */; };
+		8A3CD6C61E3CE6BC000C3F71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3CD6C11E3CE6BC000C3F71 /* Assets.xcassets */; };
+		8A3CD6C71E3CE6BC000C3F71 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A3CD6C31E3CE6BC000C3F71 /* Info.plist */; };
+		8A3CD6C81E3CE6BC000C3F71 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A3CD6C31E3CE6BC000C3F71 /* Info.plist */; };
+		8A3CD6C91E3CE6BC000C3F71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6C41E3CE6BC000C3F71 /* main.m */; };
+		8A3CD6CA1E3CE6BC000C3F71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6C41E3CE6BC000C3F71 /* main.m */; };
 		8A78B1711E3CADE900E7534A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B16F1E3CADE900E7534A /* Main.storyboard */; };
-		8A78B1731E3CADE900E7534A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B1721E3CADE900E7534A /* Assets.xcassets */; };
 		8A78B1761E3CADE900E7534A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B1741E3CADE900E7534A /* LaunchScreen.storyboard */; };
 		8A78B1811E3CADE900E7534A /* TwitterFeedViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A78B1801E3CADE900E7534A /* TwitterFeedViewerTests.m */; };
 		B68D3C36C752B1D2BC1C1FCE /* libPods-TwitterFeedViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B44DC57178446202331AE1CB /* libPods-TwitterFeedViewer.a */; };
@@ -32,16 +36,14 @@
 		056495EB88D61CD9F1E9A384 /* Pods-TwitterFeedViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterFeedViewerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterFeedViewerTests/Pods-TwitterFeedViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1B714AFB8A21DBCE9C7D25EC /* libPods-TwitterFeedViewerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TwitterFeedViewerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E3BF8DA7463A6DEB0A7084 /* Pods-TwitterFeedViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterFeedViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterFeedViewer/Pods-TwitterFeedViewer.release.xcconfig"; sourceTree = "<group>"; };
+		8A3CD6BC1E3CE5EB000C3F71 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A3CD6BD1E3CE5EB000C3F71 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A3CD6C11E3CE6BC000C3F71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A3CD6C31E3CE6BC000C3F71 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A3CD6C41E3CE6BC000C3F71 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8A78B1631E3CADE900E7534A /* TwitterFeedViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterFeedViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A78B1671E3CADE900E7534A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8A78B1691E3CADE900E7534A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8A78B16A1E3CADE900E7534A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8A78B16C1E3CADE900E7534A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8A78B16D1E3CADE900E7534A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8A78B1701E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8A78B1721E3CADE900E7534A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A78B1751E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8A78B1771E3CADE900E7534A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A78B17C1E3CADE900E7534A /* TwitterFeedViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterFeedViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A78B1801E3CADE900E7534A /* TwitterFeedViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterFeedViewerTests.m; sourceTree = "<group>"; };
 		8A78B1821E3CADE900E7534A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +81,88 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8A3CD6B41E3CE5C3000C3F71 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8A3CD6B51E3CE5C3000C3F71 /* ApplicationLayer */,
+				8A3CD6B61E3CE5C3000C3F71 /* BusinessLogicLayer */,
+				8A3CD6B71E3CE5C3000C3F71 /* CoreLayer */,
+				8A3CD6B81E3CE5C3000C3F71 /* Models */,
+				8A3CD6B91E3CE5C3000C3F71 /* PresentationLayer */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8A3CD6B51E3CE5C3000C3F71 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8A3CD6BB1E3CE5DA000C3F71 /* AppDelegate */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		8A3CD6B61E3CE5C3000C3F71 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		8A3CD6B71E3CE5C3000C3F71 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		8A3CD6B81E3CE5C3000C3F71 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8A3CD6B91E3CE5C3000C3F71 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8A3CD6BA1E3CE5C3000C3F71 /* UserStories */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		8A3CD6BA1E3CE5C3000C3F71 /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserStories;
+			sourceTree = "<group>";
+		};
+		8A3CD6BB1E3CE5DA000C3F71 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8A3CD6BC1E3CE5EB000C3F71 /* AppDelegate.h */,
+				8A3CD6BD1E3CE5EB000C3F71 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8A3CD6C01E3CE6BC000C3F71 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A3CD6C11E3CE6BC000C3F71 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A3CD6C21E3CE6BC000C3F71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A3CD6C31E3CE6BC000C3F71 /* Info.plist */,
+				8A3CD6C41E3CE6BC000C3F71 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		8A78B15A1E3CADE800E7534A = {
 			isa = PBXGroup;
 			children = (
@@ -102,25 +186,13 @@
 		8A78B1651E3CADE900E7534A /* TwitterFeedViewer */ = {
 			isa = PBXGroup;
 			children = (
-				8A78B1691E3CADE900E7534A /* AppDelegate.h */,
-				8A78B16A1E3CADE900E7534A /* AppDelegate.m */,
-				8A78B16C1E3CADE900E7534A /* ViewController.h */,
-				8A78B16D1E3CADE900E7534A /* ViewController.m */,
+				8A3CD6B41E3CE5C3000C3F71 /* Classes */,
+				8A3CD6C01E3CE6BC000C3F71 /* Resources */,
+				8A3CD6C21E3CE6BC000C3F71 /* Supporting Files */,
 				8A78B16F1E3CADE900E7534A /* Main.storyboard */,
-				8A78B1721E3CADE900E7534A /* Assets.xcassets */,
 				8A78B1741E3CADE900E7534A /* LaunchScreen.storyboard */,
-				8A78B1771E3CADE900E7534A /* Info.plist */,
-				8A78B1661E3CADE900E7534A /* Supporting Files */,
 			);
 			path = TwitterFeedViewer;
-			sourceTree = "<group>";
-		};
-		8A78B1661E3CADE900E7534A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8A78B1671E3CADE900E7534A /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		8A78B17F1E3CADE900E7534A /* TwitterFeedViewerTests */ = {
@@ -233,8 +305,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A3CD6C71E3CE6BC000C3F71 /* Info.plist in Resources */,
 				8A78B1761E3CADE900E7534A /* LaunchScreen.storyboard in Resources */,
-				8A78B1731E3CADE900E7534A /* Assets.xcassets in Resources */,
+				8A3CD6C51E3CE6BC000C3F71 /* Assets.xcassets in Resources */,
 				8A78B1711E3CADE900E7534A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +316,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A3CD6C81E3CE6BC000C3F71 /* Info.plist in Resources */,
+				8A3CD6C61E3CE6BC000C3F71 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,9 +421,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A78B16E1E3CADE900E7534A /* ViewController.m in Sources */,
-				8A78B16B1E3CADE900E7534A /* AppDelegate.m in Sources */,
-				8A78B1681E3CADE900E7534A /* main.m in Sources */,
+				8A3CD6C91E3CE6BC000C3F71 /* main.m in Sources */,
+				8A3CD6BE1E3CE5EB000C3F71 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +430,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A3CD6BF1E3CE5EB000C3F71 /* AppDelegate.m in Sources */,
+				8A3CD6CA1E3CE6BC000C3F71 /* main.m in Sources */,
 				8A78B1811E3CADE900E7534A /* TwitterFeedViewerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,7 +562,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S6T374PVN9;
-				INFOPLIST_FILE = TwitterFeedViewer/Info.plist;
+				INFOPLIST_FILE = "TwitterFeedViewer/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AS.TwitterFeedViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -499,7 +575,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S6T374PVN9;
-				INFOPLIST_FILE = TwitterFeedViewer/Info.plist;
+				INFOPLIST_FILE = "TwitterFeedViewer/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AS.TwitterFeedViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -553,6 +629,7 @@
 				8A78B1871E3CADE900E7534A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A78B1881E3CADE900E7534A /* Build configuration list for PBXNativeTarget "TwitterFeedViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +638,7 @@
 				8A78B18A1E3CADE900E7534A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
