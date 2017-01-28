@@ -20,6 +20,8 @@
 		8A3CD6CF1E3D1091000C3F71 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6CD1E3D1091000C3F71 /* Tweet.m */; };
 		8A3CD6DB1E3D16F8000C3F71 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6DA1E3D16F8000C3F71 /* User.m */; };
 		8A3CD6DC1E3D16F8000C3F71 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6DA1E3D16F8000C3F71 /* User.m */; };
+		8A3CD6DF1E3D1788000C3F71 /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6DE1E3D1788000C3F71 /* MappingProvider.m */; };
+		8A3CD6E01E3D1788000C3F71 /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6DE1E3D1788000C3F71 /* MappingProvider.m */; };
 		8A78B1711E3CADE900E7534A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B16F1E3CADE900E7534A /* Main.storyboard */; };
 		8A78B1761E3CADE900E7534A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B1741E3CADE900E7534A /* LaunchScreen.storyboard */; };
 		8A78B1811E3CADE900E7534A /* TwitterFeedViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A78B1801E3CADE900E7534A /* TwitterFeedViewerTests.m */; };
@@ -49,6 +51,9 @@
 		8A3CD6CD1E3D1091000C3F71 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 		8A3CD6D91E3D16F8000C3F71 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		8A3CD6DA1E3D16F8000C3F71 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		8A3CD6DD1E3D1788000C3F71 /* MappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingProvider.h; sourceTree = "<group>"; };
+		8A3CD6DE1E3D1788000C3F71 /* MappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingProvider.m; sourceTree = "<group>"; };
+		8A3CD6E11E3D193A000C3F71 /* MappingProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingProviderProtocol.h; sourceTree = "<group>"; };
 		8A78B1631E3CADE900E7534A /* TwitterFeedViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterFeedViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A78B1701E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A78B1751E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -210,6 +215,9 @@
 		8A3CD6D31E3D127A000C3F71 /* MappingProviders */ = {
 			isa = PBXGroup;
 			children = (
+				8A3CD6E11E3D193A000C3F71 /* MappingProviderProtocol.h */,
+				8A3CD6DD1E3D1788000C3F71 /* MappingProvider.h */,
+				8A3CD6DE1E3D1788000C3F71 /* MappingProvider.m */,
 			);
 			path = MappingProviders;
 			sourceTree = "<group>";
@@ -482,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A3CD6DB1E3D16F8000C3F71 /* User.m in Sources */,
+				8A3CD6DF1E3D1788000C3F71 /* MappingProvider.m in Sources */,
 				8A3CD6CE1E3D1091000C3F71 /* Tweet.m in Sources */,
 				8A3CD6C91E3CE6BC000C3F71 /* main.m in Sources */,
 				8A3CD6BE1E3CE5EB000C3F71 /* AppDelegate.m in Sources */,
@@ -495,6 +504,7 @@
 				8A3CD6DC1E3D16F8000C3F71 /* User.m in Sources */,
 				8A3CD6BF1E3CE5EB000C3F71 /* AppDelegate.m in Sources */,
 				8A3CD6CA1E3CE6BC000C3F71 /* main.m in Sources */,
+				8A3CD6E01E3D1788000C3F71 /* MappingProvider.m in Sources */,
 				8A78B1811E3CADE900E7534A /* TwitterFeedViewerTests.m in Sources */,
 				8A3CD6CF1E3D1091000C3F71 /* Tweet.m in Sources */,
 			);
