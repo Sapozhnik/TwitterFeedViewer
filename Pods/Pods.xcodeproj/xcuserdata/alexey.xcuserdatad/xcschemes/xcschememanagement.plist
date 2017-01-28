@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>OCMock.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TwitterFeedViewer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +37,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E3098E615DA0FA1253854757DDBC926B</key>
+		<key>A561198B7669F579C29FC6864AE4991F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4A73F3B67D8504185ADEB5549474403</key>
 		<dict>
 			<key>primary</key>
 			<true/>

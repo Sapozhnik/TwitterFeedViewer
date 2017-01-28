@@ -2,13 +2,16 @@ PODS:
   - EasyMapping (0.16.2):
     - EasyMapping/Core (= 0.16.2)
   - EasyMapping/Core (0.16.2)
+  - OCMock (3.3)
 
 DEPENDENCIES:
   - EasyMapping (~> 0.15)
+  - OCMock (~> 3.3.0)
 
 SPEC CHECKSUMS:
   EasyMapping: 7d519910862b8aa7484527eb129d95d3cd2dcf02
+  OCMock: d68685bde31f69cb61d518dcb39269080c78b5ed
 
-PODFILE CHECKSUM: 08d3624f13a7aa4c7bb3d8c430fa91416065aa32
+PODFILE CHECKSUM: ad3a87a45ac30b859807b454694c598fbad9ac00
 
 COCOAPODS: 1.2.0
