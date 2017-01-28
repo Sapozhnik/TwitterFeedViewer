@@ -24,7 +24,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RamblerTyphoonUtils.xcscheme</key>
+		<key>RamblerTyphoonUtils-AssemblyCollector.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RamblerTyphoonUtils-AssemblyTesting.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,7 +47,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2A0BDF860325D26A1326833BD3BEC2A2</key>
+		<key>22C9B07213D0AA3609F5D8736B3B1097</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>341CC49367D943E13039EC3AAAEBF1A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>628A1CC92EA3360C6AF536FF22274D76</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6948BC0FB2A4EA945EC2D39932CA482E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7227DB80798BABD70B4DE701BA68D5C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,22 +82,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B4A73F3B67D8504185ADEB5549474403</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C1E93625C7B5CD240F515F32B4F0A5F5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C6CE4CA8E8675E612E1097949EAA055E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D09DC7E4D3424B7075E7A6251E242EAA</key>
+		<key>AFFBCCEEA0F5AAC29A0E477783E9C951</key>
 		<dict>
 			<key>primary</key>
 			<true/>
