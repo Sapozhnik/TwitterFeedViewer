@@ -8,7 +8,10 @@ target 'TwitterFeedViewer' do
 
   target 'TwitterFeedViewerTests' do
     inherit! :search_paths
-    # Pods for testing
+
+    # Mocks and stubs
+    pod 'OCMock', '~>3.3.0'
+
   end
 
 end
