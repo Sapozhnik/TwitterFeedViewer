@@ -18,21 +18,21 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u3g-aG-QP2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr9-NX-t2P">
-                                <rect key="frame" x="112.5" y="34" width="150" height="30"/>
-                                <color key="backgroundColor" white="0.8551897321428571" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="112.5" y="-94" width="150" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47934520244598389" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="8cr-JW-VnF"/>
                                 </constraints>
                                 <state key="normal" title="Load new tweets">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="bubbleDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C31-Xt-iQr"/>
@@ -46,7 +46,7 @@
                             <constraint firstItem="u3g-aG-QP2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IJp-a6-K8k"/>
                             <constraint firstItem="u3g-aG-QP2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Qf0-6x-uFE"/>
                             <constraint firstAttribute="trailing" secondItem="u3g-aG-QP2" secondAttribute="trailing" id="i1a-Cc-nTr"/>
-                            <constraint firstItem="dr9-NX-t2P" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-30" id="iH3-ax-5gU"/>
+                            <constraint firstItem="dr9-NX-t2P" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-94" id="iH3-ax-5gU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Twitter feed viewer" id="iTa-y7-fDi">
@@ -56,6 +56,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="bubbleButton" destination="dr9-NX-t2P" id="lbX-iy-9vT"/>
                         <outlet property="tableView" destination="u3g-aG-QP2" id="uuF-rH-PsZ"/>
@@ -88,11 +89,12 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N4p-Bv-LSG">
                                 <rect key="frame" x="310" y="78" width="51" height="31"/>
+                                <color key="tintColor" white="0.85999999999999999" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="imageSwitchDidChangeValue:" destination="WwF-7x-yw1" eventType="valueChanged" id="ysz-j2-j9e"/>
                                 </connections>
                             </switch>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fj8-BX-qHm">
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fj8-BX-qHm">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
                                     <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
@@ -139,24 +141,24 @@
                         <viewControllerLayoutGuide type="bottom" id="L4i-nT-SDf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CKt-bx-zjq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gJw-sv-NQR">
-                                <rect key="frame" x="16" y="80" width="70" height="70"/>
+                                <rect key="frame" x="16" y="16" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="Y0f-b2-YSN"/>
                                     <constraint firstAttribute="height" constant="70" id="cft-hM-pyi"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="500" text="Author Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyu-Hf-vBK">
-                                <rect key="frame" x="102" y="80" width="257" height="34"/>
+                                <rect key="frame" x="102" y="16" width="257" height="34"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffz-Uj-byW">
-                                <rect key="frame" x="16" y="162" width="343" height="64.5"/>
+                                <rect key="frame" x="16" y="98" width="343" height="64.5"/>
                                 <string key="text">Русская адаптация "Игры престолов":
 Сезон 1: "Ланнистеры берут валютную ипотеку".
 Сезон 2: "Ланнистеры всегда платят свои долги".</string>
@@ -165,7 +167,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAa-r7-KVv">
-                                <rect key="frame" x="102" y="122" width="257" height="16"/>
+                                <rect key="frame" x="102" y="58" width="257" height="16"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>

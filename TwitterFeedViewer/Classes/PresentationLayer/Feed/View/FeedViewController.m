@@ -15,6 +15,7 @@
 
 static NSUInteger const TableViewEstimatedRowHeight = 150.0;
 static NSUInteger const TableViewFooterHeight = 50.0;
+
 static NSTimeInterval const BubbleTransitionAnimationDuration = 0.2;
 static CGFloat const BubbleOpenTopConstraintConstant = 18.0;
 
@@ -138,7 +139,7 @@ static CGFloat const BubbleOpenTopConstraintConstant = 18.0;
         self.topBubbleButtonConstraint.constant = BubbleOpenTopConstraintConstant;
     } else {
         CGFloat buttonHeight = CGRectGetHeight(self.bubbleButton.frame);
-        self.topBubbleButtonConstraint.constant =  - (BubbleOpenTopConstraintConstant + buttonHeight);
+        self.topBubbleButtonConstraint.constant =  - (buttonHeight + CGRectGetMaxY(self.navigationController.navigationBar.frame));
     }
     
     [UIView animateWithDuration:BubbleTransitionAnimationDuration
