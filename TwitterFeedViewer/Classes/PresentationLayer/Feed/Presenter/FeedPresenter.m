@@ -12,6 +12,15 @@
 #import "FeedInteractorInput.h"
 #import "FeedRouterInput.h"
 
+// Entities
+#import "Tweet.h"
+
+@interface FeedPresenter ()
+
+@property (nonatomic, strong) NSMutableArray *tweets;
+
+@end
+
 @implementation FeedPresenter
 
 - (void)refreshFeed {
@@ -38,17 +47,33 @@
 }
 
 - (void)loadMoreTweets {
-    
+    Tweet *lastTweet = self.tweets.lastObject;
+    NSString *lastTweetId = lastTweet.tweetId;
+    [self.interactor loadTweetsWithQuery:self.searchQuery
+                                   count:[self.searchQueryPageSize unsignedIntegerValue]
+                                 afterId:lastTweetId];
 }
 
 #pragma mark - Методы FeedInteractorOutput
 
-- (void)didLoadTweets:(NSArray<Tweet *> *)tweets afterId:(NSString *)afterId {
+- (void)didLoadTweets:(NSArray<Tweet *> *)tweets
+              afterId:(NSString *)afterId {
     [self.view hideSpinners];
-    [self.view showTweets:tweets
-          withAuthorPhoto:YES];
     
-    NSLog(@"%@", tweets);
+    if (afterId != nil) {
+        Tweet *lastTweet = self.tweets.lastObject;
+        NSString *lastTweetId = lastTweet.tweetId;
+        if ([afterId isEqualToString:lastTweetId]) { //infinite scroll
+            [self.tweets addObjectsFromArray:tweets];
+            [self.view addTweets:tweets
+                 withAuthorPhoto:YES];
+        }
+    } else {
+        //pull to refresh or initial
+        self.tweets = [tweets mutableCopy];
+        [self.view showTweets:tweets
+              withAuthorPhoto:YES];
+    }
 }
 
 @end

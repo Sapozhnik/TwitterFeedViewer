@@ -23,4 +23,7 @@
 - (void)showTweets:(NSArray<Tweet *> *)tweets
    withAuthorPhoto:(BOOL)showAuthorPhoto;
 
+- (void)addTweets:(NSArray<Tweet *> *)tweets
+  withAuthorPhoto:(BOOL)showAuthorPhoto;
+
 @end

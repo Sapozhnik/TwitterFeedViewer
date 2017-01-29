@@ -15,6 +15,7 @@
 #import "TweetCellObject.h"
 
 #import "UpdatableCellProtocol.h"
+#import "FeedDataDisplayManagerDelegate.h"
 
 @interface FeedDataDisplayManager ()
 
@@ -28,6 +29,13 @@
    withAuthorPhoto:(BOOL)showAuthorPhoto {
     self.cellObjects = [[self.cellObjectFactory tweetCellObjectsFromTweets:tweets
                                                      shouldShowAuthorPhoto:showAuthorPhoto] mutableCopy];
+}
+
+- (void)addTweets:(NSArray<Tweet *> *)tweets
+  withAuthorPhoto:(BOOL)showAuthorPhoto {
+    NSArray *newTweets = [self.cellObjectFactory tweetCellObjectsFromTweets:tweets
+                                                      shouldShowAuthorPhoto:showAuthorPhoto];
+    [self.cellObjects addObjectsFromArray:newTweets];
 }
 
 #pragma mark - UITableViewDataSource
@@ -52,6 +60,10 @@
     [updatableCell updateWithCellObject:cellObject];
     
     return updatableCell;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self.delegate scrollViewDidScroll:scrollView];
 }
 
 @end

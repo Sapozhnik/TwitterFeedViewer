@@ -12,4 +12,6 @@
 
 - (void)didTapOnTweetWithIndex:(NSUInteger)tweetIndex;
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;
+
 @end
