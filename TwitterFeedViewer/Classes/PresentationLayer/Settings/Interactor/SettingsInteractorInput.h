@@ -10,4 +10,7 @@
 
 @protocol SettingsInteractorInput <NSObject>
 
+- (BOOL)obtainShowUsersPhotoFlag;
+- (void)updateShowingUsersPhotoFlag:(BOOL)shouldShowUsersPhoto;
+
 @end

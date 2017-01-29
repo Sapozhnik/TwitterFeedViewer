@@ -52,6 +52,8 @@ static NSString *const FeedConfigTwitterSearchQueryPageSizeKey = @"TwitterSearch
                                                     with:[self presenterFeed]];
                               [definition injectProperty:@selector(tweetService)
                                                     with:[self.servicesAssembly tweetService]];
+                              [definition injectProperty:@selector(settingsService)
+                                                    with:[self.servicesAssembly settingsService]];
                           }];
 }
 

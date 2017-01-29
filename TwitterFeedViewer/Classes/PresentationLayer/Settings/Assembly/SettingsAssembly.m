@@ -15,6 +15,14 @@
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
+#import "ServicesAssemblyProtocol.h"
+
+@interface SettingsAssembly ()
+
+@property (nonatomic, strong, readonly) TyphoonAssembly<ServicesAssemblyProtocol> *servicesAssembly;
+
+@end
+
 @implementation SettingsAssembly
 
 - (SettingsViewController *)viewSettings {
@@ -32,6 +40,8 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(output)
                                                     with:[self presenterSettings]];
+                              [definition injectProperty:@selector(settingsService)
+                                                    with:[self.servicesAssembly settingsService]];
                           }];
 }
 

@@ -21,11 +21,12 @@
 #pragma mark - Методы SettingsViewOutput
 
 - (void)didTriggerViewReadyEvent {
-	[self.view setupInitialStateWithImageSwitchState:NO];
+    BOOL showingUsersPhotoFlag = [self.interactor obtainShowUsersPhotoFlag];
+	[self.view setupInitialStateWithImageSwitchState:showingUsersPhotoFlag];
 }
 
 - (void)imageSwitchDidChangeToState:(BOOL)state {
-    
+    [self.interactor updateShowingUsersPhotoFlag:state];
 }
 
 - (void)doneButtonDidTap {

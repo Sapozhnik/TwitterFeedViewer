@@ -10,11 +10,13 @@
 
 @protocol FeedInteractorOutput;
 @protocol TweetServiceProtocol;
+@protocol SettingsServiceProtocol;
 
 @interface FeedInteractor : NSObject <FeedInteractorInput>
 
 @property (nonatomic, weak) id<FeedInteractorOutput> output;
 
 @property (nonatomic, strong) id<TweetServiceProtocol> tweetService;
+@property (nonatomic, strong) id<SettingsServiceProtocol> settingsService;
 
 @end

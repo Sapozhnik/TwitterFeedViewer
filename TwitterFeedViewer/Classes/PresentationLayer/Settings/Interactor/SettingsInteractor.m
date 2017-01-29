@@ -10,8 +10,18 @@
 
 #import "SettingsInteractorOutput.h"
 
+#import "SettingsServiceProtocol.h"
+
 @implementation SettingsInteractor
 
 #pragma mark - Методы SettingsInteractorInput
+
+- (BOOL)obtainShowUsersPhotoFlag {
+    return [self.settingsService shouldShowUsersPhoto];
+}
+
+- (void)updateShowingUsersPhotoFlag:(BOOL)shouldShowUsersPhoto {
+    [self.settingsService saveShowingUsersPhotoFlag:shouldShowUsersPhoto];
+}
 
 @end

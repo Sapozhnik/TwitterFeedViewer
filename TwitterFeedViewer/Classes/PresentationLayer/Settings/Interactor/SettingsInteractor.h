@@ -9,9 +9,11 @@
 #import "SettingsInteractorInput.h"
 
 @protocol SettingsInteractorOutput;
+@protocol SettingsServiceProtocol;
 
 @interface SettingsInteractor : NSObject <SettingsInteractorInput>
 
 @property (nonatomic, weak) id<SettingsInteractorOutput> output;
+@property (nonatomic, strong) id<SettingsServiceProtocol> settingsService;
 
 @end

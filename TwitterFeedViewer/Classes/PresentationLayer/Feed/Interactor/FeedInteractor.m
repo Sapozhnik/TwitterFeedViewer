@@ -10,8 +10,11 @@
 
 #import "FeedInteractorOutput.h"
 
+#import "Tweet.h"
+
 // Dependencies
 #import "TweetServiceProtocol.h"
+#import "SettingsServiceProtocol.h"
 
 @implementation FeedInteractor
 
@@ -30,6 +33,10 @@
                                [wSelf.output didLoadTweets:tweets
                                                    afterId:afterId];
                            }];
+}
+
+- (BOOL)obtainShowUsersPhotoFlag {
+    return [self.settingsService shouldShowUsersPhoto];
 }
 
 @end

@@ -25,13 +25,13 @@
 }
 
 - (IBAction)imageSwitchDidChangeValue:(UISwitch *)sender {
-    [self.output imageSwitchDidChangeToState:sender.isSelected];
+    [self.output imageSwitchDidChangeToState:sender.isOn];
 }
 
 #pragma mark - Методы SettingsViewInput
 
 - (void)setupInitialStateWithImageSwitchState:(BOOL)state {
-    self.imageSwitch.selected = state;
+    self.imageSwitch.on = state;
 }
 
 @end

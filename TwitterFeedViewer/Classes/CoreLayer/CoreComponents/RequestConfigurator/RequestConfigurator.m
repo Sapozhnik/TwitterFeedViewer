@@ -31,7 +31,7 @@ static NSString *const RequestConfiguratorAuthorizationHeaderName = @"Authorizat
     [request setValue:authorizationValue
    forHTTPHeaderField:RequestConfiguratorAuthorizationHeaderName];
     
-    return [request mutableCopy];
+    return [request copy];
 }
 
 @end
