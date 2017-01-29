@@ -10,5 +10,14 @@
 #import "UpdatableCellProtocol.h"
 
 @interface TweetCell : UITableViewCell <UpdatableCellProtocol>
+@property (weak, nonatomic) IBOutlet UILabel *authorNameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *authorImage;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tweetTextLabel;
+
+@property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *visiblePhotoConstraints;
+
+@property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *hidePhotoConstraints;
+
 
 @end

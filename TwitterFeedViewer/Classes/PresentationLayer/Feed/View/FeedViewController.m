@@ -13,6 +13,8 @@
 // Dependencies
 #import "FeedDataDisplayManager.h"
 
+static NSUInteger const TableViewEstimatedRowHeight = 150.0;
+
 @implementation FeedViewController
 
 #pragma mark - Методы жизненного цикла
@@ -22,6 +24,9 @@
 
     self.tableView.dataSource = self.dataDisplayManager;
     self.tableView.delegate = self.dataDisplayManager;
+    
+    self.tableView.estimatedRowHeight = TableViewEstimatedRowHeight;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
     
 	[self.output didTriggerViewReadyEvent];
 }

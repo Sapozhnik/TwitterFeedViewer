@@ -48,10 +48,10 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier
                                                             forIndexPath:indexPath];
     
-    id<UpdatableCellProtocol>updatableCell = (id<UpdatableCellProtocol>)cell;
+    UITableViewCell<UpdatableCellProtocol> *updatableCell = (UITableViewCell<UpdatableCellProtocol> *)cell;
     [updatableCell updateWithCellObject:cellObject];
     
-    return [UITableViewCell new];
+    return updatableCell;
 }
 
 @end
