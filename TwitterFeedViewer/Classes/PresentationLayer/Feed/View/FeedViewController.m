@@ -15,6 +15,8 @@
 
 static NSUInteger const TableViewEstimatedRowHeight = 150.0;
 static NSUInteger const TableViewFooterHeight = 50.0;
+static NSTimeInterval const BubbleTransitionAnimationDuration = 0.2;
+static CGFloat const BubbleOpenTopConstraintConstant = 18.0;
 
 @interface FeedViewController ()
 
@@ -96,6 +98,8 @@ static NSUInteger const TableViewFooterHeight = 50.0;
 
     self.tableView.tableFooterView = self.infiniteScrollView;
     
+    self.bubbleButton.layer.cornerRadius = CGRectGetHeight(self.bubbleButton.bounds) / 2.0;
+
     [self.output didTriggerViewReadyEvent];
 }
 
@@ -129,6 +133,23 @@ static NSUInteger const TableViewFooterHeight = 50.0;
     }
 }
 
+- (void)setBubbleOpenState:(BOOL)openState {
+    if (openState) {
+        self.topBubbleButtonConstraint.constant = BubbleOpenTopConstraintConstant;
+    } else {
+        CGFloat buttonHeight = CGRectGetHeight(self.bubbleButton.frame);
+        self.topBubbleButtonConstraint.constant =  - (BubbleOpenTopConstraintConstant + buttonHeight);
+    }
+    
+    [UIView animateWithDuration:BubbleTransitionAnimationDuration
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [self.view layoutIfNeeded];
+                     }
+                     completion:nil];
+}
+
 #pragma mark - FeedDataDisplayManagerDelegate
 
 - (void)didTapOnTweetWithIndex:(NSUInteger)tweetIndex {
@@ -156,10 +177,14 @@ static NSUInteger const TableViewFooterHeight = 50.0;
     [self.output loadFreshTweets];
 }
 
-#pragma mark - Bar button item action
-
+#pragma mark - Buttons action
 - (IBAction)settingsButtonDidTap:(id)sender {
     [self.output settingsButtonDidTap];
+}
+
+- (IBAction)bubbleDidTap:(id)sender {
+    [self setBubbleOpenState:NO];
+    [self.output bubleTapped];
 }
 
 @end

@@ -16,4 +16,10 @@ typedef void (^CompletionBlockWithResultObjects)(NSArray *objects, NSError *erro
                       count:(NSUInteger)count
                     afterId:(NSString *)afterId;
 
+- (void)checkFreshTweetsWithQuery:(NSString *)query
+                            count:(NSUInteger)count
+                         beforeId:(NSString *)newestTweetId;
+
+- (BOOL)obtainShowUsersPhotoFlag;
+
 @end

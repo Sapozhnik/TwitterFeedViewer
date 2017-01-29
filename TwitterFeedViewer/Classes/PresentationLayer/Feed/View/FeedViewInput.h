@@ -27,4 +27,6 @@
 
 - (void)hideSpinners;
 
+- (void)setBubbleOpenState:(BOOL)openState;
+
 @end

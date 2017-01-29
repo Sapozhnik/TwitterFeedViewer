@@ -25,13 +25,28 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr9-NX-t2P">
+                                <rect key="frame" x="112.5" y="34" width="150" height="30"/>
+                                <color key="backgroundColor" white="0.8551897321428571" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="8cr-JW-VnF"/>
+                                </constraints>
+                                <state key="normal" title="Load new tweets">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="bubbleDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C31-Xt-iQr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="dr9-NX-t2P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5yv-xd-Cxe"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="u3g-aG-QP2" secondAttribute="bottom" id="77D-O2-M5u"/>
                             <constraint firstItem="u3g-aG-QP2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IJp-a6-K8k"/>
                             <constraint firstItem="u3g-aG-QP2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Qf0-6x-uFE"/>
                             <constraint firstAttribute="trailing" secondItem="u3g-aG-QP2" secondAttribute="trailing" id="i1a-Cc-nTr"/>
+                            <constraint firstItem="dr9-NX-t2P" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-30" id="iH3-ax-5gU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Twitter feed viewer" id="iTa-y7-fDi">
@@ -42,7 +57,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="bubbleButton" destination="dr9-NX-t2P" id="lbX-iy-9vT"/>
                         <outlet property="tableView" destination="u3g-aG-QP2" id="uuF-rH-PsZ"/>
+                        <outlet property="topBubbleButtonConstraint" destination="iH3-ax-5gU" id="ewR-Q0-Njl"/>
                         <segue destination="laU-7g-HJH" kind="show" identifier="OpenTweetSegue" id="BqV-Kf-XxI"/>
                         <segue destination="WwF-7x-yw1" kind="presentation" identifier="OpenSettingsSegue" id="Er5-tB-vde"/>
                     </connections>

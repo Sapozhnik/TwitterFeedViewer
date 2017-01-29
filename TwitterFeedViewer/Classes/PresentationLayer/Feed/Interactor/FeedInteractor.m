@@ -35,6 +35,25 @@
                            }];
 }
 
+- (void)checkFreshTweetsWithQuery:(NSString *)query
+                            count:(NSUInteger)count
+                         beforeId:(NSString *)newestTweetId {
+    __weak typeof(self) wSelf = self;
+    
+    [self.tweetService loadTweetsWithQuery:query
+                                     count:count
+                                   afterId:nil
+                           complitionBlock:^(NSArray<Tweet *> *tweets, NSError *error) {
+                               Tweet *firstTweet = tweets.firstObject;
+                               
+                               BOOL hasNewTweets = (error == nil) && (firstTweet != nil) && ([firstTweet.tweetId isEqualToString:newestTweetId] == NO);
+                               
+                               if (hasNewTweets == YES) {
+                                   [wSelf.output discoveredFreshTweets];
+                               }
+                           }];
+}
+
 - (BOOL)obtainShowUsersPhotoFlag {
     return [self.settingsService shouldShowUsersPhoto];
 }

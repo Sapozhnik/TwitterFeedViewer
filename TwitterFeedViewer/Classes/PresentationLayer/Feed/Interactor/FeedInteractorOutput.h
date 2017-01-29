@@ -15,4 +15,6 @@
 - (void)didLoadTweets:(NSArray<Tweet *> *)tweets
               afterId:(NSString *)afterId;
 
+- (void)discoveredFreshTweets;
+
 @end

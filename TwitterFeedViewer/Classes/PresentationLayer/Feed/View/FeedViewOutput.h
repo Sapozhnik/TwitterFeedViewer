@@ -25,4 +25,6 @@
 
 - (void)settingsButtonDidTap;
 
+- (void)bubleTapped;
+
 @end

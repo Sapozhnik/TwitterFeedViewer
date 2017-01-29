@@ -71,6 +71,8 @@
 		8A3EDDB11E3E32B800D35E75 /* FeedPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE9E01F3371DE9AE63EBE9D /* FeedPresenter.m */; };
 		8A3EDDB21E3E32B800D35E75 /* FeedInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C25412D95B431B072F1E4 /* FeedInteractor.m */; };
 		8A3EDDB31E3E32B800D35E75 /* FeedRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 655FADFB35BC3C50EA1E64EB /* FeedRouter.m */; };
+		8A60D0151E3E471D00F81117 /* SettingsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A60D0141E3E471D00F81117 /* SettingsService.m */; };
+		8A60D0161E3E471D00F81117 /* SettingsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A60D0141E3E471D00F81117 /* SettingsService.m */; };
 		8A78B1711E3CADE900E7534A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B16F1E3CADE900E7534A /* Main.storyboard */; };
 		8A78B1761E3CADE900E7534A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B1741E3CADE900E7534A /* LaunchScreen.storyboard */; };
 		8AAA0A711E3DD46600069C2C /* APIConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AAA0A701E3DD46600069C2C /* APIConfig.plist */; };
@@ -180,6 +182,9 @@
 		8A3EDD941E3DF34100D35E75 /* UpdatableCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdatableCellProtocol.h; sourceTree = "<group>"; };
 		8A3EDD981E3DF3F100D35E75 /* CellObjectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellObjectProtocol.h; sourceTree = "<group>"; };
 		8A3EDDB41E3E3E8600D35E75 /* SettingsModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModuleOutput.h; sourceTree = "<group>"; };
+		8A60D00F1E3E471800F81117 /* SettingsServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsServiceProtocol.h; sourceTree = "<group>"; };
+		8A60D0131E3E471D00F81117 /* SettingsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsService.h; sourceTree = "<group>"; };
+		8A60D0141E3E471D00F81117 /* SettingsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsService.m; sourceTree = "<group>"; };
 		8A78B1631E3CADE900E7534A /* TwitterFeedViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterFeedViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A78B1701E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A78B1751E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -608,6 +613,7 @@
 		8A3CD6F41E3DC7D0000C3F71 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8A60D00E1E3E470F00F81117 /* SettingsService */,
 				8A3CD6F51E3DC7F5000C3F71 /* TweetService */,
 			);
 			path = Services;
@@ -711,6 +717,16 @@
 				8A3EDD8F1E3DF2FB00D35E75 /* TweetCell.xib */,
 			);
 			path = TweetCell;
+			sourceTree = "<group>";
+		};
+		8A60D00E1E3E470F00F81117 /* SettingsService */ = {
+			isa = PBXGroup;
+			children = (
+				8A60D00F1E3E471800F81117 /* SettingsServiceProtocol.h */,
+				8A60D0131E3E471D00F81117 /* SettingsService.h */,
+				8A60D0141E3E471D00F81117 /* SettingsService.m */,
+			);
+			path = SettingsService;
 			sourceTree = "<group>";
 		};
 		8A78B15A1E3CADE800E7534A = {
@@ -1146,6 +1162,7 @@
 				8242C03EF62A4F2545426F5B /* FeedAssembly.m in Sources */,
 				8A3EDD851E3DEC1900D35E75 /* TweetCellObjectFactory.m in Sources */,
 				8A3CD7151E3DCE5B000C3F71 /* RequestExecutor.m in Sources */,
+				8A60D0151E3E471D00F81117 /* SettingsService.m in Sources */,
 				8A3CD6F81E3DC804000C3F71 /* TweetService.m in Sources */,
 				6407EA875E1D9EFE4D290158 /* FeedViewController.m in Sources */,
 				0DB0D3412E2388470143C35D /* FeedPresenter.m in Sources */,
@@ -1172,6 +1189,7 @@
 			files = (
 				8A3EDDAF1E3E32B800D35E75 /* FeedDataDisplayManager.m in Sources */,
 				8A3CD6F01E3D1FA3000C3F71 /* ResponseMapperTests.m in Sources */,
+				8A60D0161E3E471D00F81117 /* SettingsService.m in Sources */,
 				8A3EDDB31E3E32B800D35E75 /* FeedRouter.m in Sources */,
 				8A3EDDA51E3E32AF00D35E75 /* User.m in Sources */,
 				8A3EDDA11E3E32AF00D35E75 /* RequestConfigurator.m in Sources */,
