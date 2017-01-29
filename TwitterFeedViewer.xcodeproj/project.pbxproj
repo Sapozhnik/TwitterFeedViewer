@@ -73,6 +73,16 @@
 		8A3EDDB31E3E32B800D35E75 /* FeedRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 655FADFB35BC3C50EA1E64EB /* FeedRouter.m */; };
 		8A60D0151E3E471D00F81117 /* SettingsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A60D0141E3E471D00F81117 /* SettingsService.m */; };
 		8A60D0161E3E471D00F81117 /* SettingsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A60D0141E3E471D00F81117 /* SettingsService.m */; };
+		8A60D01F1E3E63E100F81117 /* DetailTweetAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EA3F3DC38B1550997142A4 /* DetailTweetAssembly.m */; };
+		8A60D0201E3E63E100F81117 /* DetailTweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1682A1B2195E6726C842FE /* DetailTweetViewController.m */; };
+		8A60D0211E3E63E100F81117 /* DetailTweetPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 417157DA9A85FE16BBBB6AD0 /* DetailTweetPresenter.m */; };
+		8A60D0221E3E63E100F81117 /* DetailTweetInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1887F9B40FC634AA649F00 /* DetailTweetInteractor.m */; };
+		8A60D0231E3E63E100F81117 /* DetailTweetRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 43124DDA1DCF21E9DAFAA86B /* DetailTweetRouter.m */; };
+		8A60D0241E3E63E800F81117 /* SettingsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C9A7EA8F64B55A4DFD02D0 /* SettingsAssembly.m */; };
+		8A60D0251E3E63E800F81117 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AC3A9DC3E992007BA11EA5 /* SettingsViewController.m */; };
+		8A60D0261E3E63E800F81117 /* SettingsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 014E7DBA90D3FFFA6CD610D5 /* SettingsPresenter.m */; };
+		8A60D0271E3E63E800F81117 /* SettingsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 10629948E9C70E32D84BA106 /* SettingsInteractor.m */; };
+		8A60D0281E3E63E800F81117 /* SettingsRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DD84BF02C21620F0E17E26 /* SettingsRouter.m */; };
 		8A78B1711E3CADE900E7534A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B16F1E3CADE900E7534A /* Main.storyboard */; };
 		8A78B1761E3CADE900E7534A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B1741E3CADE900E7534A /* LaunchScreen.storyboard */; };
 		8AAA0A711E3DD46600069C2C /* APIConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AAA0A701E3DD46600069C2C /* APIConfig.plist */; };
@@ -1191,27 +1201,37 @@
 				8A3CD6F01E3D1FA3000C3F71 /* ResponseMapperTests.m in Sources */,
 				8A60D0161E3E471D00F81117 /* SettingsService.m in Sources */,
 				8A3EDDB31E3E32B800D35E75 /* FeedRouter.m in Sources */,
+				8A60D01F1E3E63E100F81117 /* DetailTweetAssembly.m in Sources */,
 				8A3EDDA51E3E32AF00D35E75 /* User.m in Sources */,
+				8A60D0221E3E63E100F81117 /* DetailTweetInteractor.m in Sources */,
 				8A3EDDA11E3E32AF00D35E75 /* RequestConfigurator.m in Sources */,
 				8A3EDDA31E3E32AF00D35E75 /* MappingProvider.m in Sources */,
 				8A3EDDA21E3E32AF00D35E75 /* RequestExecutor.m in Sources */,
 				8A3EDDB11E3E32B800D35E75 /* FeedPresenter.m in Sources */,
+				8A60D0281E3E63E800F81117 /* SettingsRouter.m in Sources */,
 				8A3EDDA81E3E32AF00D35E75 /* TweetCell.m in Sources */,
 				610B88CDA3DA2BAA4E59F8DF /* FeedAssemblyTests.m in Sources */,
+				8A60D0261E3E63E800F81117 /* SettingsPresenter.m in Sources */,
 				8A3EDD9E1E3E32AF00D35E75 /* ServicesAssembly.m in Sources */,
+				8A60D0271E3E63E800F81117 /* SettingsInteractor.m in Sources */,
 				8A3EDD9F1E3E32AF00D35E75 /* TweetService.m in Sources */,
 				8A3EDDB01E3E32B800D35E75 /* FeedViewController.m in Sources */,
 				8A3EDDA41E3E32AF00D35E75 /* ResponseMapper.m in Sources */,
+				8A60D0241E3E63E800F81117 /* SettingsAssembly.m in Sources */,
 				8A3EDDAE1E3E32B800D35E75 /* TweetCellObjectFactory.m in Sources */,
 				8A3EDDA61E3E32AF00D35E75 /* Tweet.m in Sources */,
 				BBB830D42C0D611AA327DD6E /* FeedViewControllerTests.m in Sources */,
 				8A3EDDA91E3E32AF00D35E75 /* TweetCellObject.m in Sources */,
+				8A60D0201E3E63E100F81117 /* DetailTweetViewController.m in Sources */,
 				8A3EDDA01E3E32AF00D35E75 /* CoreComponentsAssembly.m in Sources */,
 				003A5653D34AAEB4F8323350 /* FeedPresenterTests.m in Sources */,
 				8A3EDDA71E3E32AF00D35E75 /* FeedAssembly.m in Sources */,
 				057143E0B942CAAA2AECFCF3 /* FeedInteractorTests.m in Sources */,
+				8A60D0251E3E63E800F81117 /* SettingsViewController.m in Sources */,
 				8A3EDDB21E3E32B800D35E75 /* FeedInteractor.m in Sources */,
+				8A60D0231E3E63E100F81117 /* DetailTweetRouter.m in Sources */,
 				53A2D663945430B90DE614BD /* FeedRouterTests.m in Sources */,
+				8A60D0211E3E63E100F81117 /* DetailTweetPresenter.m in Sources */,
 				AA8E76DA879F92108FB8741C /* DetailTweetAssemblyTests.m in Sources */,
 				37E747F25F28F600832FEF94 /* DetailTweetViewControllerTests.m in Sources */,
 				5A41FF126F68054B77F83845 /* DetailTweetPresenterTests.m in Sources */,

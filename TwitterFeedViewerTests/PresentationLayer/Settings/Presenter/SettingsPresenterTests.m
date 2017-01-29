@@ -59,13 +59,14 @@
 
 - (void)testThatPresenterHandlesViewReadyEvent {
     // given
-
-
+    BOOL expectedFlag = YES;
+    OCMStub([self.mockInteractor obtainShowUsersPhotoFlag]).andReturn(expectedFlag);
+    
     // when
     [self.presenter didTriggerViewReadyEvent];
 
     // then
-    OCMVerify([self.mockView setupInitialState]);
+    OCMVerify([self.mockView setupInitialStateWithImageSwitchState:expectedFlag]);
 }
 
 #pragma mark - Тестирование методов SettingsInteractorOutput
