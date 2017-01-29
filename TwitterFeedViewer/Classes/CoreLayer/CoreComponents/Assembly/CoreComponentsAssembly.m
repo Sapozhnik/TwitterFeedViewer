@@ -17,6 +17,7 @@
 
 static NSString *const APIConfigFileName = @"APIConfig.plist";
 static NSString *const TwitterAPIBaseURLKey = @"TwitterAPIBaseURL";
+static NSString *const TwitterBearerTokenKey = @"TwitterBearerToken";
 
 @implementation CoreComponentsAssembly
 
@@ -25,8 +26,9 @@ static NSString *const TwitterAPIBaseURLKey = @"TwitterAPIBaseURL";
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(baseURL)
                                                     with:TyphoonConfig(TwitterAPIBaseURLKey)];
+                              
                               [definition injectProperty:@selector(bearerToken)
-                                                    with:@"some bearer"];
+                                                    with:TyphoonConfig(TwitterBearerTokenKey)];//¯\_(ツ)_/¯
                           }];
 }
 
