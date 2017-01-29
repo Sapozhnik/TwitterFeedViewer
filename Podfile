@@ -24,6 +24,7 @@ target 'TwitterFeedViewer' do
 
     # AssemblyTesting
     pod 'RamblerTyphoonUtils/AssemblyTesting', '~> 1.5.0'
+    pod 'Typhoon', '3.6.0'
 
   end
 
