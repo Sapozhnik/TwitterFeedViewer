@@ -50,6 +50,13 @@
                                  afterId:lastTweetId];
 }
 
+- (void)didSelectTweetAtIndex:(NSUInteger)tweetIndex {
+    if (self.tweets.count > tweetIndex) {
+        Tweet *selectedTweet = self.tweets[tweetIndex];
+        [self.router openTweetDetailModuleWithTweet:selectedTweet];
+    }
+}
+
 #pragma mark - Методы FeedInteractorOutput
 
 - (void)didLoadTweets:(NSArray<Tweet *> *)tweets

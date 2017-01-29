@@ -132,7 +132,7 @@ static NSUInteger const TableViewFooterHeight = 50.0;
 #pragma mark - FeedDataDisplayManagerDelegate
 
 - (void)didTapOnTweetWithIndex:(NSUInteger)tweetIndex {
-    
+    [self.output didSelectTweetAtIndex:tweetIndex];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {

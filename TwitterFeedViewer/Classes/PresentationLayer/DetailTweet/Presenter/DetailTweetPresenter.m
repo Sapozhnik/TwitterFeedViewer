@@ -12,18 +12,26 @@
 #import "DetailTweetInteractorInput.h"
 #import "DetailTweetRouterInput.h"
 
+#import "Tweet.h"
+
+@interface DetailTweetPresenter ()
+
+@property (nonatomic, strong) Tweet *tweet;
+
+@end
+
 @implementation DetailTweetPresenter
 
 #pragma mark - Методы DetailTweetModuleInput
 
-- (void)configureModule {
-    // Стартовая конфигурация модуля, не привязанная к состоянию view
+- (void)configureModuleWithTweet:(Tweet *)tweet {
+    self.tweet = tweet;
 }
 
 #pragma mark - Методы DetailTweetViewOutput
 
 - (void)didTriggerViewReadyEvent {
-	[self.view setupInitialState];
+	[self.view setupInitialStateWithTweet:self.tweet];
 }
 
 #pragma mark - Методы DetailTweetInteractorOutput

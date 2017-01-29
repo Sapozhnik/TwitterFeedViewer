@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
+@class Tweet;
+
 @protocol DetailTweetModuleInput <RamblerViperModuleInput>
 
 /**
@@ -16,6 +18,6 @@
 
  Метод инициирует стартовую конфигурацию текущего модуля
  */
-- (void)configureModule;
+- (void)configureModuleWithTweet:(Tweet *)tweet;;
 
 @end

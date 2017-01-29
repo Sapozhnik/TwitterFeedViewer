@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class Tweet;
+
 @protocol FeedRouterInput <NSObject>
+
+- (void)openTweetDetailModuleWithTweet:(Tweet *)tweet;
 
 @end

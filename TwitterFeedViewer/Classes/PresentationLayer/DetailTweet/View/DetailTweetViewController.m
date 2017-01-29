@@ -10,20 +10,33 @@
 
 #import "DetailTweetViewOutput.h"
 
+// Entities
+#import "Tweet.h"
+#import "User.h"
+
+// Libraries
+#import <SDWebImage/UIImageView+WebCache.h>
+
 @implementation DetailTweetViewController
 
 #pragma mark - Методы жизненного цикла
 
 - (void)viewDidLoad {
-	[super viewDidLoad];
-
-	[self.output didTriggerViewReadyEvent];
+    [super viewDidLoad];
+    
+    [self.output didTriggerViewReadyEvent];
 }
 
 #pragma mark - Методы DetailTweetViewInput
 
-- (void)setupInitialState {
-	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
+- (void)setupInitialStateWithTweet:(Tweet *)tweet{
+    self.authorNameLabel.text = tweet.user.name;
+    
+    self.dateLabel.text = [NSDateFormatter localizedStringFromDate:tweet.date
+                                                         dateStyle:NSDateFormatterShortStyle
+                                                         timeStyle:NSDateFormatterShortStyle];
+    self.tweetTextLabel.text = tweet.text;
+    [self.authorImage sd_setImageWithURL:tweet.user.profileImageURL];
 }
 
 @end

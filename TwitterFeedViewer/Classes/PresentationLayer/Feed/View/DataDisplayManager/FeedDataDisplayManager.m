@@ -62,6 +62,17 @@
     return updatableCell;
 }
 
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSAssert(indexPath.row >= 0u, @"WTF?");
+    NSUInteger index = indexPath.row;
+    [self.delegate didTapOnTweetWithIndex:index];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - UIScrollViewDelegate
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [self.delegate scrollViewDidScroll:scrollView];
 }

@@ -16,4 +16,9 @@
 
 @property (nonatomic, strong) id<DetailTweetViewOutput> output;
 
+@property (weak, nonatomic) IBOutlet UILabel *authorNameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *authorImage;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tweetTextLabel;
+
 @end

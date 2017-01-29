@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class Tweet;
+
 @protocol DetailTweetViewInput <NSObject>
 
 /**
@@ -15,6 +17,6 @@
 
  Метод настраивает начальный стейт view
  */
-- (void)setupInitialState;
+- (void)setupInitialStateWithTweet:(Tweet *)tweet;
 
 @end

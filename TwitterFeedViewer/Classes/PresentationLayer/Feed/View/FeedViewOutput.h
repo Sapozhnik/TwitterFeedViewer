@@ -21,4 +21,6 @@
 
 - (void)loadMoreTweets;
 
+- (void)didSelectTweetAtIndex:(NSUInteger)tweetIndex;
+
 @end

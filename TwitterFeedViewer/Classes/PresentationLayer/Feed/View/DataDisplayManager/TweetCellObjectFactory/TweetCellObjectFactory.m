@@ -23,7 +23,7 @@
         tweetCellObject.text = tweet.text;
         tweetCellObject.date = [NSDateFormatter localizedStringFromDate:tweet.date
                                                               dateStyle:NSDateFormatterShortStyle
-                                                              timeStyle:NSDateFormatterFullStyle];
+                                                              timeStyle:NSDateFormatterShortStyle];
         tweetCellObject.authorName = tweet.user.name;
         tweetCellObject.profileImageURL = tweet.user.profileImageURL;
         tweetCellObject.showImage = shouldShowAuthorPhoto;
