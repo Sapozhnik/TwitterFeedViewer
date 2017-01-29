@@ -30,13 +30,14 @@
         disabledConstraints = self.visiblePhotoConstraints;
     }
     
+    for (NSLayoutConstraint *constraint in disabledConstraints) {
+        constraint.active = NO;
+    }
+    
     for (NSLayoutConstraint *constraint in activeConstraints) {
         constraint.active = YES;
     }
     
-    for (NSLayoutConstraint *constraint in disabledConstraints) {
-        constraint.active = NO;
-    }
     [super updateConstraints];
 }
 
