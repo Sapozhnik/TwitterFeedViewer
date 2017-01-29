@@ -94,6 +94,7 @@
         self.tweets = [tweets mutableCopy];
         [self.view showTweets:tweets
               withAuthorPhoto:shouldShowPhoto];
+        [self.view scrollToTop];
     }
 }
 

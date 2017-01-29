@@ -29,4 +29,6 @@
 
 - (void)setBubbleOpenState:(BOOL)openState;
 
+- (void)scrollToTop;
+
 @end

@@ -150,6 +150,16 @@ static CGFloat const BubbleOpenTopConstraintConstant = 18.0;
                      completion:nil];
 }
 
+- (void)scrollToTop {
+    if ([self.tableView numberOfRowsInSection:0] != 0) {
+        NSIndexPath *firstCellIndexPath = [NSIndexPath indexPathForRow:0
+                                                             inSection:0];
+        [self.tableView scrollToRowAtIndexPath:firstCellIndexPath
+                              atScrollPosition:UITableViewScrollPositionTop
+                                      animated:YES];
+    }
+}
+
 #pragma mark - FeedDataDisplayManagerDelegate
 
 - (void)didTapOnTweetWithIndex:(NSUInteger)tweetIndex {
