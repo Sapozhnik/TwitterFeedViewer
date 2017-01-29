@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @protocol TweetServiceProtocol;
+@protocol SettingsServiceProtocol;
 
 @protocol ServicesAssemblyProtocol <NSObject>
 
 - (id<TweetServiceProtocol>)tweetService;
+- (id<SettingsServiceProtocol>)settingsService;
 
 @end

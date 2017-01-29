@@ -10,6 +10,7 @@
 
 // Services
 #import "TweetService.h"
+#import "SettingsService.h"
 
 // Dependencies
 #import "CoreComponentsAssemblyProtocol.h"
@@ -31,6 +32,24 @@
                                       with:[self.coreComponentsAssembly requestExecutor]];
                 [definition injectProperty:@selector(responseMapper)
                                       with:[self.coreComponentsAssembly tweetFeedResponseMapper]];
+            }];
+}
+
+- (id<SettingsServiceProtocol>)settingsService {
+    return [TyphoonDefinition withClass:[SettingsService class]
+                          configuration:^(TyphoonDefinition *definition) {
+                              [definition injectProperty:@selector(userDefaults)
+                                                    with:[self userDefaults]];
+                          }];
+}
+
+#pragma mark - Private
+
+- (NSUserDefaults *)userDefaults {
+    return [TyphoonDefinition withClass:[NSUserDefaults class]
+            configuration:^(TyphoonDefinition *definition) {
+                [definition useInitializer:@selector(standardUserDefaults)];
+                definition.scope = TyphoonScopeSingleton;
             }];
 }
 
