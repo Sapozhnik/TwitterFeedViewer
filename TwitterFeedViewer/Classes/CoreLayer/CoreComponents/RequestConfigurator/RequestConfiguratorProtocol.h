@@ -10,6 +10,7 @@
 
 @protocol RequestConfiguratorProtocol <NSObject>
 
-- (NSURLRequest *)requestWithQueryItems:(NSArray<NSURLQueryItem *> *)queryItems;
+- (NSURLRequest *)requestWithPathComponent:(NSString *)pathComponent
+                                queryItems:(NSArray<NSURLQueryItem *> *)queryItems;
 
 @end

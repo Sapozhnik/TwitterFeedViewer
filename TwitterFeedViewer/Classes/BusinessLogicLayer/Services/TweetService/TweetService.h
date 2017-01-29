@@ -11,10 +11,9 @@
 // Protocols
 #import "TweetServiceProtocol.h"
 
-// Dependencies
-#import "RequestConfiguratorProtocol.h"
-#import "RequestExecutorProtocol.h"
-#import "ResponseMapperProtocol.h"
+@protocol RequestConfiguratorProtocol;
+@protocol RequestExecutorProtocol;
+@protocol ResponseMapperProtocol;
 
 @interface TweetService : NSObject <TweetServiceProtocol>
 

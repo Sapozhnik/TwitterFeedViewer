@@ -8,12 +8,65 @@
 
 #import "TweetService.h"
 
+// Dependencies
+#import "RequestConfiguratorProtocol.h"
+#import "RequestExecutorProtocol.h"
+#import "ResponseMapperProtocol.h"
+
+static NSString *const TwitterAPISearchPathComponents = @"search/tweets.json";
+
+static NSString *const TwitterAPISearchQueryKey = @"q";
+
+static NSString *const TwitterAPISearchCountKey = @"count";
+static NSString *const TwitterAPISearchCountValue = @"10";
+
+static NSString *const TwitterAPISearchAfterIdKey = @"since_id";
+
 @implementation TweetService
 
 - (void)loadTweetsWithQuery:(NSString *)query
                     afterId:(NSString *)afterId
             complitionBlock:(TweetServiceCompletionBlockWithResultObjects)complitionBlock {
     
+    NSMutableArray *mutableItems = [NSMutableArray new];
+    
+    NSURLQueryItem *queryItem = [NSURLQueryItem queryItemWithName:TwitterAPISearchQueryKey
+                                                            value:query];
+    [mutableItems addObject:queryItem];
+    
+    
+    NSURLQueryItem *countItem = [NSURLQueryItem queryItemWithName:TwitterAPISearchCountKey
+                                                            value:TwitterAPISearchCountValue];
+    
+    [mutableItems addObject:countItem];
+    
+    if (afterId != nil) {
+        NSURLQueryItem *afterIdItem = [NSURLQueryItem queryItemWithName:TwitterAPISearchAfterIdKey
+                                                                  value:afterId];
+        [mutableItems addObject:afterIdItem];
+    }
+    
+    NSURLRequest *feedRequest = [self.requestConfigurator requestWithPathComponent:TwitterAPISearchPathComponents
+                                                                        queryItems:[mutableItems copy]];
+    
+    __weak typeof(self) wSelf = self;
+    [self.requestExecutor performRequest:feedRequest
+                          withCompletion:^(id data, NSError *error) {
+                              __weak typeof(wSelf) sSelf = wSelf;
+                              
+                              NSError *serializationError = nil;
+                              
+                              NSDictionary * responseObject = [NSJSONSerialization JSONObjectWithData:data
+                                                                                              options:0
+                                                                                                error:&serializationError];
+                              if (serializationError != nil) {
+                                  complitionBlock(nil, serializationError);
+                                  return;
+                              }
+                              
+                              NSArray<Tweet *> *tweets = [sSelf.responseMapper tweetsFromResponse:responseObject];
+                              complitionBlock(tweets, nil);
+                          }];
 }
 
 @end

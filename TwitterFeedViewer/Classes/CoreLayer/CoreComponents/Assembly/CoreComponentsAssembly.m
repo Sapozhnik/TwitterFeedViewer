@@ -18,7 +18,6 @@
 static NSString *const APIConfigFileName = @"APIConfig.plist";
 static NSString *const TwitterAPIBaseURLKey = @"TwitterAPIBaseURL";
 
-
 @implementation CoreComponentsAssembly
 
 - (id<RequestConfiguratorProtocol>)requestConfigurator {

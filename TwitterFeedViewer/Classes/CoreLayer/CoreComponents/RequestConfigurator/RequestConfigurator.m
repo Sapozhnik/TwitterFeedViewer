@@ -13,8 +13,12 @@ static NSString *const RequestConfiguratorAuthorizationHeaderName = @"Authorizat
 
 @implementation RequestConfigurator
 
-- (NSURLRequest *)requestWithQueryItems:(NSArray<NSURLQueryItem *> *)queryItems {
-    NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:self.baseURL
+- (NSURLRequest *)requestWithPathComponent:(NSString *)pathComponent
+                                queryItems:(NSArray<NSURLQueryItem *> *)queryItems {
+    
+    NSURL *fullURL = [self.baseURL URLByAppendingPathComponent:pathComponent];
+
+    NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:fullURL
                                                 resolvingAgainstBaseURL:YES];
     urlComponents.queryItems = queryItems;
     
