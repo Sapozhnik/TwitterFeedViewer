@@ -23,9 +23,9 @@ static NSString *const TFVResponseStatusesRootKey = @"statuses";
 
 - (NSArray<Tweet *> *)tweetsFromResponse:(NSDictionary<NSString *, NSArray *> *)response {
     NSArray *statusesArray = response[TFVResponseStatusesRootKey];
-    NSArray *carsArray = [EKMapper arrayOfObjectsFromExternalRepresentation:statusesArray
-                                                                withMapping:self.tweetMappingProvider.tweetMapping];
-    return carsArray;
+    NSArray *tweetsArray = [EKMapper arrayOfObjectsFromExternalRepresentation:statusesArray
+                                                                  withMapping:self.tweetMappingProvider.tweetMapping];
+    return tweetsArray;
 }
 
 @end

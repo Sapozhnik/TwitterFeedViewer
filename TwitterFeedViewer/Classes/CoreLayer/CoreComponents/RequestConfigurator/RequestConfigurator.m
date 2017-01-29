@@ -14,7 +14,8 @@ static NSString *const RequestConfiguratorAuthorizationHeaderName = @"Authorizat
 @implementation RequestConfigurator
 
 - (NSURLRequest *)requestWithQueryItems:(NSArray<NSURLQueryItem *> *)queryItems {
-    NSURLComponents *urlComponents = [NSURLComponents componentsWithString:self.baseLink];
+    NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:self.baseURL
+                                                resolvingAgainstBaseURL:YES];
     urlComponents.queryItems = queryItems;
     
     NSURL *urlFromComponents = urlComponents.URL;

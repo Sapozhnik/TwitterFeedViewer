@@ -13,7 +13,7 @@
 
 @interface RequestConfigurator : NSObject <RequestConfiguratorProtocol>
 
-@property (nonatomic, copy) NSString *baseLink;
+@property (nonatomic, copy) NSURL *baseURL;
 @property (nonatomic, copy) NSString *bearerToken;
 
 @end

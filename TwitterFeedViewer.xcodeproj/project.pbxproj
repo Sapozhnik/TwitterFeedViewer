@@ -42,8 +42,14 @@
 		8A3CD72C1E3DD0B6000C3F71 /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7261E3DD0B6000C3F71 /* MappingProvider.m */; };
 		8A3CD72D1E3DD0B6000C3F71 /* ResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7291E3DD0B6000C3F71 /* ResponseMapper.m */; };
 		8A3CD72E1E3DD0B6000C3F71 /* ResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7291E3DD0B6000C3F71 /* ResponseMapper.m */; };
+		8A3CD7321E3DD107000C3F71 /* ServicesAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7311E3DD107000C3F71 /* ServicesAssembly.m */; };
+		8A3CD7331E3DD107000C3F71 /* ServicesAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7311E3DD107000C3F71 /* ServicesAssembly.m */; };
+		8A3CD73B1E3DD248000C3F71 /* CoreComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD73A1E3DD248000C3F71 /* CoreComponentsAssembly.m */; };
+		8A3CD73C1E3DD248000C3F71 /* CoreComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD73A1E3DD248000C3F71 /* CoreComponentsAssembly.m */; };
 		8A78B1711E3CADE900E7534A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B16F1E3CADE900E7534A /* Main.storyboard */; };
 		8A78B1761E3CADE900E7534A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B1741E3CADE900E7534A /* LaunchScreen.storyboard */; };
+		8AAA0A711E3DD46600069C2C /* APIConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AAA0A701E3DD46600069C2C /* APIConfig.plist */; };
+		8AAA0A721E3DD46600069C2C /* APIConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AAA0A701E3DD46600069C2C /* APIConfig.plist */; };
 		B68D3C36C752B1D2BC1C1FCE /* libPods-TwitterFeedViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B44DC57178446202331AE1CB /* libPods-TwitterFeedViewer.a */; };
 		BBB830D42C0D611AA327DD6E /* FeedViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A393EE7A45903AD570A66C46 /* FeedViewControllerTests.m */; };
 /* End PBXBuildFile section */
@@ -100,12 +106,19 @@
 		8A3CD7281E3DD0B6000C3F71 /* ResponseMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseMapper.h; sourceTree = "<group>"; };
 		8A3CD7291E3DD0B6000C3F71 /* ResponseMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseMapper.m; sourceTree = "<group>"; };
 		8A3CD72A1E3DD0B6000C3F71 /* ResponseMapperProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseMapperProtocol.h; sourceTree = "<group>"; };
+		8A3CD7301E3DD107000C3F71 /* ServicesAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesAssembly.h; sourceTree = "<group>"; };
+		8A3CD7311E3DD107000C3F71 /* ServicesAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesAssembly.m; sourceTree = "<group>"; };
+		8A3CD7341E3DD117000C3F71 /* ServicesAssemblyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesAssemblyProtocol.h; sourceTree = "<group>"; };
+		8A3CD7391E3DD248000C3F71 /* CoreComponentsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreComponentsAssembly.h; sourceTree = "<group>"; };
+		8A3CD73A1E3DD248000C3F71 /* CoreComponentsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreComponentsAssembly.m; sourceTree = "<group>"; };
+		8A3CD73D1E3DD253000C3F71 /* CoreComponentsAssemblyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreComponentsAssemblyProtocol.h; sourceTree = "<group>"; };
 		8A78B1631E3CADE900E7534A /* TwitterFeedViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterFeedViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A78B1701E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A78B1751E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A78B17C1E3CADE900E7534A /* TwitterFeedViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterFeedViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A78B1821E3CADE900E7534A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A7C1F76660680F764001093 /* FeedInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FeedInteractorTests.m; sourceTree = "<group>"; };
+		8AAA0A701E3DD46600069C2C /* APIConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIConfig.plist; sourceTree = "<group>"; };
 		A393EE7A45903AD570A66C46 /* FeedViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FeedViewControllerTests.m; sourceTree = "<group>"; };
 		A9177263E46A2C19C4BFC288 /* FeedInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedInteractorOutput.h; sourceTree = "<group>"; };
 		B3CD7CDDAB3ADA8AAEFC19DF /* FeedAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedAssembly_Testable.h; sourceTree = "<group>"; };
@@ -259,6 +272,7 @@
 		8A3CD6B61E3CE5C3000C3F71 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8A3CD72F1E3DD0FA000C3F71 /* Assembly */,
 				8A3CD6F41E3DC7D0000C3F71 /* Services */,
 			);
 			path = BusinessLogicLayer;
@@ -327,6 +341,7 @@
 		8A3CD6D01E3D11E1000C3F71 /* CoreComponents */ = {
 			isa = PBXGroup;
 			children = (
+				8A3CD7381E3DD238000C3F71 /* Assembly */,
 				8A3CD6FE1E3DCACD000C3F71 /* RequestConfigurator */,
 				8A3CD6FF1E3DCACD000C3F71 /* RequestExecutor */,
 				8A3CD7231E3DD0B6000C3F71 /* ResponseMapper */,
@@ -417,6 +432,27 @@
 				8A3CD7271E3DD0B6000C3F71 /* MappingProviderProtocol.h */,
 			);
 			path = MappingProviders;
+			sourceTree = "<group>";
+		};
+		8A3CD72F1E3DD0FA000C3F71 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				8A3CD7341E3DD117000C3F71 /* ServicesAssemblyProtocol.h */,
+				8A3CD7301E3DD107000C3F71 /* ServicesAssembly.h */,
+				8A3CD7311E3DD107000C3F71 /* ServicesAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		8A3CD7381E3DD238000C3F71 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				8A3CD73D1E3DD253000C3F71 /* CoreComponentsAssemblyProtocol.h */,
+				8A3CD7391E3DD248000C3F71 /* CoreComponentsAssembly.h */,
+				8A3CD73A1E3DD248000C3F71 /* CoreComponentsAssembly.m */,
+				8AAA0A701E3DD46600069C2C /* APIConfig.plist */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		8A78B15A1E3CADE800E7534A = {
@@ -604,6 +640,7 @@
 				8A3CD6C51E3CE6BC000C3F71 /* Assets.xcassets in Resources */,
 				8A3CD6F21E3D1FF6000C3F71 /* feed_with_2_tweets.json in Resources */,
 				8A78B1711E3CADE900E7534A /* Main.storyboard in Resources */,
+				8AAA0A711E3DD46600069C2C /* APIConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +649,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A3CD6F31E3D1FF6000C3F71 /* feed_with_2_tweets.json in Resources */,
+				8AAA0A721E3DD46600069C2C /* APIConfig.plist in Resources */,
 				8A3CD6C81E3CE6BC000C3F71 /* Info.plist in Resources */,
 				8A3CD6C61E3CE6BC000C3F71 /* Assets.xcassets in Resources */,
 			);
@@ -719,6 +757,7 @@
 			files = (
 				8A3CD6DB1E3D16F8000C3F71 /* User.m in Sources */,
 				8A3CD6CE1E3D1091000C3F71 /* Tweet.m in Sources */,
+				8A3CD73B1E3DD248000C3F71 /* CoreComponentsAssembly.m in Sources */,
 				8A3CD6C91E3CE6BC000C3F71 /* main.m in Sources */,
 				8A3CD6BE1E3CE5EB000C3F71 /* AppDelegate.m in Sources */,
 				8A3CD72B1E3DD0B6000C3F71 /* MappingProvider.m in Sources */,
@@ -728,6 +767,7 @@
 				8A3CD6F81E3DC804000C3F71 /* TweetService.m in Sources */,
 				6407EA875E1D9EFE4D290158 /* FeedViewController.m in Sources */,
 				0DB0D3412E2388470143C35D /* FeedPresenter.m in Sources */,
+				8A3CD7321E3DD107000C3F71 /* ServicesAssembly.m in Sources */,
 				43C705630CB3F9F119674C81 /* FeedInteractor.m in Sources */,
 				49E4F450566A012CE7425223 /* FeedRouter.m in Sources */,
 				8A3CD72D1E3DD0B6000C3F71 /* ResponseMapper.m in Sources */,
@@ -739,7 +779,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A3CD6DC1E3D16F8000C3F71 /* User.m in Sources */,
+				8A3CD7331E3DD107000C3F71 /* ServicesAssembly.m in Sources */,
 				8A3CD7061E3DCB26000C3F71 /* RequestConfigurator.m in Sources */,
+				8A3CD73C1E3DD248000C3F71 /* CoreComponentsAssembly.m in Sources */,
 				8A3CD72C1E3DD0B6000C3F71 /* MappingProvider.m in Sources */,
 				8A3CD7161E3DCE5B000C3F71 /* RequestExecutor.m in Sources */,
 				8A3CD6F01E3D1FA3000C3F71 /* ResponseMapperTests.m in Sources */,
