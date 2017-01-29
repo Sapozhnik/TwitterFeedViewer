@@ -677,7 +677,6 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = S6T374PVN9;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 8A78B1621E3CADE800E7534A;
 					};
 				};
 			};
@@ -1032,13 +1031,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 056495EB88D61CD9F1E9A384 /* Pods-TwitterFeedViewerTests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = S6T374PVN9;
 				INFOPLIST_FILE = TwitterFeedViewerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AS.TwitterFeedViewerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwitterFeedViewer.app/TwitterFeedViewer";
 			};
 			name = Debug;
 		};
@@ -1046,13 +1043,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC3309A0CA461DD116ADE50A /* Pods-TwitterFeedViewerTests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = S6T374PVN9;
 				INFOPLIST_FILE = TwitterFeedViewerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AS.TwitterFeedViewerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwitterFeedViewer.app/TwitterFeedViewer";
 			};
 			name = Release;
 		};
