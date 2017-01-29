@@ -10,6 +10,9 @@ target 'TwitterFeedViewer' do
     # Intermodule communications
     pod 'ViperMcFlurry', '~> 1.5.2'
 
+    # Images
+    pod 'SDWebImage', '~> 3.7'
+
   target 'TwitterFeedViewerTests' do
     inherit! :search_paths
 
