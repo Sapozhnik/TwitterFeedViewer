@@ -38,6 +38,8 @@
 		8A3CD6F31E3D1FF6000C3F71 /* feed_with_2_tweets.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A3CD6F11E3D1FF6000C3F71 /* feed_with_2_tweets.json */; };
 		8A3CD6F81E3DC804000C3F71 /* TweetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6F71E3DC804000C3F71 /* TweetService.m */; };
 		8A3CD6F91E3DC804000C3F71 /* TweetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6F71E3DC804000C3F71 /* TweetService.m */; };
+		8A3CD7051E3DCB26000C3F71 /* RequestConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7041E3DCB25000C3F71 /* RequestConfigurator.m */; };
+		8A3CD7061E3DCB26000C3F71 /* RequestConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7041E3DCB25000C3F71 /* RequestConfigurator.m */; };
 		8A78B1711E3CADE900E7534A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B16F1E3CADE900E7534A /* Main.storyboard */; };
 		8A78B1761E3CADE900E7534A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B1741E3CADE900E7534A /* LaunchScreen.storyboard */; };
 		B68D3C36C752B1D2BC1C1FCE /* libPods-TwitterFeedViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B44DC57178446202331AE1CB /* libPods-TwitterFeedViewer.a */; };
@@ -90,6 +92,9 @@
 		8A3CD6F61E3DC804000C3F71 /* TweetService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetService.h; sourceTree = "<group>"; };
 		8A3CD6F71E3DC804000C3F71 /* TweetService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetService.m; sourceTree = "<group>"; };
 		8A3CD6FA1E3DC827000C3F71 /* TweetServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetServiceProtocol.h; sourceTree = "<group>"; };
+		8A3CD7031E3DCB25000C3F71 /* RequestConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestConfigurator.h; sourceTree = "<group>"; };
+		8A3CD7041E3DCB25000C3F71 /* RequestConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestConfigurator.m; sourceTree = "<group>"; };
+		8A3CD7071E3DCBD1000C3F71 /* RequestConfiguratorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestConfiguratorProtocol.h; sourceTree = "<group>"; };
 		8A78B1631E3CADE900E7534A /* TwitterFeedViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterFeedViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A78B1701E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A78B1751E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -317,6 +322,10 @@
 		8A3CD6D01E3D11E1000C3F71 /* CoreComponents */ = {
 			isa = PBXGroup;
 			children = (
+				8A3CD6FE1E3DCACD000C3F71 /* RequestConfigurator */,
+				8A3CD6FF1E3DCACD000C3F71 /* RequestExecutor */,
+				8A3CD7011E3DCACD000C3F71 /* ResponseDeserializer */,
+				8A3CD7021E3DCACD000C3F71 /* ResponseValidator */,
 				8A3CD6D11E3D127A000C3F71 /* ResponseMappers */,
 			);
 			path = CoreComponents;
@@ -393,6 +402,37 @@
 				8A3CD6F71E3DC804000C3F71 /* TweetService.m */,
 			);
 			path = TweetService;
+			sourceTree = "<group>";
+		};
+		8A3CD6FE1E3DCACD000C3F71 /* RequestConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				8A3CD7071E3DCBD1000C3F71 /* RequestConfiguratorProtocol.h */,
+				8A3CD7031E3DCB25000C3F71 /* RequestConfigurator.h */,
+				8A3CD7041E3DCB25000C3F71 /* RequestConfigurator.m */,
+			);
+			path = RequestConfigurator;
+			sourceTree = "<group>";
+		};
+		8A3CD6FF1E3DCACD000C3F71 /* RequestExecutor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestExecutor;
+			sourceTree = "<group>";
+		};
+		8A3CD7011E3DCACD000C3F71 /* ResponseDeserializer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResponseDeserializer;
+			sourceTree = "<group>";
+		};
+		8A3CD7021E3DCACD000C3F71 /* ResponseValidator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResponseValidator;
 			sourceTree = "<group>";
 		};
 		8A78B15A1E3CADE800E7534A = {
@@ -699,6 +739,7 @@
 				8A3CD6CE1E3D1091000C3F71 /* Tweet.m in Sources */,
 				8A3CD6C91E3CE6BC000C3F71 /* main.m in Sources */,
 				8A3CD6BE1E3CE5EB000C3F71 /* AppDelegate.m in Sources */,
+				8A3CD7051E3DCB26000C3F71 /* RequestConfigurator.m in Sources */,
 				8242C03EF62A4F2545426F5B /* FeedAssembly.m in Sources */,
 				8A3CD6F81E3DC804000C3F71 /* TweetService.m in Sources */,
 				6407EA875E1D9EFE4D290158 /* FeedViewController.m in Sources */,
@@ -714,6 +755,7 @@
 			files = (
 				8A3CD6DC1E3D16F8000C3F71 /* User.m in Sources */,
 				8A3CD6EA1E3D1CA2000C3F71 /* ResponseMapper.m in Sources */,
+				8A3CD7061E3DCB26000C3F71 /* RequestConfigurator.m in Sources */,
 				8A3CD6F01E3D1FA3000C3F71 /* ResponseMapperTests.m in Sources */,
 				8A3CD6BF1E3CE5EB000C3F71 /* AppDelegate.m in Sources */,
 				8A3CD6CA1E3CE6BC000C3F71 /* main.m in Sources */,
