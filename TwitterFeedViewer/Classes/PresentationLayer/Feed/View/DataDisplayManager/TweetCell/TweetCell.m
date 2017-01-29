@@ -9,6 +9,9 @@
 #import "TweetCell.h"
 #import "TweetCellObject.h"
 
+// Libraries
+#import <SDWebImage/UIImageView+WebCache.h>
+
 @implementation TweetCell
 
 - (void)awakeFromNib {
@@ -47,11 +50,13 @@
 #pragma mark - UpdatableCellProtocol
 
 - (void)updateWithCellObject:(TweetCellObject *)cellObject {
+
     self.authorNameLabel.text = cellObject.authorName;
     self.dateLabel.text = cellObject.date;
     self.tweetTextLabel.text = cellObject.text;
 
     if (cellObject.showImage == YES) {
+        [self.authorImage sd_setImageWithURL:cellObject.profileImageURL];
         self.authorImage.hidden = NO;
     } else {
         self.authorImage.hidden = YES;
