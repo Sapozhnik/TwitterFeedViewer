@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^CompletionBlockWithResultObjects)(NSArray *objects, NSError *error);
+
 @protocol FeedInteractorInput <NSObject>
+
+- (void)loadTweetsWithQuery:(NSString *)query
+                      count:(NSUInteger)count
+                    afterId:(NSString *)afterId;
 
 @end

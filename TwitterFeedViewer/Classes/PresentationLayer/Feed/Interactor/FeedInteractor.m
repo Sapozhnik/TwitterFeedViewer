@@ -10,8 +10,26 @@
 
 #import "FeedInteractorOutput.h"
 
+// Dependencies
+#import "TweetServiceProtocol.h"
+
 @implementation FeedInteractor
 
 #pragma mark - Методы FeedInteractorInput
+
+- (void)loadTweetsWithQuery:(NSString *)query
+                      count:(NSUInteger)count
+                    afterId:(NSString *)afterId {
+    
+    __weak typeof(self) wSelf = self;
+
+    [self.tweetService loadTweetsWithQuery:query
+                                     count:count
+                                   afterId:afterId
+                           complitionBlock:^(NSArray<Tweet *> *tweets, NSError *error) {
+                               [wSelf.output didLoadTweets:tweets
+                                                   afterId:afterId];
+                           }];
+}
 
 @end

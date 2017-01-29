@@ -16,15 +16,12 @@
 static NSString *const TwitterAPISearchPathComponents = @"search/tweets.json";
 
 static NSString *const TwitterAPISearchQueryKey = @"q";
-
 static NSString *const TwitterAPISearchCountKey = @"count";
-static NSString *const TwitterAPISearchCountValue = @"10";
-
 static NSString *const TwitterAPISearchAfterIdKey = @"since_id";
 
 @implementation TweetService
-
 - (void)loadTweetsWithQuery:(NSString *)query
+                      count:(NSUInteger)count
                     afterId:(NSString *)afterId
             complitionBlock:(TweetServiceCompletionBlockWithResultObjects)complitionBlock {
     
@@ -34,9 +31,9 @@ static NSString *const TwitterAPISearchAfterIdKey = @"since_id";
                                                             value:query];
     [mutableItems addObject:queryItem];
     
-    
+    NSString *twitterAPISearchCountValue = [NSString stringWithFormat:@"%lu", count];
     NSURLQueryItem *countItem = [NSURLQueryItem queryItemWithName:TwitterAPISearchCountKey
-                                                            value:TwitterAPISearchCountValue];
+                                                            value:twitterAPISearchCountValue];
     
     [mutableItems addObject:countItem];
     

@@ -50,6 +50,8 @@
 		8A78B1761E3CADE900E7534A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B1741E3CADE900E7534A /* LaunchScreen.storyboard */; };
 		8AAA0A711E3DD46600069C2C /* APIConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AAA0A701E3DD46600069C2C /* APIConfig.plist */; };
 		8AAA0A721E3DD46600069C2C /* APIConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AAA0A701E3DD46600069C2C /* APIConfig.plist */; };
+		8AAA0A771E3DE19000069C2C /* FeedConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AAA0A761E3DE19000069C2C /* FeedConfig.plist */; };
+		8AAA0A781E3DE19000069C2C /* FeedConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AAA0A761E3DE19000069C2C /* FeedConfig.plist */; };
 		B68D3C36C752B1D2BC1C1FCE /* libPods-TwitterFeedViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B44DC57178446202331AE1CB /* libPods-TwitterFeedViewer.a */; };
 		BBB830D42C0D611AA327DD6E /* FeedViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A393EE7A45903AD570A66C46 /* FeedViewControllerTests.m */; };
 /* End PBXBuildFile section */
@@ -119,6 +121,7 @@
 		8A78B1821E3CADE900E7534A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A7C1F76660680F764001093 /* FeedInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FeedInteractorTests.m; sourceTree = "<group>"; };
 		8AAA0A701E3DD46600069C2C /* APIConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIConfig.plist; sourceTree = "<group>"; };
+		8AAA0A761E3DE19000069C2C /* FeedConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FeedConfig.plist; sourceTree = "<group>"; };
 		A393EE7A45903AD570A66C46 /* FeedViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FeedViewControllerTests.m; sourceTree = "<group>"; };
 		A9177263E46A2C19C4BFC288 /* FeedInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedInteractorOutput.h; sourceTree = "<group>"; };
 		B3CD7CDDAB3ADA8AAEFC19DF /* FeedAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FeedAssembly_Testable.h; sourceTree = "<group>"; };
@@ -198,6 +201,7 @@
 		2F1BB7B10FA54FDB0AB7D9E3 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
+				8AAA0A761E3DE19000069C2C /* FeedConfig.plist */,
 				2152525E0CBA1C4BDF924682 /* FeedAssembly.h */,
 				FDECB01C2D60E5E666892147 /* FeedAssembly.m */,
 			);
@@ -641,6 +645,7 @@
 				8A3CD6F21E3D1FF6000C3F71 /* feed_with_2_tweets.json in Resources */,
 				8A78B1711E3CADE900E7534A /* Main.storyboard in Resources */,
 				8AAA0A711E3DD46600069C2C /* APIConfig.plist in Resources */,
+				8AAA0A771E3DE19000069C2C /* FeedConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,6 +657,7 @@
 				8AAA0A721E3DD46600069C2C /* APIConfig.plist in Resources */,
 				8A3CD6C81E3CE6BC000C3F71 /* Info.plist in Resources */,
 				8A3CD6C61E3CE6BC000C3F71 /* Assets.xcassets in Resources */,
+				8AAA0A781E3DE19000069C2C /* FeedConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

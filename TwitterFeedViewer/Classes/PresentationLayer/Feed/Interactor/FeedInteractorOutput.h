@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class Tweet;
+
 @protocol FeedInteractorOutput <NSObject>
+
+- (void)didLoadTweets:(NSArray<Tweet *> *)tweets
+              afterId:(NSString *)afterId;
 
 @end

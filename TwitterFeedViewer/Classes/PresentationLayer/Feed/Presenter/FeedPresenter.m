@@ -24,8 +24,15 @@
 
 - (void)didTriggerViewReadyEvent {
 	[self.view setupInitialState];
+    [self.interactor loadTweetsWithQuery:self.searchQuery
+                                   count:[self.searchQueryPageSize unsignedIntegerValue]
+                                 afterId:nil];
 }
 
 #pragma mark - Методы FeedInteractorOutput
+
+- (void)didLoadTweets:(NSArray<Tweet *> *)tweets afterId:(NSString *)afterId {
+    NSLog(@"%@", tweets);
+}
 
 @end

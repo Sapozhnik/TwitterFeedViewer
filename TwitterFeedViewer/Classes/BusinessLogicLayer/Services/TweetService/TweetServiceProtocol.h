@@ -15,6 +15,7 @@ typedef void (^TweetServiceCompletionBlockWithResultObjects)(NSArray<Tweet *> *t
 @protocol TweetServiceProtocol <NSObject>
 
 - (void)loadTweetsWithQuery:(NSString *)query
+                      count:(NSUInteger)count
                     afterId:(NSString *)afterId
             complitionBlock:(TweetServiceCompletionBlockWithResultObjects)complitionBlock;
 

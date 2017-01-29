@@ -9,9 +9,12 @@
 #import "FeedInteractorInput.h"
 
 @protocol FeedInteractorOutput;
+@protocol TweetServiceProtocol;
 
 @interface FeedInteractor : NSObject <FeedInteractorInput>
 
 @property (nonatomic, weak) id<FeedInteractorOutput> output;
+
+@property (nonatomic, strong) id<TweetServiceProtocol> tweetService;
 
 @end

@@ -20,4 +20,7 @@
 @property (nonatomic, strong) id<FeedInteractorInput> interactor;
 @property (nonatomic, strong) id<FeedRouterInput> router;
 
+@property (nonatomic, copy) NSString *searchQuery;
+@property (nonatomic, copy) NSNumber *searchQueryPageSize;
+
 @end

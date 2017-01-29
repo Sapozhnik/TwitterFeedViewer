@@ -15,6 +15,19 @@
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
+// Dependencies
+#import "ServicesAssemblyProtocol.h"
+
+static NSString *const FeedConfigFileName = @"FeedConfig.plist";
+static NSString *const FeedConfigTwitterSearchQueryKey = @"TwitterSearchQuery";
+static NSString *const FeedConfigTwitterSearchQueryPageSizeKey = @"TwitterSearchQueryPageSize";
+
+@interface FeedAssembly ()
+
+@property (nonatomic, strong, readonly) TyphoonAssembly<ServicesAssemblyProtocol> *servicesAssembly;
+
+@end
+
 @implementation FeedAssembly
 
 - (FeedViewController *)viewFeed {
@@ -32,6 +45,8 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(output)
                                                     with:[self presenterFeed]];
+                              [definition injectProperty:@selector(tweetService)
+                                                    with:[self.servicesAssembly tweetService]];
                           }];
 }
 
@@ -44,6 +59,11 @@
                                                     with:[self interactorFeed]];
                               [definition injectProperty:@selector(router)
                                                     with:[self routerFeed]];
+                              
+                              [definition injectProperty:@selector(searchQuery)
+                                                    with:TyphoonConfig(FeedConfigTwitterSearchQueryKey)];
+                              [definition injectProperty:@selector(searchQueryPageSize)
+                                                    with:TyphoonConfig(FeedConfigTwitterSearchQueryPageSizeKey)];
                           }];
 }
 
@@ -53,6 +73,18 @@
                               [definition injectProperty:@selector(transitionHandler)
                                                     with:[self viewFeed]];
                           }];
+}
+
+#pragma mark - Config
+
+- (id)configurer {
+    id result = [TyphoonDefinition withConfigName:FeedConfigFileName
+                                           bundle:[self currentBundle]];
+    return result;
+}
+
+- (NSBundle *)currentBundle {
+    return [NSBundle bundleForClass:[self class]];
 }
 
 @end
