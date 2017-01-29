@@ -15,8 +15,6 @@
 		01D4CAB100BE85CB5D04DF08EDB28040 /* TyphoonGlobalConfigCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = 15C7A8A16832FB7E183CC3AFAC8B8904 /* TyphoonGlobalConfigCollector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		023216069EFCD8C1FC992824578D821A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75E0D5D07B9AB5D3ACE038FAE4EB73D /* Foundation.framework */; };
 		02527DFB122F73BD3DC8C8A86222F3E2 /* OCMArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE248E6CF8DE482981BBA34A2B6BE9D /* OCMArg.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0274F9FC8E632F92A46E5995E6B5F5DE /* Pods-TwitterFeedViewerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0159E82AD8581CE05182F2E6C2F10B7E /* Pods-TwitterFeedViewerTests-dummy.m */; };
-		0347A5B5A70A351D5328978A9140A7F5 /* RamblerTyphoonAssemblyTestUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 01046F0797F8EBD3531059CD203C0A84 /* RamblerTyphoonAssemblyTestUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04E8F667FAE3826B4D02719A5C31A710 /* TyphoonBundleResource.h in Headers */ = {isa = PBXBuildFile; fileRef = A98C42DFB19F3A947C54075D891BBEE6 /* TyphoonBundleResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04FC734BAE7EA620A95B3A98761EDFF8 /* TyphoonStoryboardResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 79357332CD3620E1A8EE890C8AF361EC /* TyphoonStoryboardResolver.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		05954A93F19E07A4728AA08BECDB2688 /* TyphoonStoryboardResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 177C9F80EC97BC4DFA1D39AF3EF9B0CE /* TyphoonStoryboardResolver.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,7 +49,9 @@
 		1E07C0D6BFDA863C2F9ABE8D965DA568 /* TyphoonConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = D3851A1C3A4F5A65B48B35AEA93EE600 /* TyphoonConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E1A63F4FB6D81D5A5476DD44C71AC2F /* TyphoonDefinitionRegisterer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A48DCE57AA2D389D32F8FBD8333ACFC /* TyphoonDefinitionRegisterer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E9D2CF48D875E7B972453213B6525B4 /* TyphoonComponentFactory+InstanceBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 75632974B24FE9EBC84DD42227F8510B /* TyphoonComponentFactory+InstanceBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FB97C8A8E4ECE757154A8E325BB6F06 /* RamblerTyphoonAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D1C46D973F3996FA0B8EE2F67E9635 /* RamblerTyphoonAssemblyTests.m */; };
 		1FF5B9B60A733D9A6CD15EA606F1EC37 /* EKObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = E70E31C4729138F89D5212BF99208674 /* EKObjectMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2126FCFCBD4D23345895397A4910B110 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354516B74181040F8453E40BBB844D3C /* XCTest.framework */; };
 		217F4977E573C4EEE1C00E945A2DA207 /* RamblerViperModuleInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B233849594382887EDDCC508C3A841D /* RamblerViperModuleInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2255C53B7ADC649507DF5DE32802AF01 /* NSInvocation+TCFUnwrapValues.m in Sources */ = {isa = PBXBuildFile; fileRef = D070A17056B196DEF706589E73FE816F /* NSInvocation+TCFUnwrapValues.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		22693FEC356ED93368C7C3151F929F52 /* TyphoonInjections.m in Sources */ = {isa = PBXBuildFile; fileRef = 1248FB84D0110E6C7D0AEC1460015DCB /* TyphoonInjections.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -75,11 +75,12 @@
 		316E37A86D7B84610E1FC0646D4900A1 /* TyphoonInjectionByComponentFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B905498E4A2E1385ED10CFC5CEAF3D45 /* TyphoonInjectionByComponentFactory.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		31E2F23A18EA25EBE845F5FC10AEB08A /* TyphoonInjectionByConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 357E7958453519BE49E63B7319BD2F99 /* TyphoonInjectionByConfig.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		32E5850035B4190ACB4BF6107AA250AA /* RamblerViperModuleFactoryProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F0AA744F5EB7BF73045A8463BC0CC40 /* RamblerViperModuleFactoryProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		331F816CD1F5E742560ADAE3C2B62519 /* RamblerTyphoonAssemblyTestsTypeDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 964C64C1377BC90B394AF63AAB28988E /* RamblerTyphoonAssemblyTestsTypeDescriptor.m */; };
+		335000C1B93BE5448379D1C31343680F /* RamblerTyphoonAssemblyTestUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD35346E21DEDFC0B234E5675ACC169 /* RamblerTyphoonAssemblyTestUtilities.m */; };
 		359D141766A191B88CE7ACC855F737CF /* NSDateFormatter+EasyMappingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FBAF1875F54B474ACB96EC57B3BBAEF /* NSDateFormatter+EasyMappingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36FF7049446723E72202846ABCAC8B16 /* TyphoonComponentFactory+TyphoonDefinitionRegisterer.h in Headers */ = {isa = PBXBuildFile; fileRef = 06CDC86D34C852A01D1D66C224D2FC33 /* TyphoonComponentFactory+TyphoonDefinitionRegisterer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		387EDBA726616389B73D378B45848FD2 /* TyphoonBlockDefinitionController.h in Headers */ = {isa = PBXBuildFile; fileRef = DAFA2D81A8D8DCEE7AA96DDDF1355597 /* TyphoonBlockDefinitionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		390ED48F49CB53F3471A548B68A6C021 /* NSObject+PropertyInjection.m in Sources */ = {isa = PBXBuildFile; fileRef = 402941E72240C88E2EB36C14D296B0DC /* NSObject+PropertyInjection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3923E16205B1CEFFB5BDAC7635E104D3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354516B74181040F8453E40BBB844D3C /* XCTest.framework */; };
 		39A2CCC7330EC7E0BDDB336D829E9319 /* EKCoreDataImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0293643B8181D3820E56FCB196554A01 /* EKCoreDataImporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A15229D9D6D41871BE05C9588BD0D57 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8B83318E627EFEB1710E074F3C4FB4 /* SDImageCache.m */; };
 		3A25A463BDDFDF480A4EFA9619AF9847 /* TyphoonInjectionByObjectFromString.h in Headers */ = {isa = PBXBuildFile; fileRef = D1CC8ABE854EE94BDA08DB2CF61D2BAC /* TyphoonInjectionByObjectFromString.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -104,10 +105,10 @@
 		42197006B1F5B98807D79F9CACF7FEFC /* TyphoonJsonStyleConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B4F2DBC66983F95BE7053EBFACD67 /* TyphoonJsonStyleConfiguration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		436F9E462B8340278578D70D79FE55D1 /* TyphoonBlockDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC8E79E5ED02A7A18F8DF95E649D6AE /* TyphoonBlockDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4385F6F464FF4A7CD3A0A2E6290EE0B6 /* NSMethodSignature+TCFUnwrapValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F83F92C374B3862FF818A302CCD8689 /* NSMethodSignature+TCFUnwrapValues.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		446745B869EED542F5A571EC76649D57 /* RamblerTyphoonAssemblyTestsTypeDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A28B715D85C89DD31A84E4C67EBC166 /* RamblerTyphoonAssemblyTestsTypeDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		446AC99905612908C1158060CBDB0A22 /* TyphoonCollaboratingAssembliesCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FDF576AD9F21081904C132D52539E4B /* TyphoonCollaboratingAssembliesCollector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44C910954E801738976D11A146938D75 /* TyphoonPlistStyleConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 4289D48094B0C7176D6BA8705A51BE61 /* TyphoonPlistStyleConfiguration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		455B2DAE92686B51EA67B27C4C648BBF /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B840C1627C09236553F0DF73F7871E0F /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45C871CA1FF12A42051956FE47D033ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75E0D5D07B9AB5D3ACE038FAE4EB73D /* Foundation.framework */; };
 		4624FDCB5299C314F77C5B35B10A3A0A /* TyphoonDefinitionNamespace.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C8ACD18C2CE27B89D48DB4777E113B /* TyphoonDefinitionNamespace.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		46E4494EC6D7CF5404F0D60CA16EE8BE /* NSMethodSignature+TCFUnwrapValues.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D221220FFA9D65B9ED408380416FFF3 /* NSMethodSignature+TCFUnwrapValues.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		495F48845974D60E0D2A4E4FFF28E22E /* RamblerInitialAssembly.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AAA45AE7AB524C3416DA37D2434A583 /* RamblerInitialAssembly.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -118,6 +119,7 @@
 		4C47AFD31DD0DE0FB3A4C798AAF477B3 /* TyphoonFactoryDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD21CA640C3D12F8761BA431F60BB9B /* TyphoonFactoryDefinition.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		4C672278421FF8BB286638B546CA261E /* TyphoonSwizzlerDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F0F16525DE50B8CA9C5ACA8879950 /* TyphoonSwizzlerDefaultImpl.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		4C6D952C3E31D648F4C7C8FC1420005F /* TyphoonDefinition+Config.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DDC2D4C3D6FEF4801E381ABDE7DD620 /* TyphoonDefinition+Config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CC43E3A37CBA20F02A3F66876A8068D /* RamblerTyphoonAssemblyTestsTypeDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A28B715D85C89DD31A84E4C67EBC166 /* RamblerTyphoonAssemblyTestsTypeDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D0531EDE3BE5378DDB8E71A72B38297 /* TyphoonViewHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F76E6A9616B3C796713487F54EC00EA0 /* TyphoonViewHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E942F6D0540865E2E6EC73334BF1724 /* ViperMcFlurry.h in Headers */ = {isa = PBXBuildFile; fileRef = 580AF4698ADB8C799CAFCAD27D881BD0 /* ViperMcFlurry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F275E5CAC6832F42B9FDF66C7BD2A2F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA0D0472EF674AB68576B4242E10567 /* ImageIO.framework */; };
@@ -156,7 +158,6 @@
 		6544BE1843E29A5E48C04CD62FD42961 /* TyphoonDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BADA15C7A0037C981DAB6F71BBC8E2 /* TyphoonDefinition.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6595B463A38490D04515E74F3D5F6F4A /* TyphoonComponentFactory+InstanceBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EAADB0C5DB840B2B28C368B469360F /* TyphoonComponentFactory+InstanceBuilder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		65A02CF4A408F56BE2E64A4A1AC2865C /* TyphoonAssemblyBuilder+PlistProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6666ACADF8008BB75E9615B4D752ADD2 /* TyphoonAssemblyBuilder+PlistProcessor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		65A7A0B012E7A64DAF34F5A44766FBF3 /* RamblerTyphoonAssemblyTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 657C931FF22D44D6ECC2D5A6E89709F6 /* RamblerTyphoonAssemblyTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		661324FE89FAD5BF1220D6635E0185FF /* TyphoonLoadedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3013D3FD5098DEE86703F6A900B21F99 /* TyphoonLoadedView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		663D6530D5F74B04730217903A67C12C /* RamblerViperModuleTransitionHandlerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B26DB6F34C2EF49D84895F27C171022C /* RamblerViperModuleTransitionHandlerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		669D0903461F004B0CBE7DEF51BA8187 /* TyphoonStartup.h in Headers */ = {isa = PBXBuildFile; fileRef = BD5B40BF1D9CFAB964C0CC2A3CFD4E81 /* TyphoonStartup.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -165,7 +166,6 @@
 		6756AE4758B257CE44DB516BFA2E8A81 /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63320EFFC73D1514631F3E33648F62 /* SDWebImage-dummy.m */; };
 		678F91469269D216EC19961D866DD0BF /* NSLayoutConstraint+TyphoonOutletTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C29414530A34A59A18D76CCF55DAA7 /* NSLayoutConstraint+TyphoonOutletTransfer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		68F7ED902EA5F973220CE47E7CE34F03 /* TyphoonOrdered.h in Headers */ = {isa = PBXBuildFile; fileRef = 8227ED14672BD1D4FC02B4FA7FBFABF9 /* TyphoonOrdered.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A5138D4D532F8C69FB55A705C72D521 /* AssemblyTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = 995A045D3DAD7487EF7FAA3A2E0E0FF2 /* AssemblyTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B231AEBAE1E703E6C6098FCCF7119C1 /* TyphoonViewHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E621C1BF6D0C07F5C32357AEFFDC8FE /* TyphoonViewHelpers.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6C43712E5F9953D57CF067AC35E3D521 /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 9774E16B299F610525CCA39899714B28 /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CA285136FA46CF7E662E7264E19DBF9 /* TyphoonInjectionByComponentFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = FFB2C3F13ADF590859BA58A04EFEAE9E /* TyphoonInjectionByComponentFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -180,6 +180,7 @@
 		72459DFDB84F661C7530C1DC6580B327 /* TyphoonComponentsPool.h in Headers */ = {isa = PBXBuildFile; fileRef = A6458F18CA28A0234A9CF7D2D208333D /* TyphoonComponentsPool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73267219971C124F252F3616D56BAC5F /* OCLogTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3179CB9A67B4C8DE72C499C1F0A6B293 /* OCLogTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73F52A6ECC19FD12BD62D734FAC81991 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = A129B2FB62D6F7CF7CC7A43D3B40F3BE /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7441B9991AC009D7953AE0066D70FAA1 /* Pods-TwitterFeedViewerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0159E82AD8581CE05182F2E6C2F10B7E /* Pods-TwitterFeedViewerTests-dummy.m */; };
 		745CF964079BDC1B9B3D22EEF35F6D52 /* TyphoonAssemblyDefinitionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C3AF828FD2FA5AE9416CC96EFE1CA1 /* TyphoonAssemblyDefinitionBuilder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		74E75A581692520B7D5C87B89F2A92A6 /* TyphoonAssemblyAdviser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CC36C5E70F2B4781C57C104E4B5368E /* TyphoonAssemblyAdviser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74F11251752068A4669362418849D8BB /* OCMConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A83B420C386A5231539FDDE11744F63 /* OCMConstraint.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -192,6 +193,7 @@
 		791A054E6CD163ACB1E694C535F19826 /* TyphoonInjectionByConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E9F867B1EAA27F514AC210ACDE41327 /* TyphoonInjectionByConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79DF9CFB844A065CD77BAF14980BDBC2 /* OCMLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7434C018CBD9444C175577781B4B5387 /* OCMLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7AF70638D3F5705B49D50A24132B23AD /* OCProtocolMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D272E9ADA77C4B583DA1CC02BAC0DC /* OCProtocolMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7B9E0BE45DD3258F8055FA355227D175 /* RamblerTyphoonAssemblyTestUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 01046F0797F8EBD3531059CD203C0A84 /* RamblerTyphoonAssemblyTestUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BBA3AC3CB31F139597919FB1EFB14C0 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 40588749648F163E651E74F7319F2A79 /* SDWebImageDecoder.m */; };
 		7EE3201EA660F5729E6ECD4D29EB9637 /* TyphoonPatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F8345C01D3344CC40196ABEEE0BDCF /* TyphoonPatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		7F00C245F2274080970133ECCF18444E /* TyphoonInjectionByRuntimeArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B8C02A72419C8738FC596574F68B285 /* TyphoonInjectionByRuntimeArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -299,11 +301,11 @@
 		C0819F9835F75DEF82FAE4EF82998406 /* TyphoonNSNumberTypeConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = A1350A9480AF521D68EC85C9D0867649 /* TyphoonNSNumberTypeConverter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		C180BD58E4E34792DB28F19CB2D3896D /* TyphoonSwizzlerDefaultImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 161BA93F9B8EDFEC2450B1F39A7DEAEF /* TyphoonSwizzlerDefaultImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1D1836C55D2BB017749EB47E1ED8DC1 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F1F5495F2D28BAFC6EA12419CCD2DE /* SDWebImageCompat.m */; };
+		C22709FC6991A1EA423054E0AE836B45 /* RamblerTyphoonUtils-AssemblyTesting-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2DCBF853BE7B82014ECA7EDEB380DE /* RamblerTyphoonUtils-AssemblyTesting-dummy.m */; };
 		C26A4F94AB43A53F292A32E2359BC316 /* NSObject+PropertyInjection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB1F81E76EB6C600BFBF14DBE1A9EE5 /* NSObject+PropertyInjection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C27A9F562CBC4793E9A81FEF65F6D45B /* TyphoonDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5BF36FFF9CCAC8C928F5C36F55DCFA /* TyphoonDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C304DD5078934D86897774E338D3585D /* NSInvocation+TCFWrapValues.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A904A890834B0EBD21BD9F74F9C21C /* NSInvocation+TCFWrapValues.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C37FEA2F910BA3EAA341687568370FFC /* TyphoonPropertyInjection.h in Headers */ = {isa = PBXBuildFile; fileRef = 07C8739593A431767B027EF98CE6861A /* TyphoonPropertyInjection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3E0055688B2EECE7D1DBF62B87504C9 /* RamblerTyphoonAssemblyTestsTypeDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 964C64C1377BC90B394AF63AAB28988E /* RamblerTyphoonAssemblyTestsTypeDescriptor.m */; };
 		C4945BF00E7C57BB73562DD5BC37D898 /* NSInvocation+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B338CECEEBCFF62F036D602F37E15FE2 /* NSInvocation+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C4E611BA5BA3E0032D4FA80542FF2033 /* OCMArg.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E0BCFC8879450F8C9F67D73563D713 /* OCMArg.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C4E9AA0379B7D81028FE9F3B657DACC8 /* TyphoonInjectionByCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5111A9D6F49AC3024EEFD0DD18B012 /* TyphoonInjectionByCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -337,7 +339,6 @@
 		D5A79F426E09A9BFB87FABFEC819B286 /* TyphoonAbstractInjection.h in Headers */ = {isa = PBXBuildFile; fileRef = 130F5BBDD2741C5C4D18CC722136D7C1 /* TyphoonAbstractInjection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5CD06522E993D4CA5A5DA30760CF2A6 /* NSObject+TyphoonIntrospectionUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A326175B5C8B54B968BB512A56B63920 /* NSObject+TyphoonIntrospectionUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D754D52C9C0FC5FDA9D79E359A5CEB63 /* NSMethodSignature+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EE921A86FF896CF003A0C5E8460F4F5 /* NSMethodSignature+OCMAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D7E1413A768E83741FC7FCD216EBABC7 /* RamblerTyphoonAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D1C46D973F3996FA0B8EE2F67E9635 /* RamblerTyphoonAssemblyTests.m */; };
 		D7FC9F39216B518CC8FCFE082E23B9ED /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C50A703A1798AC9771D95FCDA73332E8 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D87328037AC62BC698D991279FD5F164 /* OCMBlockArgCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 84BC04143CA2314C3D6FE36E612B463D /* OCMBlockArgCaller.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D8C8106B66D1E908DF6A19160D9EF9F0 /* TyphoonPlistStyleConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 390272B5CACA3B1EBF453E773CFCDFEC /* TyphoonPlistStyleConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -355,6 +356,8 @@
 		DE8CD4AA198A0B7BEA0581A13ABEACE5 /* TyphoonReferenceDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 90FEED15CBE6B17CD836D647CA65D575 /* TyphoonReferenceDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE958B81838496F3EF8FDCF3321978DE /* TyphoonParentReferenceHydratingPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F3F2B043E0CC7F3D45263B23D1B297 /* TyphoonParentReferenceHydratingPostProcessor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		DEB1B20659BAC952B2893FF14C59834C /* EKRelationshipMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE1FD759100D406DF7C2B6D6B0100A /* EKRelationshipMapping.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E0340DA212597746C50D5AEF22380D24 /* RamblerTyphoonAssemblyTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 657C931FF22D44D6ECC2D5A6E89709F6 /* RamblerTyphoonAssemblyTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E067B7FE19601DC8C4AA1F13134BA0DC /* AssemblyTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = 995A045D3DAD7487EF7FAA3A2E0E0FF2 /* AssemblyTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0B95FD34D7782F251F548ECA728799D /* EKCoreDataImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A70AACE94EE002FFA4FC4EC15502BE /* EKCoreDataImporter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E116120333BA19DD5E96C6196DAA74AD /* NSInvocation+TCFUnwrapValues.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FAD7873D5A2518776A0F56679FC68F5 /* NSInvocation+TCFUnwrapValues.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E137E0262BC44A50507D01044AEE807B /* OCMObserverRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6ACCEF79AAE274F0E4F4A0266E1498 /* OCMObserverRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -362,17 +365,13 @@
 		E227E4804E9C76D933C2D57403361F10 /* TyphoonDefinition+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DD0390D956EB4AFB011A592CFA60A /* TyphoonDefinition+Config.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E22EC61227D38D65E6CAC14895115222 /* TyphoonStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 546A38F83841BA081D0D22EF84D28487 /* TyphoonStoryboard.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E280A30B0332F9FD7DC4ED14CE50123A /* TyphoonPropertyStyleConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3EDFAA7A7B8ABE262F3FB2E620B0E9 /* TyphoonPropertyStyleConfiguration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E34ED3ECDA321E54A0B2E35214661743 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75E0D5D07B9AB5D3ACE038FAE4EB73D /* Foundation.framework */; };
-		E49C52E3E9B3EC889F5CCD6602C34678 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75E0D5D07B9AB5D3ACE038FAE4EB73D /* Foundation.framework */; };
 		E54CF3B09A8D251A71FC03A0E59A5A57 /* EKPropertyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 855D1936CE53AC3C7882A8FAF26121D8 /* EKPropertyHelper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E6CE7E482261CFBDB354443EFA78D35C /* OCMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C927CEFAA22B9311D4FD459067B9FC /* OCMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E6E861E09E3D5894812205536CE45CF1 /* TyphoonTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EAD9EEED03E612E946F8F1ED588516 /* TyphoonTestUtils.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E730625131A75D6BC99A90647AD11DB2 /* RamblerTyphoonUtils-AssemblyTesting-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2DCBF853BE7B82014ECA7EDEB380DE /* RamblerTyphoonUtils-AssemblyTesting-dummy.m */; };
 		E8612AABCE826260F2D834D5061AC591 /* OCMNotificationPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = 759E7F6024F44E4134120162EE503BA1 /* OCMNotificationPoster.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E95F19A39A7240AEB5CC025F79ECC97E /* TyphoonPrimitiveTypeConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 23A77D0D660160F01343FE058ABB20B0 /* TyphoonPrimitiveTypeConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9E0728E72AB9F8DFD2836AA8BA23B21 /* NSArray+TyphoonManualEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B79BFA6D625E91E9AC35C4B40ADC33 /* NSArray+TyphoonManualEnumeration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		EA9A79135185FA9B8D8E0460B13083A0 /* OCMPassByRefSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B34D3C7E8A05C3FD9F2B6BBDDAA811C /* OCMPassByRefSetter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		EAE5D4150042B10539663377395967A6 /* RamblerTyphoonAssemblyTestUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD35346E21DEDFC0B234E5675ACC169 /* RamblerTyphoonAssemblyTestUtilities.m */; };
 		EAFAAAE894D0C428E621793FF23AC652 /* TyphoonInjectionByType.m in Sources */ = {isa = PBXBuildFile; fileRef = 2616CF3D21F36F2F12F810D2B5E4CCF8 /* TyphoonInjectionByType.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		EB0CF01A07CC4A069F96AA913AC457CE /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD5BB73B29D8EF91F5C0D06E6D41714 /* UIView+WebCacheOperation.m */; };
 		EB6A40A8F33ED126F16FA1E6D36FB9DA /* TyphoonMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DB71824058DD55F1AEC8BEB8768A70A /* TyphoonMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -402,12 +401,20 @@
 		FCCC0FCC718781429FBFF16C1847370B /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2327565E327AC6B6965E0F09838C1814 /* SDWebImageDownloaderOperation.m */; };
 		FCEB3964FE34FF08B22C795DB6EFA25B /* OCMInvocationMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CE308A81173702249966CEAC6C6898D /* OCMInvocationMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FD8DC5ECC3B7DE74EF4FD4E5BAA498FD /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = ADA3C1C1C59A666304EE15681817E383 /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD94AE352B989E5DA5879702C19543CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75E0D5D07B9AB5D3ACE038FAE4EB73D /* Foundation.framework */; };
 		FE4882BE2FCAE096C1A014363FA7E1C5 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 63EF9FEEAE3A081B7A95FDEB7EB8AC18 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEC0100261B1AAC0D712598ACD6DFF21 /* NSObject+DeallocNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = EDFB32B5A14D6DEAB9F0EC1EB7473BFC /* NSObject+DeallocNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF3A5EF46E72C4ED5D98631D05B17EFC /* TyphoonLinkerCategoryBugFix.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D5EF0DE7560942D2F0F39877C14F9BD /* TyphoonLinkerCategoryBugFix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0754151CEC1A4209A3C97B81855BF4DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29F691C4E535B259F39A1066C784B1CA;
+			remoteInfo = ViperMcFlurry;
+		};
 		08DCEE4ECB9599F21C41C6D6CFF7B00C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -422,19 +429,19 @@
 			remoteGlobalIDString = 49EABB34C9553AA6E492BE242E3BB95B;
 			remoteInfo = SDWebImage;
 		};
-		6A06D9DABDC89952485ECB9624E1DD23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B65A0EB3381D0EF1A72BD59A32A49B04;
-			remoteInfo = "RamblerTyphoonUtils-AssemblyTesting";
-		};
-		74AA1119930D0397205AEAECBA144DE6 /* PBXContainerItemProxy */ = {
+		397A53897B6B89DEA1A588D8E7E8821D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A561198B7669F579C29FC6864AE4991F;
 			remoteInfo = OCMock;
+		};
+		4AC2E29B0A894C7D03B2DD6CED5D40B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0997BABBAE7B01AE09DC9AC9589EA2F;
+			remoteInfo = "RamblerTyphoonUtils-AssemblyTesting";
 		};
 		7D9DC6AEA068E39BE13CE3207465DF63 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -443,12 +450,19 @@
 			remoteGlobalIDString = 985888A2E6687A95E124DC22AED8A3D8;
 			remoteInfo = EasyMapping;
 		};
-		81DC4CDD4A2A462B01CE0F3BF441784E /* PBXContainerItemProxy */ = {
+		8DEFE8B49789CA0FC569ACF2A129DC45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BBBD8848C1BB0D7D5D9756FAC69D2807;
 			remoteInfo = Typhoon;
+		};
+		9BC1EDDB607F6EB5D2F29ED14E691D8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 985888A2E6687A95E124DC22AED8A3D8;
+			remoteInfo = EasyMapping;
 		};
 		AB9E281D276BEF71FE6AC2A9DAADBACC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -463,13 +477,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = BBBD8848C1BB0D7D5D9756FAC69D2807;
 			remoteInfo = Typhoon;
-		};
-		E9CD3D48ACB18A216F2FA1297D0B0287 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 985888A2E6687A95E124DC22AED8A3D8;
-			remoteInfo = EasyMapping;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -912,6 +919,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		449FA9233DD9734CB773551B8945EB3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45C871CA1FF12A42051956FE47D033ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50D0F670CFCB54A57945E12F6CB7BF94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -937,20 +952,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85071237E82A066312DFC38CEB3179F8 /* Frameworks */ = {
+		873F9D5AFE4B63E022E07166E2B99EF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E49C52E3E9B3EC889F5CCD6602C34678 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		86D366DC20253D14FA6AB93F3AB55194 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E34ED3ECDA321E54A0B2E35214661743 /* Foundation.framework in Frameworks */,
-				3923E16205B1CEFFB5BDAC7635E104D3 /* XCTest.framework in Frameworks */,
+				FD94AE352B989E5DA5879702C19543CC /* Foundation.framework in Frameworks */,
+				2126FCFCBD4D23345895397A4910B110 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1750,17 +1757,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD42B58C7226E2CC07B83A39DFBB6ACE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A5138D4D532F8C69FB55A705C72D521 /* AssemblyTesting.h in Headers */,
-				65A7A0B012E7A64DAF34F5A44766FBF3 /* RamblerTyphoonAssemblyTests.h in Headers */,
-				446745B869EED542F5A571EC76649D57 /* RamblerTyphoonAssemblyTestsTypeDescriptor.h in Headers */,
-				0347A5B5A70A351D5328978A9140A7F5 /* RamblerTyphoonAssemblyTestUtilities.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E03FB0EFFD8AE046E869EEED409F8A51 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1896,6 +1892,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E871FF5A9882768F3CF78EADCF494DDB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E067B7FE19601DC8C4AA1F13134BA0DC /* AssemblyTesting.h in Headers */,
+				E0340DA212597746C50D5AEF22380D24 /* RamblerTyphoonAssemblyTests.h in Headers */,
+				4CC43E3A37CBA20F02A3F66876A8068D /* RamblerTyphoonAssemblyTestsTypeDescriptor.h in Headers */,
+				7B9E0BE45DD3258F8055FA355227D175 /* RamblerTyphoonAssemblyTestUtilities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -1971,26 +1978,6 @@
 			productReference = 17A9637E377666DA9E8A9E168430D3C3 /* libPods-TwitterFeedViewer.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		97E16F131FA518F894512532462E5155 /* Pods-TwitterFeedViewerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6CDD1F9729D7BB3043BD31B0D6AAEC00 /* Build configuration list for PBXNativeTarget "Pods-TwitterFeedViewerTests" */;
-			buildPhases = (
-				021803451BD878D75508E4BD75758D34 /* Sources */,
-				85071237E82A066312DFC38CEB3179F8 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CCC27754A78DF37286191FA59931F76D /* PBXTargetDependency */,
-				08AF168773D68D5CF8920941250BE6D9 /* PBXTargetDependency */,
-				A4D8717C87066DDDDBF6E1F0C19FC0FB /* PBXTargetDependency */,
-				1130D27312377A4537E3D79EE9D67A9D /* PBXTargetDependency */,
-			);
-			name = "Pods-TwitterFeedViewerTests";
-			productName = "Pods-TwitterFeedViewerTests";
-			productReference = 9F970AD05752BF1163A5EA1F396F9469 /* libPods-TwitterFeedViewerTests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		985888A2E6687A95E124DC22AED8A3D8 /* EasyMapping */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CE02F0A699EF8E8C0041E1F353CA23B /* Build configuration list for PBXNativeTarget "EasyMapping" */;
@@ -2006,6 +1993,27 @@
 			name = EasyMapping;
 			productName = EasyMapping;
 			productReference = A68CFC3166E6EC856AACF171D5E375D7 /* libEasyMapping.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A4780C1826F7C2B0A8FAEC33B26EBD7A /* Pods-TwitterFeedViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF6DD76B5D2DF4956269E4592C0D5F2 /* Build configuration list for PBXNativeTarget "Pods-TwitterFeedViewerTests" */;
+			buildPhases = (
+				6AF9CFA1D74B0C21669F6A4DC04D9174 /* Sources */,
+				449FA9233DD9734CB773551B8945EB3E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B7E07F78B3B2BCA7EF39EED52101C56 /* PBXTargetDependency */,
+				1C0C4808D5AFAA6D7958F0A3F63654D4 /* PBXTargetDependency */,
+				806EBF7F030FEF2D44CA903A909A8994 /* PBXTargetDependency */,
+				9D3552D33649594BF618D468D8041288 /* PBXTargetDependency */,
+				92B612625F8E6B851C1ACBD338B7DE27 /* PBXTargetDependency */,
+			);
+			name = "Pods-TwitterFeedViewerTests";
+			productName = "Pods-TwitterFeedViewerTests";
+			productReference = 9F970AD05752BF1163A5EA1F396F9469 /* libPods-TwitterFeedViewerTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A561198B7669F579C29FC6864AE4991F /* OCMock */ = {
@@ -2025,13 +2033,13 @@
 			productReference = DEDC738B9E9C86B57D3EA53932B54A52 /* libOCMock.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		B65A0EB3381D0EF1A72BD59A32A49B04 /* RamblerTyphoonUtils-AssemblyTesting */ = {
+		B0997BABBAE7B01AE09DC9AC9589EA2F /* RamblerTyphoonUtils-AssemblyTesting */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA09540117275A98511F7892B689056E /* Build configuration list for PBXNativeTarget "RamblerTyphoonUtils-AssemblyTesting" */;
+			buildConfigurationList = 6AA1A3E71323189DC342CB36CB27CAA3 /* Build configuration list for PBXNativeTarget "RamblerTyphoonUtils-AssemblyTesting" */;
 			buildPhases = (
-				BA3DD53227B2BFF8CDDF52B4E0D39D6B /* Sources */,
-				86D366DC20253D14FA6AB93F3AB55194 /* Frameworks */,
-				CD42B58C7226E2CC07B83A39DFBB6ACE /* Headers */,
+				AA8CFCCC3E76E4C21206C6E18097775C /* Sources */,
+				873F9D5AFE4B63E022E07166E2B99EF1 /* Frameworks */,
+				E871FF5A9882768F3CF78EADCF494DDB /* Headers */,
 			);
 			buildRules = (
 			);
@@ -2083,9 +2091,9 @@
 				985888A2E6687A95E124DC22AED8A3D8 /* EasyMapping */,
 				A561198B7669F579C29FC6864AE4991F /* OCMock */,
 				532E7ED44DA7FABBED18FB3FD3EA90B1 /* Pods-TwitterFeedViewer */,
-				97E16F131FA518F894512532462E5155 /* Pods-TwitterFeedViewerTests */,
+				A4780C1826F7C2B0A8FAEC33B26EBD7A /* Pods-TwitterFeedViewerTests */,
 				347D657A752364BC5134F07DA5D2EC98 /* RamblerTyphoonUtils-AssemblyCollector */,
-				B65A0EB3381D0EF1A72BD59A32A49B04 /* RamblerTyphoonUtils-AssemblyTesting */,
+				B0997BABBAE7B01AE09DC9AC9589EA2F /* RamblerTyphoonUtils-AssemblyTesting */,
 				49EABB34C9553AA6E492BE242E3BB95B /* SDWebImage */,
 				BBBD8848C1BB0D7D5D9756FAC69D2807 /* Typhoon */,
 				29F691C4E535B259F39A1066C784B1CA /* ViperMcFlurry */,
@@ -2094,14 +2102,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		021803451BD878D75508E4BD75758D34 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0274F9FC8E632F92A46E5995E6B5F5DE /* Pods-TwitterFeedViewerTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		21E005B366D42565E075FF780872E655 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2174,11 +2174,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6AF9CFA1D74B0C21669F6A4DC04D9174 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7441B9991AC009D7953AE0066D70FAA1 /* Pods-TwitterFeedViewerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C7017FB69B007AF6030509F0C0C3FB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C584817FEF03F8BAB8095E38BF42C6FE /* Pods-TwitterFeedViewer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA8CFCCC3E76E4C21206C6E18097775C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB97C8A8E4ECE757154A8E325BB6F06 /* RamblerTyphoonAssemblyTests.m in Sources */,
+				331F816CD1F5E742560ADAE3C2B62519 /* RamblerTyphoonAssemblyTestsTypeDescriptor.m in Sources */,
+				335000C1B93BE5448379D1C31343680F /* RamblerTyphoonAssemblyTestUtilities.m in Sources */,
+				C22709FC6991A1EA423054E0AE836B45 /* RamblerTyphoonUtils-AssemblyTesting-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2190,17 +2209,6 @@
 				59DDF52A68F08834CA530FD4EA8019C7 /* RamblerViperOpenModulePromise.m in Sources */,
 				0D7B145C5795BC8A851817130B3E3037 /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.m in Sources */,
 				C9417B8F7544E697096AE81B6A49F722 /* ViperMcFlurry-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA3DD53227B2BFF8CDDF52B4E0D39D6B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D7E1413A768E83741FC7FCD216EBABC7 /* RamblerTyphoonAssemblyTests.m in Sources */,
-				C3E0055688B2EECE7D1DBF62B87504C9 /* RamblerTyphoonAssemblyTestsTypeDescriptor.m in Sources */,
-				EAE5D4150042B10539663377395967A6 /* RamblerTyphoonAssemblyTestUtilities.m in Sources */,
-				E730625131A75D6BC99A90647AD11DB2 /* RamblerTyphoonUtils-AssemblyTesting-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2337,23 +2345,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		08AF168773D68D5CF8920941250BE6D9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OCMock;
-			target = A561198B7669F579C29FC6864AE4991F /* OCMock */;
-			targetProxy = 74AA1119930D0397205AEAECBA144DE6 /* PBXContainerItemProxy */;
-		};
 		10FA113B5A9A47EBE39404547B3767FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SDWebImage;
 			target = 49EABB34C9553AA6E492BE242E3BB95B /* SDWebImage */;
 			targetProxy = 14C0C3302BEDF6A79E26EEE7693BD4E2 /* PBXContainerItemProxy */;
-		};
-		1130D27312377A4537E3D79EE9D67A9D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Typhoon;
-			target = BBBD8848C1BB0D7D5D9756FAC69D2807 /* Typhoon */;
-			targetProxy = 81DC4CDD4A2A462B01CE0F3BF441784E /* PBXContainerItemProxy */;
 		};
 		19F081757EE236D9BB5E838F7AE9B298 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2361,11 +2357,35 @@
 			target = 985888A2E6687A95E124DC22AED8A3D8 /* EasyMapping */;
 			targetProxy = 7D9DC6AEA068E39BE13CE3207465DF63 /* PBXContainerItemProxy */;
 		};
-		A4D8717C87066DDDDBF6E1F0C19FC0FB /* PBXTargetDependency */ = {
+		1C0C4808D5AFAA6D7958F0A3F63654D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OCMock;
+			target = A561198B7669F579C29FC6864AE4991F /* OCMock */;
+			targetProxy = 397A53897B6B89DEA1A588D8E7E8821D /* PBXContainerItemProxy */;
+		};
+		3B7E07F78B3B2BCA7EF39EED52101C56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyMapping;
+			target = 985888A2E6687A95E124DC22AED8A3D8 /* EasyMapping */;
+			targetProxy = 9BC1EDDB607F6EB5D2F29ED14E691D8B /* PBXContainerItemProxy */;
+		};
+		806EBF7F030FEF2D44CA903A909A8994 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "RamblerTyphoonUtils-AssemblyTesting";
-			target = B65A0EB3381D0EF1A72BD59A32A49B04 /* RamblerTyphoonUtils-AssemblyTesting */;
-			targetProxy = 6A06D9DABDC89952485ECB9624E1DD23 /* PBXContainerItemProxy */;
+			target = B0997BABBAE7B01AE09DC9AC9589EA2F /* RamblerTyphoonUtils-AssemblyTesting */;
+			targetProxy = 4AC2E29B0A894C7D03B2DD6CED5D40B1 /* PBXContainerItemProxy */;
+		};
+		92B612625F8E6B851C1ACBD338B7DE27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ViperMcFlurry;
+			target = 29F691C4E535B259F39A1066C784B1CA /* ViperMcFlurry */;
+			targetProxy = 0754151CEC1A4209A3C97B81855BF4DE /* PBXContainerItemProxy */;
+		};
+		9D3552D33649594BF618D468D8041288 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Typhoon;
+			target = BBBD8848C1BB0D7D5D9756FAC69D2807 /* Typhoon */;
+			targetProxy = 8DEFE8B49789CA0FC569ACF2A129DC45 /* PBXContainerItemProxy */;
 		};
 		B051D561430B5F30805285C8C12059AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2378,12 +2398,6 @@
 			name = ViperMcFlurry;
 			target = 29F691C4E535B259F39A1066C784B1CA /* ViperMcFlurry */;
 			targetProxy = 08DCEE4ECB9599F21C41C6D6CFF7B00C /* PBXContainerItemProxy */;
-		};
-		CCC27754A78DF37286191FA59931F76D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EasyMapping;
-			target = 985888A2E6687A95E124DC22AED8A3D8 /* EasyMapping */;
-			targetProxy = E9CD3D48ACB18A216F2FA1297D0B0287 /* PBXContainerItemProxy */;
 		};
 		FA8A5CAA2CFCC39069F713E50F801048 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2449,6 +2463,29 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		22C4A65FBF8AA50FD5908B12D416F79E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C378B3E0D816C96C6EC2788BB6B883FA /* RamblerTyphoonUtils-AssemblyTesting.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RamblerTyphoonUtils-AssemblyTesting/RamblerTyphoonUtils-AssemblyTesting-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -2547,6 +2584,29 @@
 			};
 			name = Release;
 		};
+		636F9112BA65BDCFB451A5331314E686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60CA2BE5106F4573CFD60277D6C94848 /* Pods-TwitterFeedViewerTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		73C02E281137A7CF109CD2C5EE8C091C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 37A98CBE0806F796F84CE4F731E255EA /* OCMock.xcconfig */;
@@ -2616,6 +2676,29 @@
 			};
 			name = Release;
 		};
+		7D7D380C98D2046B35FE33B6244C54DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4E8849E3C6670773A77262F559A9D5 /* Pods-TwitterFeedViewerTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		7E3AC00DBFF0A5D4BC4FAA10D35182CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0162DBA274DA70B80E9FC7322AF59DD5 /* RamblerTyphoonUtils-AssemblyCollector.xcconfig */;
@@ -2638,29 +2721,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
-		};
-		82947A1E575B285E4F1FDC374FF70A3B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C378B3E0D816C96C6EC2788BB6B883FA /* RamblerTyphoonUtils-AssemblyTesting.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RamblerTyphoonUtils-AssemblyTesting/RamblerTyphoonUtils-AssemblyTesting-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 		922B5016641F1BDBAB1D528DDAE1389F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2731,6 +2791,29 @@
 			};
 			name = Debug;
 		};
+		C9CE9F391AEEC23E1E2105067212FE2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C378B3E0D816C96C6EC2788BB6B883FA /* RamblerTyphoonUtils-AssemblyTesting.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RamblerTyphoonUtils-AssemblyTesting/RamblerTyphoonUtils-AssemblyTesting-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		E3A8517E9E9FDDA89983A5D5D7793DF8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9BC013A28101624C23B7FB63BB5E7A70 /* ViperMcFlurry.xcconfig */;
@@ -2777,29 +2860,6 @@
 			};
 			name = Release;
 		};
-		E94DE8B745D5F8A601103ECFFD504B9D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D4E8849E3C6670773A77262F559A9D5 /* Pods-TwitterFeedViewerTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		ED71687639AFD88C2E47BC5FAF020F23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B14F796486BC09B6E1B1D8555876A8B /* Pods-TwitterFeedViewer.debug.xcconfig */;
@@ -2823,29 +2883,6 @@
 			};
 			name = Debug;
 		};
-		ED78723E56CDBCA4E07816810A5E8596 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C378B3E0D816C96C6EC2788BB6B883FA /* RamblerTyphoonUtils-AssemblyTesting.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RamblerTyphoonUtils-AssemblyTesting/RamblerTyphoonUtils-AssemblyTesting-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		F3D74E2535BFAE413161A228B4DDD145 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AD544C2E32FAC1246234A03095257842 /* EasyMapping.xcconfig */;
@@ -2864,29 +2901,6 @@
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		FDA2C1ADA0A479D6AF000774036B0373 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60CA2BE5106F4573CFD60277D6C94848 /* Pods-TwitterFeedViewerTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -2949,20 +2963,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6CDD1F9729D7BB3043BD31B0D6AAEC00 /* Build configuration list for PBXNativeTarget "Pods-TwitterFeedViewerTests" */ = {
+		6AA1A3E71323189DC342CB36CB27CAA3 /* Build configuration list for PBXNativeTarget "RamblerTyphoonUtils-AssemblyTesting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDA2C1ADA0A479D6AF000774036B0373 /* Debug */,
-				E94DE8B745D5F8A601103ECFFD504B9D /* Release */,
+				C9CE9F391AEEC23E1E2105067212FE2F /* Debug */,
+				22C4A65FBF8AA50FD5908B12D416F79E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA09540117275A98511F7892B689056E /* Build configuration list for PBXNativeTarget "RamblerTyphoonUtils-AssemblyTesting" */ = {
+		ABF6DD76B5D2DF4956269E4592C0D5F2 /* Build configuration list for PBXNativeTarget "Pods-TwitterFeedViewerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				82947A1E575B285E4F1FDC374FF70A3B /* Debug */,
-				ED78723E56CDBCA4E07816810A5E8596 /* Release */,
+				636F9112BA65BDCFB451A5331314E686 /* Debug */,
+				7D7D380C98D2046B35FE33B6244C54DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
