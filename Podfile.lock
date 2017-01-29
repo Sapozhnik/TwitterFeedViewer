@@ -5,6 +5,9 @@ PODS:
   - OCMock (3.3)
   - RamblerTyphoonUtils/AssemblyCollector (1.5.0)
   - RamblerTyphoonUtils/AssemblyTesting (1.5.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - Typhoon (3.6.0):
     - Typhoon/DeallocNotifier (= 3.6.0)
     - Typhoon/IntrospectionUtils (= 3.6.0)
@@ -20,6 +23,7 @@ DEPENDENCIES:
   - OCMock (~> 3.3.0)
   - RamblerTyphoonUtils/AssemblyCollector (~> 1.5.0)
   - RamblerTyphoonUtils/AssemblyTesting (~> 1.5.0)
+  - SDWebImage (~> 3.7)
   - Typhoon (= 3.6.0)
   - ViperMcFlurry (~> 1.5.2)
 
@@ -27,9 +31,10 @@ SPEC CHECKSUMS:
   EasyMapping: 7d519910862b8aa7484527eb129d95d3cd2dcf02
   OCMock: d68685bde31f69cb61d518dcb39269080c78b5ed
   RamblerTyphoonUtils: 08a6b5592e045a490cd4550aa9ea4a581308d482
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   Typhoon: 551cc8fae881d0f4b20ddafc6d276da3e867f61f
   ViperMcFlurry: 701bc3ad8d188b1f1e157ec0ddf4e77184de88b5
 
-PODFILE CHECKSUM: 056c5a960c9c4ab3dffeb138b6db8718c7073d62
+PODFILE CHECKSUM: b3299883fecf14e5820f37d59a02750b82cd5c04
 
 COCOAPODS: 1.2.0

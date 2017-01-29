@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Typhoon.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,12 +52,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>22C9B07213D0AA3609F5D8736B3B1097</key>
+		<key>29F691C4E535B259F39A1066C784B1CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>341CC49367D943E13039EC3AAAEBF1A6</key>
+		<key>347D657A752364BC5134F07DA5D2EC98</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>49EABB34C9553AA6E492BE242E3BB95B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>532E7ED44DA7FABBED18FB3FD3EA90B1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,11 +82,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7227DB80798BABD70B4DE701BA68D5C0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>985888A2E6687A95E124DC22AED8A3D8</key>
 		<dict>
 			<key>primary</key>
@@ -82,7 +92,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AFFBCCEEA0F5AAC29A0E477783E9C951</key>
+		<key>BBBD8848C1BB0D7D5D9756FAC69D2807</key>
 		<dict>
 			<key>primary</key>
 			<true/>

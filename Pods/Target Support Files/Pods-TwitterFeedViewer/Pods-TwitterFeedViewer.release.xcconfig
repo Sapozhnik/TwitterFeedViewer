@@ -1,8 +1,8 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/EasyMapping" "${PODS_ROOT}/Headers/Public/OCMock" "${PODS_ROOT}/Headers/Public/RamblerTyphoonUtils" "${PODS_ROOT}/Headers/Public/Typhoon" "${PODS_ROOT}/Headers/Public/ViperMcFlurry"
-LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/EasyMapping" "$PODS_CONFIGURATION_BUILD_DIR/RamblerTyphoonUtils-AssemblyCollector" "$PODS_CONFIGURATION_BUILD_DIR/Typhoon" "$PODS_CONFIGURATION_BUILD_DIR/ViperMcFlurry"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/EasyMapping" -isystem "${PODS_ROOT}/Headers/Public/OCMock" -isystem "${PODS_ROOT}/Headers/Public/RamblerTyphoonUtils" -isystem "${PODS_ROOT}/Headers/Public/Typhoon" -isystem "${PODS_ROOT}/Headers/Public/ViperMcFlurry"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"EasyMapping" -l"RamblerTyphoonUtils-AssemblyCollector" -l"Typhoon" -l"ViperMcFlurry" -framework "CoreData"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/EasyMapping" "${PODS_ROOT}/Headers/Public/OCMock" "${PODS_ROOT}/Headers/Public/RamblerTyphoonUtils" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/Typhoon" "${PODS_ROOT}/Headers/Public/ViperMcFlurry"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/EasyMapping" "$PODS_CONFIGURATION_BUILD_DIR/RamblerTyphoonUtils-AssemblyCollector" "$PODS_CONFIGURATION_BUILD_DIR/SDWebImage" "$PODS_CONFIGURATION_BUILD_DIR/Typhoon" "$PODS_CONFIGURATION_BUILD_DIR/ViperMcFlurry"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/EasyMapping" -isystem "${PODS_ROOT}/Headers/Public/OCMock" -isystem "${PODS_ROOT}/Headers/Public/RamblerTyphoonUtils" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage" -isystem "${PODS_ROOT}/Headers/Public/Typhoon" -isystem "${PODS_ROOT}/Headers/Public/ViperMcFlurry"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"EasyMapping" -l"RamblerTyphoonUtils-AssemblyCollector" -l"SDWebImage" -l"Typhoon" -l"ViperMcFlurry" -framework "CoreData" -framework "ImageIO"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods
