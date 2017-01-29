@@ -32,6 +32,8 @@
 #pragma mark - Методы FeedInteractorOutput
 
 - (void)didLoadTweets:(NSArray<Tweet *> *)tweets afterId:(NSString *)afterId {
+    [self.view showTweets:tweets
+          withAuthorPhoto:YES];
     NSLog(@"%@", tweets);
 }
 

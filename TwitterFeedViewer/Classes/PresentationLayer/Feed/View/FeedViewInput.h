@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class Tweet;
+
 @protocol FeedViewInput <NSObject>
 
 /**
@@ -16,5 +18,8 @@
  Метод настраивает начальный стейт view
  */
 - (void)setupInitialState;
+
+- (void)showTweets:(NSArray<Tweet *> *)tweets
+   withAuthorPhoto:(BOOL)showAuthorPhoto;
 
 @end

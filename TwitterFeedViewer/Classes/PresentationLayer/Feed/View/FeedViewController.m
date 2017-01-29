@@ -10,6 +10,9 @@
 
 #import "FeedViewOutput.h"
 
+// Dependencies
+#import "FeedDataDisplayManager.h"
+
 @implementation FeedViewController
 
 #pragma mark - Методы жизненного цикла
@@ -17,13 +20,29 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
+    self.tableView.dataSource = self.dataDisplayManager;
+    self.tableView.delegate = self.dataDisplayManager;
+    
 	[self.output didTriggerViewReadyEvent];
 }
 
-#pragma mark - Методы FeedViewInput
+#pragma mark - FeedViewInput
 
 - (void)setupInitialState {
 	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
+}
+
+- (void)showTweets:(NSArray<Tweet *> *)tweets
+   withAuthorPhoto:(BOOL)showAuthorPhoto {
+    [self.dataDisplayManager showTweets:tweets
+                        withAuthorPhoto:showAuthorPhoto];
+    [self.tableView reloadData];
+}
+
+#pragma mark - FeedDataDisplayManagerDelegate
+
+- (void)didTapOnTweetWithIndex:(NSUInteger)tweetIndex {
+    
 }
 
 @end

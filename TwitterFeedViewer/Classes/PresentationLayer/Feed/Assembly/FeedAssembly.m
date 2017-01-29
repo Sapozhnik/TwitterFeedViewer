@@ -15,6 +15,9 @@
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
+#import "FeedDataDisplayManager.h"
+#import "TweetCellObjectFactory.h"
+
 // Dependencies
 #import "ServicesAssemblyProtocol.h"
 
@@ -37,6 +40,8 @@ static NSString *const FeedConfigTwitterSearchQueryPageSizeKey = @"TwitterSearch
                                                     with:[self presenterFeed]];
                               [definition injectProperty:@selector(moduleInput)
                                                     with:[self presenterFeed]];
+                              [definition injectProperty:@selector(dataDisplayManager)
+                                                    with:[self feedDataDisplayManager]];
                           }];
 }
 
@@ -73,6 +78,22 @@ static NSString *const FeedConfigTwitterSearchQueryPageSizeKey = @"TwitterSearch
                               [definition injectProperty:@selector(transitionHandler)
                                                     with:[self viewFeed]];
                           }];
+}
+
+#pragma mark - Helpers
+
+- (FeedDataDisplayManager *)feedDataDisplayManager {
+    return [TyphoonDefinition withClass:[FeedDataDisplayManager class]
+            configuration:^(TyphoonDefinition *definition) {
+                [definition injectProperty:@selector(cellObjectFactory)
+                                      with:[self tweetCellObjectFactory]];
+                [definition injectProperty:@selector(delegate)
+                                      with:[self viewFeed]];
+            }];
+}
+
+- (TweetCellObjectFactory *)tweetCellObjectFactory {
+    return [TyphoonDefinition withClass:[TweetCellObjectFactory class]];
 }
 
 #pragma mark - Config

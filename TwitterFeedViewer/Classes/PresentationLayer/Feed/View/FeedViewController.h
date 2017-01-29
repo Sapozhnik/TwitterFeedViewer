@@ -10,10 +10,19 @@
 
 #import "FeedViewInput.h"
 
+// Delegates
+#import "FeedDataDisplayManagerDelegate.h"
+
+@class FeedDataDisplayManager;
+
 @protocol FeedViewOutput;
 
-@interface FeedViewController : UIViewController <FeedViewInput>
+@interface FeedViewController : UIViewController <FeedViewInput, FeedDataDisplayManagerDelegate>
+
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong) id<FeedViewOutput> output;
+
+@property (nonatomic, strong) FeedDataDisplayManager *dataDisplayManager;
 
 @end
