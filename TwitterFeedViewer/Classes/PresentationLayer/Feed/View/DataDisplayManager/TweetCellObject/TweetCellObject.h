@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TweetCellObject : NSObject
+// Protocols
+#import "CellObjectProtocol.h"
+
+@interface TweetCellObject : NSObject <CellObjectProtocol>
 
 @property (nonatomic, copy) NSString *text;
 @property (nonatomic, copy) NSString *date;

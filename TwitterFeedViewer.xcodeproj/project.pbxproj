@@ -50,6 +50,10 @@
 		8A3EDD861E3DEC1900D35E75 /* TweetCellObjectFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3EDD841E3DEC1900D35E75 /* TweetCellObjectFactory.m */; };
 		8A3EDD8A1E3DEC4200D35E75 /* TweetCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3EDD891E3DEC4200D35E75 /* TweetCellObject.m */; };
 		8A3EDD8B1E3DEC4200D35E75 /* TweetCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3EDD891E3DEC4200D35E75 /* TweetCellObject.m */; };
+		8A3EDD901E3DF2FB00D35E75 /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3EDD8E1E3DF2FB00D35E75 /* TweetCell.m */; };
+		8A3EDD911E3DF2FB00D35E75 /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3EDD8E1E3DF2FB00D35E75 /* TweetCell.m */; };
+		8A3EDD921E3DF2FB00D35E75 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3EDD8F1E3DF2FB00D35E75 /* TweetCell.xib */; };
+		8A3EDD931E3DF2FB00D35E75 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3EDD8F1E3DF2FB00D35E75 /* TweetCell.xib */; };
 		8A78B1711E3CADE900E7534A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B16F1E3CADE900E7534A /* Main.storyboard */; };
 		8A78B1761E3CADE900E7534A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B1741E3CADE900E7534A /* LaunchScreen.storyboard */; };
 		8AAA0A711E3DD46600069C2C /* APIConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AAA0A701E3DD46600069C2C /* APIConfig.plist */; };
@@ -124,6 +128,11 @@
 		8A3EDD841E3DEC1900D35E75 /* TweetCellObjectFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCellObjectFactory.m; sourceTree = "<group>"; };
 		8A3EDD881E3DEC4200D35E75 /* TweetCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCellObject.h; sourceTree = "<group>"; };
 		8A3EDD891E3DEC4200D35E75 /* TweetCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCellObject.m; sourceTree = "<group>"; };
+		8A3EDD8D1E3DF2FB00D35E75 /* TweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCell.h; sourceTree = "<group>"; };
+		8A3EDD8E1E3DF2FB00D35E75 /* TweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
+		8A3EDD8F1E3DF2FB00D35E75 /* TweetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetCell.xib; sourceTree = "<group>"; };
+		8A3EDD941E3DF34100D35E75 /* UpdatableCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdatableCellProtocol.h; sourceTree = "<group>"; };
+		8A3EDD981E3DF3F100D35E75 /* CellObjectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellObjectProtocol.h; sourceTree = "<group>"; };
 		8A78B1631E3CADE900E7534A /* TwitterFeedViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterFeedViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A78B1701E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A78B1751E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -491,6 +500,16 @@
 			path = TweetCellObject;
 			sourceTree = "<group>";
 		};
+		8A3EDD8C1E3DF2DF00D35E75 /* TweetCell */ = {
+			isa = PBXGroup;
+			children = (
+				8A3EDD8D1E3DF2FB00D35E75 /* TweetCell.h */,
+				8A3EDD8E1E3DF2FB00D35E75 /* TweetCell.m */,
+				8A3EDD8F1E3DF2FB00D35E75 /* TweetCell.xib */,
+			);
+			path = TweetCell;
+			sourceTree = "<group>";
+		};
 		8A78B15A1E3CADE800E7534A = {
 			isa = PBXGroup;
 			children = (
@@ -536,6 +555,9 @@
 		8AAA0A791E3DE77400069C2C /* DataDisplayManager */ = {
 			isa = PBXGroup;
 			children = (
+				8A3EDD941E3DF34100D35E75 /* UpdatableCellProtocol.h */,
+				8A3EDD981E3DF3F100D35E75 /* CellObjectProtocol.h */,
+				8A3EDD8C1E3DF2DF00D35E75 /* TweetCell */,
 				8A3EDD871E3DEC3A00D35E75 /* TweetCellObject */,
 				8A3EDD821E3DEC1200D35E75 /* TweetCellObjectFactory */,
 				8AAA0A821E3DE80F00069C2C /* FeedDataDisplayManagerDelegate.h */,
@@ -690,6 +712,7 @@
 				8A78B1711E3CADE900E7534A /* Main.storyboard in Resources */,
 				8AAA0A711E3DD46600069C2C /* APIConfig.plist in Resources */,
 				8AAA0A771E3DE19000069C2C /* FeedConfig.plist in Resources */,
+				8A3EDD921E3DF2FB00D35E75 /* TweetCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,6 +725,7 @@
 				8A3CD6C81E3CE6BC000C3F71 /* Info.plist in Resources */,
 				8A3CD6C61E3CE6BC000C3F71 /* Assets.xcassets in Resources */,
 				8AAA0A781E3DE19000069C2C /* FeedConfig.plist in Resources */,
+				8A3EDD931E3DF2FB00D35E75 /* TweetCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,6 +832,7 @@
 				8A3CD6DB1E3D16F8000C3F71 /* User.m in Sources */,
 				8A3CD6CE1E3D1091000C3F71 /* Tweet.m in Sources */,
 				8AAA0A7C1E3DE78200069C2C /* FeedDataDisplayManager.m in Sources */,
+				8A3EDD901E3DF2FB00D35E75 /* TweetCell.m in Sources */,
 				8A3CD73B1E3DD248000C3F71 /* CoreComponentsAssembly.m in Sources */,
 				8A3EDD8A1E3DEC4200D35E75 /* TweetCellObject.m in Sources */,
 				8A3CD6C91E3CE6BC000C3F71 /* main.m in Sources */,
@@ -837,6 +862,7 @@
 				8A3CD73C1E3DD248000C3F71 /* CoreComponentsAssembly.m in Sources */,
 				8A3CD72C1E3DD0B6000C3F71 /* MappingProvider.m in Sources */,
 				8A3CD7161E3DCE5B000C3F71 /* RequestExecutor.m in Sources */,
+				8A3EDD911E3DF2FB00D35E75 /* TweetCell.m in Sources */,
 				8A3CD6F01E3D1FA3000C3F71 /* ResponseMapperTests.m in Sources */,
 				8A3EDD861E3DEC1900D35E75 /* TweetCellObjectFactory.m in Sources */,
 				8A3CD6BF1E3CE5EB000C3F71 /* AppDelegate.m in Sources */,

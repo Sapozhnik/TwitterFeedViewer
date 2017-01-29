@@ -7,11 +7,18 @@
 //
 
 #import "FeedDataDisplayManager.h"
+
+// Dependencies
 #import "TweetCellObjectFactory.h"
+
+// Entities
+#import "TweetCellObject.h"
+
+#import "UpdatableCellProtocol.h"
 
 @interface FeedDataDisplayManager ()
 
-@property (nonatomic, strong) NSMutableArray *cellObjects;
+@property (nonatomic, strong) NSMutableArray<TweetCellObject *> *cellObjects;
 
 @end
 
@@ -21,7 +28,6 @@
    withAuthorPhoto:(BOOL)showAuthorPhoto {
     self.cellObjects = [[self.cellObjectFactory tweetCellObjectsFromTweets:tweets
                                                      shouldShowAuthorPhoto:showAuthorPhoto] mutableCopy];
-    
 }
 
 #pragma mark - UITableViewDataSource
@@ -31,6 +37,20 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    id<CellObjectProtocol> cellObject = self.cellObjects[indexPath.row];
+    
+    UINib *cellNib = [cellObject cellNib];
+    NSString *cellIdentifier = NSStringFromClass([cellObject cellClass]);
+    
+    [tableView registerNib:cellNib
+    forCellReuseIdentifier:cellIdentifier];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier
+                                                            forIndexPath:indexPath];
+    
+    id<UpdatableCellProtocol>updatableCell = (id<UpdatableCellProtocol>)cell;
+    [updatableCell updateWithCellObject:cellObject];
+    
     return [UITableViewCell new];
 }
 

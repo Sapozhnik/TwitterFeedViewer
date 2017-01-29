@@ -8,6 +8,21 @@
 
 #import "TweetCellObject.h"
 
+#import <UIKit/UIKit.h>
+
+#import "TweetCell.h"
+
 @implementation TweetCellObject
+
+#pragma mark - CellObjectProtocol
+
+- (Class)cellClass {
+    return [TweetCell class];
+}
+
+- (id)cellNib {
+    return [UINib nibWithNibName:NSStringFromClass([self cellClass])
+                          bundle:[NSBundle bundleForClass:[self class]]];
+}
 
 @end
