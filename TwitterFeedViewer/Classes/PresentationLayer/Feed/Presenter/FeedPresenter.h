@@ -25,4 +25,6 @@
 @property (nonatomic, copy) NSString *searchQuery;
 @property (nonatomic, copy) NSNumber *searchQueryPageSize;
 
+@property (nonatomic, copy) NSNumber *updateTimeInterval;
+
 @end

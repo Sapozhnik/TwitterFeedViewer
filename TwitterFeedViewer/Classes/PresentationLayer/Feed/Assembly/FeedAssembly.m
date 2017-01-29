@@ -24,6 +24,7 @@
 static NSString *const FeedConfigFileName = @"FeedConfig.plist";
 static NSString *const FeedConfigTwitterSearchQueryKey = @"TwitterSearchQuery";
 static NSString *const FeedConfigTwitterSearchQueryPageSizeKey = @"TwitterSearchQueryPageSize";
+static NSString *const FeedConfigTimerTimeIntervalKey = @"TimerTimeInterval";
 
 @interface FeedAssembly ()
 
@@ -71,6 +72,8 @@ static NSString *const FeedConfigTwitterSearchQueryPageSizeKey = @"TwitterSearch
                                                     with:TyphoonConfig(FeedConfigTwitterSearchQueryKey)];
                               [definition injectProperty:@selector(searchQueryPageSize)
                                                     with:TyphoonConfig(FeedConfigTwitterSearchQueryPageSizeKey)];
+                              [definition injectProperty:@selector(updateTimeInterval)
+                                                    with:TyphoonConfig(FeedConfigTimerTimeIntervalKey)];
                           }];
 }
 

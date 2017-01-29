@@ -6,5 +6,7 @@
 	<string>apple</string>
 	<key>TwitterSearchQueryPageSize</key>
 	<integer>10</integer>
+	<key>TimerTimeInterval</key>
+	<real>60</real>
 </dict>
 </plist>

@@ -36,7 +36,8 @@
 #pragma mark - Методы FeedViewOutput
 
 - (void)didTriggerViewReadyEvent {
-    self.updateTimer = [NSTimer scheduledTimerWithTimeInterval:20.0
+    NSTimeInterval timerTimeInterval = [self.updateTimeInterval doubleValue];
+    self.updateTimer = [NSTimer scheduledTimerWithTimeInterval:timerTimeInterval
                                                         target:self
                                                       selector:@selector(checkFreshTweets)
                                                       userInfo:nil
