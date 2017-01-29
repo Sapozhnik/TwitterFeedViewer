@@ -40,6 +40,8 @@
 		8A3CD6F91E3DC804000C3F71 /* TweetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6F71E3DC804000C3F71 /* TweetService.m */; };
 		8A3CD7051E3DCB26000C3F71 /* RequestConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7041E3DCB25000C3F71 /* RequestConfigurator.m */; };
 		8A3CD7061E3DCB26000C3F71 /* RequestConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7041E3DCB25000C3F71 /* RequestConfigurator.m */; };
+		8A3CD7151E3DCE5B000C3F71 /* RequestExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7141E3DCE5B000C3F71 /* RequestExecutor.m */; };
+		8A3CD7161E3DCE5B000C3F71 /* RequestExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7141E3DCE5B000C3F71 /* RequestExecutor.m */; };
 		8A78B1711E3CADE900E7534A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B16F1E3CADE900E7534A /* Main.storyboard */; };
 		8A78B1761E3CADE900E7534A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B1741E3CADE900E7534A /* LaunchScreen.storyboard */; };
 		B68D3C36C752B1D2BC1C1FCE /* libPods-TwitterFeedViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B44DC57178446202331AE1CB /* libPods-TwitterFeedViewer.a */; };
@@ -95,6 +97,9 @@
 		8A3CD7031E3DCB25000C3F71 /* RequestConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestConfigurator.h; sourceTree = "<group>"; };
 		8A3CD7041E3DCB25000C3F71 /* RequestConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestConfigurator.m; sourceTree = "<group>"; };
 		8A3CD7071E3DCBD1000C3F71 /* RequestConfiguratorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestConfiguratorProtocol.h; sourceTree = "<group>"; };
+		8A3CD7131E3DCE5B000C3F71 /* RequestExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestExecutor.h; sourceTree = "<group>"; };
+		8A3CD7141E3DCE5B000C3F71 /* RequestExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestExecutor.m; sourceTree = "<group>"; };
+		8A3CD7171E3DCE65000C3F71 /* RequestExecutorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestExecutorProtocol.h; sourceTree = "<group>"; };
 		8A78B1631E3CADE900E7534A /* TwitterFeedViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterFeedViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A78B1701E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A78B1751E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -417,6 +422,9 @@
 		8A3CD6FF1E3DCACD000C3F71 /* RequestExecutor */ = {
 			isa = PBXGroup;
 			children = (
+				8A3CD7171E3DCE65000C3F71 /* RequestExecutorProtocol.h */,
+				8A3CD7131E3DCE5B000C3F71 /* RequestExecutor.h */,
+				8A3CD7141E3DCE5B000C3F71 /* RequestExecutor.m */,
 			);
 			path = RequestExecutor;
 			sourceTree = "<group>";
@@ -741,6 +749,7 @@
 				8A3CD6BE1E3CE5EB000C3F71 /* AppDelegate.m in Sources */,
 				8A3CD7051E3DCB26000C3F71 /* RequestConfigurator.m in Sources */,
 				8242C03EF62A4F2545426F5B /* FeedAssembly.m in Sources */,
+				8A3CD7151E3DCE5B000C3F71 /* RequestExecutor.m in Sources */,
 				8A3CD6F81E3DC804000C3F71 /* TweetService.m in Sources */,
 				6407EA875E1D9EFE4D290158 /* FeedViewController.m in Sources */,
 				0DB0D3412E2388470143C35D /* FeedPresenter.m in Sources */,
@@ -756,6 +765,7 @@
 				8A3CD6DC1E3D16F8000C3F71 /* User.m in Sources */,
 				8A3CD6EA1E3D1CA2000C3F71 /* ResponseMapper.m in Sources */,
 				8A3CD7061E3DCB26000C3F71 /* RequestConfigurator.m in Sources */,
+				8A3CD7161E3DCE5B000C3F71 /* RequestExecutor.m in Sources */,
 				8A3CD6F01E3D1FA3000C3F71 /* ResponseMapperTests.m in Sources */,
 				8A3CD6BF1E3CE5EB000C3F71 /* AppDelegate.m in Sources */,
 				8A3CD6CA1E3CE6BC000C3F71 /* main.m in Sources */,
