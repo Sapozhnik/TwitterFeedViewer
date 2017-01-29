@@ -17,4 +17,8 @@
  */
 - (void)didTriggerViewReadyEvent;
 
+- (void)loadFreshTweets;
+
+- (void)loadMoreTweets;
+
 @end

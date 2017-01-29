@@ -22,4 +22,6 @@
 - (void)showTweets:(NSArray<Tweet *> *)tweets
    withAuthorPhoto:(BOOL)showAuthorPhoto;
 
+- (void)hideSpinners;
+
 @end

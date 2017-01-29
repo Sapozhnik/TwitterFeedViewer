@@ -14,6 +14,12 @@
 
 @implementation FeedPresenter
 
+- (void)refreshFeed {
+    [self.interactor loadTweetsWithQuery:self.searchQuery
+                                   count:[self.searchQueryPageSize unsignedIntegerValue]
+                                 afterId:nil];
+}
+
 #pragma mark - Методы FeedModuleInput
 
 - (void)configureModule {
@@ -24,16 +30,24 @@
 
 - (void)didTriggerViewReadyEvent {
 	[self.view setupInitialState];
-    [self.interactor loadTweetsWithQuery:self.searchQuery
-                                   count:[self.searchQueryPageSize unsignedIntegerValue]
-                                 afterId:nil];
+    [self refreshFeed];
+}
+
+- (void)loadFreshTweets {
+    [self refreshFeed];
+}
+
+- (void)loadMoreTweets {
+    
 }
 
 #pragma mark - Методы FeedInteractorOutput
 
 - (void)didLoadTweets:(NSArray<Tweet *> *)tweets afterId:(NSString *)afterId {
+    [self.view hideSpinners];
     [self.view showTweets:tweets
           withAuthorPhoto:YES];
+    
     NSLog(@"%@", tweets);
 }
 
