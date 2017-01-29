@@ -62,7 +62,9 @@ static NSString *const TwitterAPISearchAfterIdKey = @"since_id";
                               }
                               
                               NSArray<Tweet *> *tweets = [sSelf.responseMapper tweetsFromResponse:responseObject];
-                              complitionBlock(tweets, nil);
+                              dispatch_async(dispatch_get_main_queue(), ^{
+                                  complitionBlock(tweets, nil);
+                              });
                           }];
 }
 
