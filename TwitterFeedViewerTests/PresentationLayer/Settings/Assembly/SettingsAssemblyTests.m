@@ -17,6 +17,9 @@
 #import "SettingsInteractor.h"
 #import "SettingsRouter.h"
 
+#import "ServicesAssembly.h"
+#import "CoreComponentsAssembly.h"
+
 @interface SettingsAssemblyTests : RamblerTyphoonAssemblyTests
 
 @property (nonatomic, strong) SettingsAssembly *assembly;
@@ -29,9 +32,13 @@
 
 - (void)setUp {
     [super setUp];
-
+    
     self.assembly = [[SettingsAssembly alloc] init];
-    [self.assembly activate];
+    
+    NSArray *collaboratingAssemblies = @[
+                                         [ServicesAssembly new],
+                                         [CoreComponentsAssembly new]                                         ];
+    [self.assembly activateWithCollaboratingAssemblies:collaboratingAssemblies];
 }
 
 - (void)tearDown {

@@ -17,6 +17,9 @@
 #import "FeedInteractor.h"
 #import "FeedRouter.h"
 
+#import "ServicesAssembly.h"
+#import "CoreComponentsAssembly.h"
+
 @interface FeedAssemblyTests : RamblerTyphoonAssemblyTests
 
 @property (nonatomic, strong) FeedAssembly *assembly;
@@ -31,7 +34,10 @@
     [super setUp];
 
     self.assembly = [[FeedAssembly alloc] init];
-    [self.assembly activate];
+    NSArray *collaboratingAssemblies = @[
+                                         [ServicesAssembly new],
+                                         [CoreComponentsAssembly new]                                         ];
+    [self.assembly activateWithCollaboratingAssemblies:collaboratingAssemblies];
 }
 
 - (void)tearDown {
