@@ -11,11 +11,4 @@
 
 @protocol FeedModuleInput <RamblerViperModuleInput>
 
-/**
- @author a.sapozhnik
-
- Метод инициирует стартовую конфигурацию текущего модуля
- */
-- (void)configureModule;
-
 @end

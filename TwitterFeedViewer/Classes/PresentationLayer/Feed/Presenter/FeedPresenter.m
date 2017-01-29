@@ -31,10 +31,6 @@
 
 #pragma mark - Методы FeedModuleInput
 
-- (void)configureModule {
-    // Стартовая конфигурация модуля, не привязанная к состоянию view
-}
-
 #pragma mark - Методы FeedViewOutput
 
 - (void)didTriggerViewReadyEvent {
