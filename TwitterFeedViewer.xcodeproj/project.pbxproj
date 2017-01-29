@@ -29,10 +29,6 @@
 		8A3CD6CF1E3D1091000C3F71 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6CD1E3D1091000C3F71 /* Tweet.m */; };
 		8A3CD6DB1E3D16F8000C3F71 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6DA1E3D16F8000C3F71 /* User.m */; };
 		8A3CD6DC1E3D16F8000C3F71 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6DA1E3D16F8000C3F71 /* User.m */; };
-		8A3CD6DF1E3D1788000C3F71 /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6DE1E3D1788000C3F71 /* MappingProvider.m */; };
-		8A3CD6E01E3D1788000C3F71 /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6DE1E3D1788000C3F71 /* MappingProvider.m */; };
-		8A3CD6E91E3D1CA2000C3F71 /* ResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6E81E3D1CA2000C3F71 /* ResponseMapper.m */; };
-		8A3CD6EA1E3D1CA2000C3F71 /* ResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6E81E3D1CA2000C3F71 /* ResponseMapper.m */; };
 		8A3CD6F01E3D1FA3000C3F71 /* ResponseMapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD6EF1E3D1FA3000C3F71 /* ResponseMapperTests.m */; };
 		8A3CD6F21E3D1FF6000C3F71 /* feed_with_2_tweets.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A3CD6F11E3D1FF6000C3F71 /* feed_with_2_tweets.json */; };
 		8A3CD6F31E3D1FF6000C3F71 /* feed_with_2_tweets.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A3CD6F11E3D1FF6000C3F71 /* feed_with_2_tweets.json */; };
@@ -42,8 +38,10 @@
 		8A3CD7061E3DCB26000C3F71 /* RequestConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7041E3DCB25000C3F71 /* RequestConfigurator.m */; };
 		8A3CD7151E3DCE5B000C3F71 /* RequestExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7141E3DCE5B000C3F71 /* RequestExecutor.m */; };
 		8A3CD7161E3DCE5B000C3F71 /* RequestExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7141E3DCE5B000C3F71 /* RequestExecutor.m */; };
-		8A3CD7211E3DCF75000C3F71 /* ResponseDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7201E3DCF75000C3F71 /* ResponseDeserializer.m */; };
-		8A3CD7221E3DCF75000C3F71 /* ResponseDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7201E3DCF75000C3F71 /* ResponseDeserializer.m */; };
+		8A3CD72B1E3DD0B6000C3F71 /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7261E3DD0B6000C3F71 /* MappingProvider.m */; };
+		8A3CD72C1E3DD0B6000C3F71 /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7261E3DD0B6000C3F71 /* MappingProvider.m */; };
+		8A3CD72D1E3DD0B6000C3F71 /* ResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7291E3DD0B6000C3F71 /* ResponseMapper.m */; };
+		8A3CD72E1E3DD0B6000C3F71 /* ResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3CD7291E3DD0B6000C3F71 /* ResponseMapper.m */; };
 		8A78B1711E3CADE900E7534A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B16F1E3CADE900E7534A /* Main.storyboard */; };
 		8A78B1761E3CADE900E7534A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A78B1741E3CADE900E7534A /* LaunchScreen.storyboard */; };
 		B68D3C36C752B1D2BC1C1FCE /* libPods-TwitterFeedViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B44DC57178446202331AE1CB /* libPods-TwitterFeedViewer.a */; };
@@ -85,12 +83,6 @@
 		8A3CD6CD1E3D1091000C3F71 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 		8A3CD6D91E3D16F8000C3F71 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		8A3CD6DA1E3D16F8000C3F71 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		8A3CD6DD1E3D1788000C3F71 /* MappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingProvider.h; sourceTree = "<group>"; };
-		8A3CD6DE1E3D1788000C3F71 /* MappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingProvider.m; sourceTree = "<group>"; };
-		8A3CD6E11E3D193A000C3F71 /* MappingProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingProviderProtocol.h; sourceTree = "<group>"; };
-		8A3CD6E71E3D1CA2000C3F71 /* ResponseMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseMapper.h; sourceTree = "<group>"; };
-		8A3CD6E81E3D1CA2000C3F71 /* ResponseMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseMapper.m; sourceTree = "<group>"; };
-		8A3CD6EB1E3D1CB8000C3F71 /* ResponseMapperProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseMapperProtocol.h; sourceTree = "<group>"; };
 		8A3CD6EF1E3D1FA3000C3F71 /* ResponseMapperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseMapperTests.m; sourceTree = "<group>"; };
 		8A3CD6F11E3D1FF6000C3F71 /* feed_with_2_tweets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = feed_with_2_tweets.json; sourceTree = "<group>"; };
 		8A3CD6F61E3DC804000C3F71 /* TweetService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetService.h; sourceTree = "<group>"; };
@@ -102,9 +94,12 @@
 		8A3CD7131E3DCE5B000C3F71 /* RequestExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestExecutor.h; sourceTree = "<group>"; };
 		8A3CD7141E3DCE5B000C3F71 /* RequestExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestExecutor.m; sourceTree = "<group>"; };
 		8A3CD7171E3DCE65000C3F71 /* RequestExecutorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestExecutorProtocol.h; sourceTree = "<group>"; };
-		8A3CD71B1E3DCF6C000C3F71 /* ResponseDeserializerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseDeserializerProtocol.h; sourceTree = "<group>"; };
-		8A3CD71F1E3DCF75000C3F71 /* ResponseDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseDeserializer.h; sourceTree = "<group>"; };
-		8A3CD7201E3DCF75000C3F71 /* ResponseDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseDeserializer.m; sourceTree = "<group>"; };
+		8A3CD7251E3DD0B6000C3F71 /* MappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingProvider.h; sourceTree = "<group>"; };
+		8A3CD7261E3DD0B6000C3F71 /* MappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingProvider.m; sourceTree = "<group>"; };
+		8A3CD7271E3DD0B6000C3F71 /* MappingProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingProviderProtocol.h; sourceTree = "<group>"; };
+		8A3CD7281E3DD0B6000C3F71 /* ResponseMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseMapper.h; sourceTree = "<group>"; };
+		8A3CD7291E3DD0B6000C3F71 /* ResponseMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseMapper.m; sourceTree = "<group>"; };
+		8A3CD72A1E3DD0B6000C3F71 /* ResponseMapperProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseMapperProtocol.h; sourceTree = "<group>"; };
 		8A78B1631E3CADE900E7534A /* TwitterFeedViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterFeedViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A78B1701E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A78B1751E3CADE900E7534A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -334,39 +329,9 @@
 			children = (
 				8A3CD6FE1E3DCACD000C3F71 /* RequestConfigurator */,
 				8A3CD6FF1E3DCACD000C3F71 /* RequestExecutor */,
-				8A3CD7011E3DCACD000C3F71 /* ResponseDeserializer */,
-				8A3CD6D11E3D127A000C3F71 /* ResponseMappers */,
+				8A3CD7231E3DD0B6000C3F71 /* ResponseMapper */,
 			);
 			path = CoreComponents;
-			sourceTree = "<group>";
-		};
-		8A3CD6D11E3D127A000C3F71 /* ResponseMappers */ = {
-			isa = PBXGroup;
-			children = (
-				8A3CD6D21E3D127A000C3F71 /* ResponseMapper */,
-			);
-			path = ResponseMappers;
-			sourceTree = "<group>";
-		};
-		8A3CD6D21E3D127A000C3F71 /* ResponseMapper */ = {
-			isa = PBXGroup;
-			children = (
-				8A3CD6D31E3D127A000C3F71 /* MappingProviders */,
-				8A3CD6EB1E3D1CB8000C3F71 /* ResponseMapperProtocol.h */,
-				8A3CD6E71E3D1CA2000C3F71 /* ResponseMapper.h */,
-				8A3CD6E81E3D1CA2000C3F71 /* ResponseMapper.m */,
-			);
-			path = ResponseMapper;
-			sourceTree = "<group>";
-		};
-		8A3CD6D31E3D127A000C3F71 /* MappingProviders */ = {
-			isa = PBXGroup;
-			children = (
-				8A3CD6E11E3D193A000C3F71 /* MappingProviderProtocol.h */,
-				8A3CD6DD1E3D1788000C3F71 /* MappingProvider.h */,
-				8A3CD6DE1E3D1788000C3F71 /* MappingProvider.m */,
-			);
-			path = MappingProviders;
 			sourceTree = "<group>";
 		};
 		8A3CD6D81E3D16F1000C3F71 /* User */ = {
@@ -433,14 +398,25 @@
 			path = RequestExecutor;
 			sourceTree = "<group>";
 		};
-		8A3CD7011E3DCACD000C3F71 /* ResponseDeserializer */ = {
+		8A3CD7231E3DD0B6000C3F71 /* ResponseMapper */ = {
 			isa = PBXGroup;
 			children = (
-				8A3CD71B1E3DCF6C000C3F71 /* ResponseDeserializerProtocol.h */,
-				8A3CD71F1E3DCF75000C3F71 /* ResponseDeserializer.h */,
-				8A3CD7201E3DCF75000C3F71 /* ResponseDeserializer.m */,
+				8A3CD7241E3DD0B6000C3F71 /* MappingProviders */,
+				8A3CD7281E3DD0B6000C3F71 /* ResponseMapper.h */,
+				8A3CD7291E3DD0B6000C3F71 /* ResponseMapper.m */,
+				8A3CD72A1E3DD0B6000C3F71 /* ResponseMapperProtocol.h */,
 			);
-			path = ResponseDeserializer;
+			path = ResponseMapper;
+			sourceTree = "<group>";
+		};
+		8A3CD7241E3DD0B6000C3F71 /* MappingProviders */ = {
+			isa = PBXGroup;
+			children = (
+				8A3CD7251E3DD0B6000C3F71 /* MappingProvider.h */,
+				8A3CD7261E3DD0B6000C3F71 /* MappingProvider.m */,
+				8A3CD7271E3DD0B6000C3F71 /* MappingProviderProtocol.h */,
+			);
+			path = MappingProviders;
 			sourceTree = "<group>";
 		};
 		8A78B15A1E3CADE800E7534A = {
@@ -742,12 +718,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A3CD6DB1E3D16F8000C3F71 /* User.m in Sources */,
-				8A3CD6E91E3D1CA2000C3F71 /* ResponseMapper.m in Sources */,
-				8A3CD6DF1E3D1788000C3F71 /* MappingProvider.m in Sources */,
-				8A3CD7211E3DCF75000C3F71 /* ResponseDeserializer.m in Sources */,
 				8A3CD6CE1E3D1091000C3F71 /* Tweet.m in Sources */,
 				8A3CD6C91E3CE6BC000C3F71 /* main.m in Sources */,
 				8A3CD6BE1E3CE5EB000C3F71 /* AppDelegate.m in Sources */,
+				8A3CD72B1E3DD0B6000C3F71 /* MappingProvider.m in Sources */,
 				8A3CD7051E3DCB26000C3F71 /* RequestConfigurator.m in Sources */,
 				8242C03EF62A4F2545426F5B /* FeedAssembly.m in Sources */,
 				8A3CD7151E3DCE5B000C3F71 /* RequestExecutor.m in Sources */,
@@ -756,6 +730,7 @@
 				0DB0D3412E2388470143C35D /* FeedPresenter.m in Sources */,
 				43C705630CB3F9F119674C81 /* FeedInteractor.m in Sources */,
 				49E4F450566A012CE7425223 /* FeedRouter.m in Sources */,
+				8A3CD72D1E3DD0B6000C3F71 /* ResponseMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,16 +739,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A3CD6DC1E3D16F8000C3F71 /* User.m in Sources */,
-				8A3CD6EA1E3D1CA2000C3F71 /* ResponseMapper.m in Sources */,
 				8A3CD7061E3DCB26000C3F71 /* RequestConfigurator.m in Sources */,
+				8A3CD72C1E3DD0B6000C3F71 /* MappingProvider.m in Sources */,
 				8A3CD7161E3DCE5B000C3F71 /* RequestExecutor.m in Sources */,
 				8A3CD6F01E3D1FA3000C3F71 /* ResponseMapperTests.m in Sources */,
 				8A3CD6BF1E3CE5EB000C3F71 /* AppDelegate.m in Sources */,
 				8A3CD6CA1E3CE6BC000C3F71 /* main.m in Sources */,
-				8A3CD6E01E3D1788000C3F71 /* MappingProvider.m in Sources */,
 				8A3CD6CF1E3D1091000C3F71 /* Tweet.m in Sources */,
 				610B88CDA3DA2BAA4E59F8DF /* FeedAssemblyTests.m in Sources */,
-				8A3CD7221E3DCF75000C3F71 /* ResponseDeserializer.m in Sources */,
+				8A3CD72E1E3DD0B6000C3F71 /* ResponseMapper.m in Sources */,
 				BBB830D42C0D611AA327DD6E /* FeedViewControllerTests.m in Sources */,
 				8A3CD6F91E3DC804000C3F71 /* TweetService.m in Sources */,
 				003A5653D34AAEB4F8323350 /* FeedPresenterTests.m in Sources */,
