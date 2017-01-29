@@ -156,4 +156,10 @@ static NSUInteger const TableViewFooterHeight = 50.0;
     [self.output loadFreshTweets];
 }
 
+#pragma mark - Bar button item action
+
+- (IBAction)settingsButtonDidTap:(id)sender {
+    [self.output settingsButtonDidTap];
+}
+
 @end

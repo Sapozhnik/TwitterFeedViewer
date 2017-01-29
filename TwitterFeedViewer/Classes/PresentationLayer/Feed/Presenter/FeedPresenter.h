@@ -10,11 +10,13 @@
 #import "FeedInteractorOutput.h"
 #import "FeedModuleInput.h"
 
+#import "SettingsModuleOutput.h"
+
 @protocol FeedViewInput;
 @protocol FeedInteractorInput;
 @protocol FeedRouterInput;
 
-@interface FeedPresenter : NSObject <FeedModuleInput, FeedViewOutput, FeedInteractorOutput>
+@interface FeedPresenter : NSObject <FeedModuleInput, FeedViewOutput, FeedInteractorOutput, SettingsModuleOutput>
 
 @property (nonatomic, weak) id<FeedViewInput> view;
 @property (nonatomic, strong) id<FeedInteractorInput> interactor;

@@ -34,15 +34,84 @@
                             <constraint firstAttribute="trailing" secondItem="u3g-aG-QP2" secondAttribute="trailing" id="i1a-Cc-nTr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Twitter feed viewer" id="iTa-y7-fDi"/>
+                    <navigationItem key="navigationItem" title="Twitter feed viewer" id="iTa-y7-fDi">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="leq-o7-zxp">
+                            <connections>
+                                <action selector="settingsButtonDidTap:" destination="BYZ-38-t0r" id="0SE-uo-DU3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="u3g-aG-QP2" id="uuF-rH-PsZ"/>
                         <segue destination="laU-7g-HJH" kind="show" identifier="OpenTweetSegue" id="BqV-Kf-XxI"/>
+                        <segue destination="WwF-7x-yw1" kind="presentation" identifier="OpenSettingsSegue" id="Er5-tB-vde"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="975.20000000000005" y="61.619190404797607"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="uWF-9f-WlF">
+            <objects>
+                <viewController id="WwF-7x-yw1" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="deo-Eo-1v3"/>
+                        <viewControllerLayoutGuide type="bottom" id="sV2-zH-o0U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MI7-LO-uNa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show profile image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6C-ur-CHw">
+                                <rect key="frame" x="16" y="80" width="188" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N4p-Bv-LSG">
+                                <rect key="frame" x="310" y="78" width="51" height="31"/>
+                                <connections>
+                                    <action selector="imageSwitchDidChangeValue:" destination="WwF-7x-yw1" eventType="valueChanged" id="ysz-j2-j9e"/>
+                                </connections>
+                            </switch>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fj8-BX-qHm">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Settings" id="UU9-aS-H4T">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Oy1-lL-Mys">
+                                            <connections>
+                                                <action selector="doneButtonDidTap:" destination="WwF-7x-yw1" id="o0Y-CW-kAa"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s6C-ur-CHw" firstAttribute="top" secondItem="fj8-BX-qHm" secondAttribute="bottom" constant="16" id="BxE-8b-gws"/>
+                            <constraint firstAttribute="trailing" secondItem="N4p-Bv-LSG" secondAttribute="trailing" constant="16" id="Ijp-3Z-cLv"/>
+                            <constraint firstItem="N4p-Bv-LSG" firstAttribute="centerY" secondItem="s6C-ur-CHw" secondAttribute="centerY" id="JAT-Yq-Ehu"/>
+                            <constraint firstItem="s6C-ur-CHw" firstAttribute="leading" secondItem="MI7-LO-uNa" secondAttribute="leading" constant="16" id="M8H-1x-qhE"/>
+                            <constraint firstItem="fj8-BX-qHm" firstAttribute="top" secondItem="MI7-LO-uNa" secondAttribute="top" constant="20" id="MUT-0X-xPJ"/>
+                            <constraint firstAttribute="trailing" secondItem="fj8-BX-qHm" secondAttribute="trailing" id="Nnd-HO-dj4"/>
+                            <constraint firstItem="fj8-BX-qHm" firstAttribute="leading" secondItem="MI7-LO-uNa" secondAttribute="leading" id="fz6-fp-zOl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fAu-Le-2qS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="miA-TR-V9o"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageSwitch" destination="N4p-Bv-LSG" id="1pA-xh-FLM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Pi-xy-3mU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975" y="838"/>
         </scene>
         <!--Detail Tweet View Controller-->
         <scene sceneID="tqv-rJ-S8E">

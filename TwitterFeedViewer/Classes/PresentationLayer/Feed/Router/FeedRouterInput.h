@@ -10,8 +10,12 @@
 
 @class Tweet;
 
+@protocol SettingsModuleOutput;
+
 @protocol FeedRouterInput <NSObject>
 
 - (void)openTweetDetailModuleWithTweet:(Tweet *)tweet;
+
+- (void)openSettingsModuleWithModuleOutput:(id<SettingsModuleOutput>)moduleOutput;
 
 @end

@@ -1,14 +1,14 @@
 //
-//  FeedViewOutput.h
+//  SettingsViewOutput.h
 //  TwitterFeedViewer
 //
-//  Created by a.sapozhnik on 28/01/2017.
+//  Created by a.sapozhnik on 29/01/2017.
 //  Copyright © 2017 ASapozhnik. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@protocol FeedViewOutput <NSObject>
+@protocol SettingsViewOutput <NSObject>
 
 /**
  @author a.sapozhnik
@@ -17,12 +17,8 @@
  */
 - (void)didTriggerViewReadyEvent;
 
-- (void)loadFreshTweets;
+- (void)doneButtonDidTap;
 
-- (void)loadMoreTweets;
-
-- (void)didSelectTweetAtIndex:(NSUInteger)tweetIndex;
-
-- (void)settingsButtonDidTap;
+- (void)imageSwitchDidChangeToState:(BOOL)state;
 
 @end

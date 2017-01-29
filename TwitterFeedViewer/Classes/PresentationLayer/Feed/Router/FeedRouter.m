@@ -12,7 +12,10 @@
 
 #import "DetailTweetModuleInput.h"
 
+#import "SettingsModuleOutput.h"
+
 static NSString *const OpenTweetSegueName = @"OpenTweetSegue";
+static NSString *const OpenSettingsSegueName = @"OpenSettingsSegue";
 
 @implementation FeedRouter
 
@@ -22,6 +25,12 @@ static NSString *const OpenTweetSegueName = @"OpenTweetSegue";
     [[self.transitionHandler openModuleUsingSegue:OpenTweetSegueName] thenChainUsingBlock:^id<RamblerViperModuleOutput>(id<DetailTweetModuleInput> moduleInput) {
         [moduleInput configureModuleWithTweet:tweet];
         return nil;
+    }];
+}
+
+- (void)openSettingsModuleWithModuleOutput:(id<SettingsModuleOutput>)moduleOutput {
+    [[self.transitionHandler openModuleUsingSegue:OpenSettingsSegueName] thenChainUsingBlock:^id<RamblerViperModuleOutput>(id<RamblerViperModuleInput> moduleInput) {
+        return moduleOutput;
     }];
 }
 

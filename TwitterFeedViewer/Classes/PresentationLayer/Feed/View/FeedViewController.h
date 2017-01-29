@@ -25,4 +25,6 @@
 
 @property (nonatomic, strong) FeedDataDisplayManager *dataDisplayManager;
 
+- (IBAction)settingsButtonDidTap:(id)sender;
+
 @end

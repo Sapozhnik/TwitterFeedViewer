@@ -57,6 +57,10 @@
     }
 }
 
+- (void)settingsButtonDidTap {
+    [self.router openSettingsModuleWithModuleOutput:self];
+}
+
 #pragma mark - Методы FeedInteractorOutput
 
 - (void)didLoadTweets:(NSArray<Tweet *> *)tweets
@@ -77,6 +81,12 @@
         [self.view showTweets:tweets
               withAuthorPhoto:YES];
     }
+}
+
+#pragma mark - SettingsModuleOutput
+
+- (void)settingsModuleWillClose {
+    
 }
 
 @end
