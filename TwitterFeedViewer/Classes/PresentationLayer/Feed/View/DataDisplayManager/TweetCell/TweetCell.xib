@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="TweetCell">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="38D-Lu-YAP">
+                        <rect key="frame" x="16" y="16" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="Bhf-S1-HsQ"/>
+                            <constraint firstAttribute="height" constant="48" id="jgw-A8-kSz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="500" text="Author Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYt-Wv-gYw">
+                        <rect key="frame" x="72" y="16" width="288" height="33.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ed4-jw-RPc">
+                        <rect key="frame" x="72" y="55" width="288" height="16"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDc-fG-hOG">
+                        <rect key="frame" x="16" y="79" width="336" height="112.5"/>
+                        <string key="text">Русская адаптация "Игры престолов":
+Сезон 1: "Ланнистеры берут валютную ипотеку".
+Сезон 2: "Ланнистеры всегда платят свои долги".</string>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ed4-jw-RPc" firstAttribute="leading" secondItem="38D-Lu-YAP" secondAttribute="trailing" constant="8" id="4AI-Jx-DoD"/>
+                    <constraint firstAttribute="trailing" secondItem="Ed4-jw-RPc" secondAttribute="trailing" constant="16" id="6dU-ji-WFB"/>
+                    <constraint firstItem="PYt-Wv-gYw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="BlS-op-5Wj"/>
+                    <constraint firstItem="yDc-fG-hOG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="DMf-gX-yYL"/>
+                    <constraint firstItem="38D-Lu-YAP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Doa-Ds-eMS"/>
+                    <constraint firstItem="PYt-Wv-gYw" firstAttribute="leading" secondItem="38D-Lu-YAP" secondAttribute="trailing" constant="8" id="FeR-0u-WPe"/>
+                    <constraint firstItem="PYt-Wv-gYw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Imu-sN-1yL"/>
+                    <constraint firstItem="38D-Lu-YAP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="VVG-Bx-IK2"/>
+                    <constraint firstAttribute="trailing" secondItem="PYt-Wv-gYw" secondAttribute="trailing" constant="16" id="Z7g-MS-OdY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="yDc-fG-hOG" secondAttribute="trailing" constant="16" id="ZOA-V0-xuP"/>
+                    <constraint firstItem="Ed4-jw-RPc" firstAttribute="top" secondItem="PYt-Wv-gYw" secondAttribute="bottom" constant="5.5" id="nGA-RP-hjT"/>
+                    <constraint firstAttribute="bottom" secondItem="yDc-fG-hOG" secondAttribute="bottom" constant="8" id="wIO-cp-wT9"/>
+                    <constraint firstItem="yDc-fG-hOG" firstAttribute="top" secondItem="Ed4-jw-RPc" secondAttribute="bottom" constant="8" id="yjY-YZ-n2S"/>
+                    <constraint firstItem="Ed4-jw-RPc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="z8m-Qf-Eor"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Imu-sN-1yL"/>
+                        <exclude reference="z8m-Qf-Eor"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authorImage" destination="38D-Lu-YAP" id="nUV-IR-6YL"/>
+                <outlet property="authorNameLabel" destination="PYt-Wv-gYw" id="DRF-SE-obj"/>
+                <outlet property="dateLabel" destination="Ed4-jw-RPc" id="ayC-mG-xOp"/>
+                <outlet property="tweetTextLabel" destination="yDc-fG-hOG" id="21A-Q5-42r"/>
+                <outletCollection property="visiblePhotoConstraints" destination="FeR-0u-WPe" id="qZV-mn-R7i"/>
+                <outletCollection property="visiblePhotoConstraints" destination="4AI-Jx-DoD" id="3C3-hq-0lh"/>
+                <outletCollection property="hidePhotoConstraints" destination="z8m-Qf-Eor" id="zDX-R9-Lpp"/>
+                <outletCollection property="hidePhotoConstraints" destination="Imu-sN-1yL" id="mBf-2d-VvG"/>
+            </connections>
+            <point key="canvasLocation" x="59" y="183"/>
+        </tableViewCell>
+    </objects>
+</document>
