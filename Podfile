@@ -18,6 +18,11 @@ target 'TwitterFeedViewer' do
 
     # Mocks and stubs
     pod 'OCMock', '~>3.3.0'
+
+    # Mapping
+    pod 'EasyMapping', '~> 0.15'
+
+    # AssemblyTesting
     pod 'RamblerTyphoonUtils/AssemblyTesting', '~> 1.5.0'
 
   end
