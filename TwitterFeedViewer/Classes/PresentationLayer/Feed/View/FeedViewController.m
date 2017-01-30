@@ -104,6 +104,14 @@ static CGFloat const BubbleOpenTopConstraintConstant = 18.0;
     [self.output didTriggerViewReadyEvent];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self.output viewWillAppear];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.output viewWillDisappear];
+}
+
 #pragma mark - FeedViewInput
 
 - (void)showTweets:(NSArray<Tweet *> *)tweets
