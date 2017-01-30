@@ -124,7 +124,7 @@
     Tweet *newestTweet = self.tweets.firstObject;
     
     [self.interactor checkFreshTweetsWithQuery:self.searchQuery
-                                         count:[self.searchQueryPageSize unsignedIntegerValue]
+                                         count:1u
                                       beforeId:newestTweet.tweetId];
 }
 

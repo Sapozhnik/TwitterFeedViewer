@@ -18,6 +18,8 @@ static NSString *const TwitterAPISearchPathComponents = @"search/tweets.json";
 static NSString *const TwitterAPISearchQueryKey = @"q";
 static NSString *const TwitterAPISearchCountKey = @"count";
 static NSString *const TwitterAPISearchAfterIdKey = @"since_id";
+static NSString *const TwitterAPISearchResultTypeKey = @"result_type";
+static NSString *const TwitterAPISearchResultTypeValue = @"recent";
 
 @implementation TweetService
 - (void)loadTweetsWithQuery:(NSString *)query
@@ -37,6 +39,10 @@ static NSString *const TwitterAPISearchAfterIdKey = @"since_id";
     
     [mutableItems addObject:countItem];
     
+    NSURLQueryItem *resultTypeItem = [NSURLQueryItem queryItemWithName:TwitterAPISearchResultTypeKey
+                                                              value:TwitterAPISearchResultTypeValue];
+    [mutableItems addObject:resultTypeItem];
+
     if (afterId != nil) {
         NSURLQueryItem *afterIdItem = [NSURLQueryItem queryItemWithName:TwitterAPISearchAfterIdKey
                                                                   value:afterId];
