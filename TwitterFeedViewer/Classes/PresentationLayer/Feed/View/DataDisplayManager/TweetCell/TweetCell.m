@@ -14,10 +14,6 @@
 
 @implementation TweetCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-}
-
 - (void)updateConstraints {
     NSArray *activeConstraints;
     NSArray *disabledConstraints;

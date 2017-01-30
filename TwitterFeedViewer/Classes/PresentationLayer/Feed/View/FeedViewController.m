@@ -13,8 +13,8 @@
 // Dependencies
 #import "FeedDataDisplayManager.h"
 
-static NSUInteger const TableViewEstimatedRowHeight = 150.0;
-static NSUInteger const TableViewFooterHeight = 50.0;
+static CGFloat const TableViewEstimatedRowHeight = 150.0;
+static CGFloat const TableViewFooterHeight = 50.0;
 
 static NSTimeInterval const BubbleTransitionAnimationDuration = 0.2;
 static CGFloat const BubbleOpenTopConstraintConstant = 18.0;
@@ -106,10 +106,6 @@ static CGFloat const BubbleOpenTopConstraintConstant = 18.0;
 
 #pragma mark - FeedViewInput
 
-- (void)setupInitialState {
-	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
-}
-
 - (void)showTweets:(NSArray<Tweet *> *)tweets
    withAuthorPhoto:(BOOL)showAuthorPhoto {
     [self.dataDisplayManager showTweets:tweets
@@ -173,7 +169,7 @@ static CGFloat const BubbleOpenTopConstraintConstant = 18.0;
         CGFloat maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height;
         CGFloat delta = maximumOffset - offset;
         
-        BOOL shouldLoadMoreNews = (delta <= 0) && (self.infiniteScrollActivityIndicatorView.isAnimating == NO);
+        BOOL shouldLoadMoreNews = (delta <= 0.0) && (self.infiniteScrollActivityIndicatorView.isAnimating == NO);
         
         if (shouldLoadMoreNews == YES) {
             [self.infiniteScrollActivityIndicatorView startAnimating];
@@ -189,6 +185,7 @@ static CGFloat const BubbleOpenTopConstraintConstant = 18.0;
 }
 
 #pragma mark - Buttons action
+
 - (IBAction)settingsButtonDidTap:(id)sender {
     [self.output settingsButtonDidTap];
 }

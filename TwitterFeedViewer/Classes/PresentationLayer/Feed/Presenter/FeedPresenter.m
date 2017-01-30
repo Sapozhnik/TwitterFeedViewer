@@ -42,7 +42,6 @@
                                                       selector:@selector(checkFreshTweets)
                                                       userInfo:nil
                                                        repeats:YES];
-    [self.view setupInitialState];
     [self refreshFeed];
 }
 

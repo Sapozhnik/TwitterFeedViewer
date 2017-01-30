@@ -57,17 +57,6 @@
 
 #pragma mark - Тестирование методов FeedViewOutput
 
-- (void)testThatPresenterHandlesViewReadyEvent {
-    // given
-
-
-    // when
-    [self.presenter didTriggerViewReadyEvent];
-
-    // then
-    OCMVerify([self.mockView setupInitialState]);
-}
-
 #pragma mark - Тестирование методов FeedInteractorOutput
 
 @end

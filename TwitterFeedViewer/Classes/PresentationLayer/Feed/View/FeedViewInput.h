@@ -12,13 +12,6 @@
 
 @protocol FeedViewInput <NSObject>
 
-/**
- @author a.sapozhnik
-
- Метод настраивает начальный стейт view
- */
-- (void)setupInitialState;
-
 - (void)showTweets:(NSArray<Tweet *> *)tweets
    withAuthorPhoto:(BOOL)showAuthorPhoto;
 
