@@ -36,14 +36,21 @@
 #pragma mark - Методы FeedViewOutput
 
 - (void)didTriggerViewReadyEvent {
+    [self refreshFeed];
+}
+
+- (void)viewWillAppear {
     NSTimeInterval timerTimeInterval = [self.updateTimeInterval doubleValue];
     self.updateTimer = [NSTimer scheduledTimerWithTimeInterval:timerTimeInterval
                                                         target:self
                                                       selector:@selector(checkFreshTweets)
                                                       userInfo:nil
                                                        repeats:YES];
-    [self.view setupInitialState];
-    [self refreshFeed];
+}
+
+- (void)viewWillDisappear {
+    [self.updateTimer invalidate];
+    self.updateTimer = nil;
 }
 
 - (void)loadFreshTweets {
@@ -117,7 +124,7 @@
     Tweet *newestTweet = self.tweets.firstObject;
     
     [self.interactor checkFreshTweetsWithQuery:self.searchQuery
-                                         count:[self.searchQueryPageSize unsignedIntegerValue]
+                                         count:1u
                                       beforeId:newestTweet.tweetId];
 }
 

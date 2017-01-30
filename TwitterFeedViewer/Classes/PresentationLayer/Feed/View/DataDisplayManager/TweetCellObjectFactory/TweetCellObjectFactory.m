@@ -17,7 +17,7 @@
 
 - (NSArray<TweetCellObject *> *)tweetCellObjectsFromTweets:(NSArray<Tweet *> *)tweets
                                      shouldShowAuthorPhoto:(BOOL)shouldShowAuthorPhoto {
-    NSMutableArray *result = [NSMutableArray new];
+    NSMutableArray<TweetCellObject *> *result = [NSMutableArray new];
     for (Tweet *tweet in tweets) {
         TweetCellObject *tweetCellObject = [TweetCellObject new];
         tweetCellObject.text = tweet.text;

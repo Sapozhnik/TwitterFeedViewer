@@ -17,6 +17,10 @@
  */
 - (void)didTriggerViewReadyEvent;
 
+- (void)viewWillAppear;
+
+- (void)viewWillDisappear;
+
 - (void)loadFreshTweets;
 
 - (void)loadMoreTweets;

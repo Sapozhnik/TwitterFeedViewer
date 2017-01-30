@@ -12,11 +12,9 @@
 // Libraries
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@implementation TweetCell
+static NSString *const TweetCellProfileImagePlaceholderName = @"user_placeholder";
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-}
+@implementation TweetCell
 
 - (void)updateConstraints {
     NSArray *activeConstraints;
@@ -56,7 +54,8 @@
     self.tweetTextLabel.text = cellObject.text;
 
     if (cellObject.showImage == YES) {
-        [self.authorImage sd_setImageWithURL:cellObject.profileImageURL];
+        [self.authorImage sd_setImageWithURL:cellObject.profileImageURL
+                            placeholderImage:[UIImage imageNamed:TweetCellProfileImagePlaceholderName]];
         self.authorImage.hidden = NO;
     } else {
         self.authorImage.hidden = YES;

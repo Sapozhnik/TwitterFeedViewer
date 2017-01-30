@@ -5,7 +5,7 @@
 	<key>TwitterSearchQuery</key>
 	<string>apple</string>
 	<key>TwitterSearchQueryPageSize</key>
-	<integer>10</integer>
+	<integer>30</integer>
 	<key>TimerTimeInterval</key>
 	<real>60</real>
 </dict>
